@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="border border-cyan-400 px-4 py-2 text-cyan-500">Hello World</div>
+      <p>Hello World</p>
     </>
   )
 }
