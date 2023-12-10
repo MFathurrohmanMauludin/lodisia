@@ -5,7 +5,7 @@ const DropDown = () => {
         <Dropdown>
             <DropdownTrigger>
                 <Button
-                    className="hover:!bg-slate-50 !px-0 !m-0 text-[16px] rounded-none"
+                    className="hover:!bg-slate-50 !font-medium !text-slate-600 hover:!text-slate-950 !px-0 !m-0 text-[16px] rounded-none"
                     variant="light"
                     color="default"
                     size="md"
