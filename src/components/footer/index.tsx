@@ -8,12 +8,12 @@ const Footer = () => {
     const year = new Date().getFullYear();
     return (
         <>
-            <div className="grid grid-cols-6 space-x-2 px-4 py-8 rounded-t-lg">
-                <div className="">
-                    Logo
+            <div className="flex gap-x-4 px-4 py-8 rounded-t-lg">
+                <div className="flex flex-col grow">
+                    <img src="" alt="Lodisia Logo" width={127} height={36} />
                 </div>
                 {/* tentang perusahaan */}
-                <div className="flex flex-col gap-y-3">
+                <div className="flex flex-col grow gap-y-3">
                     <h5 className="text-[18px] font-medium">Tentang Kami</h5>
                     <ul className="space-y-2">
                         <li>Lodisia</li>
@@ -23,20 +23,20 @@ const Footer = () => {
                 </div>
 
                 {/* pekerjaan tersedia */}
-                <div className="flex flex-col flex-grow gap-y-3">
+                <div className="w-[300px] flex flex-col grow gap-y-3">
                     <h5 className="text-[18px] font-medium">Pekerjaan banyak dicari</h5>
                     <div className="flex flex-wrap items-center gap-2 text-[12px]">
                         <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Web Developer</a>
                         <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Accounting</a>
-                        <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Graphic Designer</a>
                         <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Entry Data</a>
                         <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Customer Service</a>
+                        <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Graphic Designer</a>
                         <a href="#" className=" bg-slate-900 text-white px-3 py-1 rounded-full">Lihat Selengkapnya</a>
                     </div>
                 </div>
 
                 {/* pertanyaan yang sering ditanyakan */}
-                <div className="flex flex-col gap-y-3">
+                <div className="flex flex-col grow gap-y-3">
                     <h5 className="text-[18px] font-medium">Sering ditanyakan</h5>
                     <ul className="space-y-2">
                         <li>Lodasi itu apa?</li>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
 
                 {/* dukungan untuk pengguna */}
-                <div className="flex flex-col gap-y-3">
+                <div className="flex flex-col grow gap-y-3">
                     <h5 className="text-[18px] font-medium">Dukungan</h5>
                     <ul className="space-y-2">
                         <li>Hubungi Kami</li>
@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
 
                 {/* sosial media */}
-                <div className="space-y-4">
+                <div className="grow-0 space-y-4">
                     <div className="flex flex-col gap-y-3">
                         <h5 className="text-[18px] font-medium">Ikuti Kami</h5>
                         <ul className="flex flex-row space-x-4">
