@@ -10,15 +10,14 @@ import './index.css'
 import './App.css'
 
 // features & components
-import App from './App'
 import Header from './components/header'
 import Footer from './components/footer'
-
+import Home from './pages/home'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
 ])
 
