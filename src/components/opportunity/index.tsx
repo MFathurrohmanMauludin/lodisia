@@ -19,10 +19,10 @@ const Opportunity = () => {
                 <div className="grid grid-cols-2 grid-flow-row gap-4 grow-0">
                     {
                         getData.map((data: any) => (
-                            <Card className="hover:drop-shadow-md shadow-slate-950/10" shadow="none" radius="sm" key={1} isPressable>
+                            <Card className="hover:drop-shadow-md shadow-slate-950/10" shadow="none" radius="sm" key={data.id} isPressable>
                                 <CardBody className="flex flex-col overflow-visible p-4">
-                                    <div className="flex justify-center py-[13px] px-[12px] border border-slate-500 max-w-max h-max rounded-full">
-                                        <FontAwesomeIcon icon={getIcon[data.icon]} />
+                                    <div className="flex justify-center items-center p-4 border border-slate-500 max-w-[48px] max-h-[48px] rounded-md">
+                                        <FontAwesomeIcon fontSize={24} icon={getIcon[data.icon]} />
                                     </div>
                                     <div className="pt-4">
                                         <h4 className="font-semibold text-[21px] capitalize">{data.title}</h4>

@@ -14,7 +14,7 @@ const TopWork = () => {
             <div className="flex flex-wrap gap-x-8 py-4">
                 {
                     getData.map((data) => (
-                        <Card className="shadow-lg shadow-stone-400/30 hover:-translate-y-4 focus-within:-translate-y-4" shadow="sm" radius="none" key={1} isPressable>
+                        <Card className="shadow-lg shadow-stone-400/30 hover:-translate-y-4 focus-within:-translate-y-4" shadow="sm" radius="none" key={data.id} isPressable>
                             <CardBody className="flex flex-row gap-4 items-center overflow-visible p-4">
                                 <FontAwesomeIcon size="lg" icon={iconRegular[data.icon]} /> <span>{data.name}</span>
                             </CardBody>

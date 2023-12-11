@@ -76,13 +76,13 @@ const PopularFieldWork = () => [
 const Oppurtunity = () => [
     {
         id: 1,
-        icon: 'faPlane',
+        icon: 'faHandHoldingHeart',
         title: 'Akses Gratis',
         description: 'Kami sediakan semua akses untuk para penyandang disabilitas secara gratis atau tidak dipungut biaya apapun.',
     },
     {
         id: 2,
-        icon: 'faPlane',
+        icon: 'faHandshake',
         title: 'Kredibilitas Tinggi',
         description: 'Untuk meningkatkan kepercayaan anda terhadap Lodisia, kami bekerja sama dengan Kemenkumham untuk menemukan perusahaan yang terdata secara resmi atau legal untuk Anda.',
     },
@@ -94,19 +94,19 @@ const Oppurtunity = () => [
     },
     {
         id: 4,
-        icon: 'faPlane',
+        icon: 'faGlobe',
         title: 'Memiliki jejaring perusahaan yang luas',
         description: 'Dengan jejaring yang luas, kami dapat terus menyediakan lowongan pekerjaan bagi para penyandang disabilitas sampai saat ini.',
     },
     {
         id: 5,
-        icon: 'faPlane',
+        icon: 'faTrophy',
         title: 'Telah memiliki banyak penghargaan',
         description: 'Penghargaan yang kami dapatkan merupakan hasil perjuangan kami dalam membantu para penyandang disabilitas untuk melewati rintangan hidup dengan memberikan pekerjaan yang sesuai dengan kapabilitas dan keterbatasan.',
     },
     {
         id: 6,
-        icon: 'faPlane',
+        icon: 'faArrowTrendDown',
         title: 'Penurunan angka pengangguran lebih dari 5% setiap tahunnya',
         description: 'Melalui data yang kami terima dari Kemnaker, kami berhasil menurunkan angka pengangguran untuk para penyandang disabilitas.',
     },
