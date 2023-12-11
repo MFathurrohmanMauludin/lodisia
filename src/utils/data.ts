@@ -73,4 +73,43 @@ const PopularFieldWork = () => [
     }
 ];
 
-export { CompanyBrand, ListWork, PopularFieldWork };
+const Oppurtunity = () => [
+    {
+        id: 1,
+        icon: 'faPlane',
+        title: 'Akses Gratis',
+        description: 'Kami sediakan semua akses untuk para penyandang disabilitas secara gratis atau tidak dipungut biaya apapun.',
+    },
+    {
+        id: 2,
+        icon: 'faPlane',
+        title: 'Kredibilitas Tinggi',
+        description: 'Untuk meningkatkan kepercayaan anda terhadap Lodisia, kami bekerja sama dengan Kemenkumham untuk menemukan perusahaan yang terdata secara resmi atau legal untuk Anda.',
+    },
+    {
+        id: 3,
+        icon: 'faPlane',
+        title: 'Dipercaya perusahaan terkemuka',
+        description: 'Kepercayaan mereka terhadap kami telah membuka peluang yang luas pekerja bagi para penyandang disabilitas',
+    },
+    {
+        id: 4,
+        icon: 'faPlane',
+        title: 'Memiliki jejaring perusahaan yang luas',
+        description: 'Dengan jejaring yang luas, kami dapat terus menyediakan lowongan pekerjaan bagi para penyandang disabilitas sampai saat ini.',
+    },
+    {
+        id: 5,
+        icon: 'faPlane',
+        title: 'Telah memiliki banyak penghargaan',
+        description: 'Penghargaan yang kami dapatkan merupakan hasil perjuangan kami dalam membantu para penyandang disabilitas untuk melewati rintangan hidup dengan memberikan pekerjaan yang sesuai dengan kapabilitas dan keterbatasan.',
+    },
+    {
+        id: 6,
+        icon: 'faPlane',
+        title: 'Penurunan angka pengangguran lebih dari 5% setiap tahunnya',
+        description: 'Melalui data yang kami terima dari Kemnaker, kami berhasil menurunkan angka pengangguran untuk para penyandang disabilitas.',
+    },
+]
+
+export { CompanyBrand, ListWork, PopularFieldWork, Oppurtunity };

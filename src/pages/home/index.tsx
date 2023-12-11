@@ -1,5 +1,6 @@
 import Brand from "../../components/brand"
 import Hero from "../../components/hero"
+import Opportunity from "../../components/opportunity"
 import TopWork from "../../components/top-work"
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
             <Hero />
             <Brand />
             <TopWork />
+            <Opportunity />
             <div>Home</div>
         </>
     )
