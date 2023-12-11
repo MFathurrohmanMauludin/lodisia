@@ -34,6 +34,43 @@ const CompanyBrand = () => [
         name: "NVidia",
         logo: "https://api-ninjas-data.s3.us-west-2.amazonaws.com/logos/l088472395b2697109252aa04c2f12d53cf051d62.png"
     }
-]
+];
 
-export { CompanyBrand };
+const ListWork = () => [
+    {
+        id: 1,
+        name: '',
+        company: 1, // mengambil data dari list perusahaan
+        createdAt: '',
+    }
+];
+
+const PopularFieldWork = () => [
+    {
+        id: 1,
+        name: 'IT & Software',
+        icon: 'faCode'
+    },
+    {
+        id: 2,
+        name: 'Keuangan & Akuntasi',
+        icon: 'faCalculator'
+    },
+    {
+        id: 3,
+        name: 'Desain & Arsitektur',
+        icon: 'faPalette'
+    },
+    {
+        id: 4,
+        name: 'Pemasaran & Periklanan',
+        icon: 'faMagnifyingGlassChart'
+    },
+    {
+        id: 5,
+        name: 'Kesehatan & Kecantikan',
+        icon: 'faHandHoldingMedical'
+    }
+];
+
+export { CompanyBrand, ListWork, PopularFieldWork };
