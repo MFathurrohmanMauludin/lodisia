@@ -88,7 +88,7 @@ const Oppurtunity = () => [
     },
     {
         id: 3,
-        icon: 'faPlane',
+        icon: 'faStar',
         title: 'Dipercaya perusahaan terkemuka',
         description: 'Kepercayaan mereka terhadap kami telah membuka peluang yang luas pekerja bagi para penyandang disabilitas',
     },

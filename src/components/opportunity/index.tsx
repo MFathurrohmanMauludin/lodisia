@@ -14,7 +14,7 @@ const Opportunity = () => {
             <div className="flex">
                 <div className="flex flex-col grow gap-y-4 mr-8">
                     <h2 className="text-3xl font-extrabold">Apa yang anda dapatkan dari kami?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis neque impedit hic doloribus voluptatem nisi mollitia!</p>
+                    <p>Kami berikan beberapa keuntungan dari platform ini yang belum pernah anda dapatkan di dalam hidup anda sebagai penyandang disabilitas.</p>
                 </div>
                 <div className="grid grid-cols-2 grid-flow-row gap-4 grow-0">
                     {
@@ -25,7 +25,7 @@ const Opportunity = () => {
                                         <FontAwesomeIcon icon={getIcon[data.icon]} />
                                     </div>
                                     <div className="pt-4">
-                                        <h4 className="font-semibold text-[21px]">{data.title}</h4>
+                                        <h4 className="font-semibold text-[21px] capitalize">{data.title}</h4>
                                         <p className="mt-1">{data.description}</p>
                                     </div>
                                 </CardBody>
