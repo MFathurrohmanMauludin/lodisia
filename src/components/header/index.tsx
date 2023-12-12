@@ -1,8 +1,8 @@
 import DropDown from "../button/DropDown";
 import Notification from "../notification";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-regular-svg-icons/faHeart";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
     const logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/2560px-Facebook.png";
@@ -24,7 +24,7 @@ const Header = () => {
                     <Notification />
                     <a href="#"
                         className="text-[24px] text-gray-400 hover:text-gray-700" aria-aria-label="Loker yang disimpan">
-                        <FontAwesomeIcon icon={faHeart} />
+                        <FontAwesomeIcon icon={faAccessibleIcon} />
                     </a>
                     <div className="flex items-center gap-x-2 ml-2 text-[16px] font-medium">
                         <a
