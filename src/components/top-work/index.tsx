@@ -11,7 +11,7 @@ const TopWork = () => {
     return (
         <div className="w-full px-16">
             <h2 className="text-xl font-semibold">Bidang Pekerjaan Popular</h2>
-            <div className="flex flex-wrap gap-x-8 gap-y-4 py-4">
+            <div className="flex flex-wrap md:justify-center gap-x-8 gap-y-4 py-4">
                 {
                     getData.map((data) => (
                         <Card className="shadow-lg shadow-stone-400/30 hover:-translate-y-4 focus-within:-translate-y-4" shadow="sm" radius="none" key={data.id} isPressable>

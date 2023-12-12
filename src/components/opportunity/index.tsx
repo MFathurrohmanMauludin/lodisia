@@ -11,8 +11,8 @@ const Opportunity = () => {
 
     return (
         <div className="py-36 px-16">
-            <div className="flex">
-                <div className="flex flex-col grow-0 w-[100%] mr-4 mt-3 gap-y-4">
+            <div className="flex md:flex-wrap md:gap-y-8 md:flex-row">
+                <div className="flex flex-col grow-0 w-[100%] pe-4 mt-3 gap-y-4">
                     <h2 className="text-3xl font-extrabold">Apa yang anda dapatkan dari kami?</h2>
                     <p>Kami berikan beberapa keuntungan dari platform ini yang belum pernah anda dapatkan di dalam hidup anda.</p>
                 </div>
