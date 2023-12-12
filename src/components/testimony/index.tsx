@@ -1,9 +1,39 @@
-import { ScrollShadow } from "@nextui-org/react"
+import { Button, ScrollShadow } from "@nextui-org/react"
 import imageWoman from "../../assets/woman-disability-works.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
 const Testimony = () => {
     return (
-        <div className="px-16">
+        <div className="relative flex justify-items-center px-16" id="slideButton">
+            <div className="absolute w-[90%] top-[50%] z-20">
+                <div className="flex justify-between" id="slideActive">
+                    {/* <span className="flex justify-center items-center border-1 px-4 py-[13px] text-gray-400 bg-white rounded-full" id="prevContent"><FontAwesomeIcon icon={faChevronLeft} /></span>
+                    <span className="flex justify-center items-center border-1 px-4 py-[13px] text-gray-400 bg-white rounded-full" id="nextContent"><FontAwesomeIcon icon={faChevronRight} /></span> */}
+                    <Button
+                        isIconOnly
+                        className="border-1 bg-white hover:!opacity-100 -ml-6 text-gray-400"
+                        variant="solid"
+                        color="default"
+                        radius="full"
+                        size="lg"
+                        aria-label="Lihat Pendapat Sebelumnya"
+                        id="prevContent">
+                        <FontAwesomeIcon icon={faChevronLeft} />
+                    </Button>
+                    <Button
+                        isIconOnly
+                        className="border-1 bg-white !hover:bg-white text-gray-400"
+                        variant="solid"
+                        color="default"
+                        radius="full"
+                        size="lg"
+                        aria-label="Lihat Pendapat Selanjutnya"
+                        id="nextContent">
+                        <FontAwesomeIcon icon={faChevronRight} />
+                    </Button>
+                </div>
+            </div>
             <div className="grid grid-cols-2">
                 {/* testimony */}
                 <div className="flex flex-col">

@@ -4,3 +4,40 @@ body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+div#slideButton {
+    width: 100%;
+    height: 100%;
+}
+
+div#slideButton div#slideActive {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility ease-out .5s, opacity ease-in .5s;
+}
+
+div#slideButton:hover div#slideActive {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility ease-in .5s, opacity ease-in .5s;
+}
+
+div#slideButton button#prevContent {
+    transform: translateX(100px);
+    transition: transform ease-in 0.5s;
+}
+
+div#slideButton:hover button#prevContent {
+    transform: translateX(0);
+    transition: transform ease-in 0.5s;
+}
+
+div#slideButton button#nextContent {
+    transform: translateX(-100px);
+    transition: transform ease-in 0.5s;
+}
+
+div#slideButton:hover button#nextContent {
+    transform: translateX(0);
+    transition: transform ease-in 0.5s;
+}
