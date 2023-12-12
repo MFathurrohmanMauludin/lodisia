@@ -36,6 +36,34 @@ const CompanyBrand = () => [
     }
 ];
 
+const ListPartnert = () => [
+    {
+        id: 1,
+        name: "Kemenkumham",
+        logo: "https://itjen.kemenkumham.go.id/wp-content/uploads/images/stories/data_gambar/berita_utama/Logo_Kemenkumham.jpg"
+    },
+    {
+        id: 2,
+        name: "KEMNAKER",
+        logo: "https://kemnaker.go.id/assets/images/logo-color.png"
+    },
+    {
+        id: 3,
+        name: "World Health Organization",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/World_Health_Organization_Logo.svg/300px-World_Health_Organization_Logo.svg.png"
+    },
+    {
+        id: 4,
+        name: "Microsoft",
+        logo: "https://api-ninjas-data.s3.us-west-2.amazonaws.com/logos/l11f3242118ff2add5d117cbf216f29ac578f6ba6.png"
+    },
+    {
+        id: 5,
+        name: "Google",
+        logo: "https://api-ninjas-data.s3.us-west-2.amazonaws.com/logos/lfc4548375734de4aa0151bef377e72b1708b5072.png"
+    },
+]
+
 const ListWork = () => [
     {
         id: 1,
@@ -112,4 +140,4 @@ const Oppurtunity = () => [
     },
 ]
 
-export { CompanyBrand, ListWork, PopularFieldWork, Oppurtunity };
+export { CompanyBrand, ListPartnert, ListWork, PopularFieldWork, Oppurtunity };
