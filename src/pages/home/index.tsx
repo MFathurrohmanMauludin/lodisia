@@ -29,7 +29,7 @@ class Home extends React.Component<Props, State>{
             counter: 0,
         }
 
-        setInterval(this.nextStory, 5000);
+        setInterval(this.nextStory, 10000);
     }
 
     prevStory = () => {
