@@ -140,4 +140,70 @@ const Oppurtunity = () => [
     },
 ]
 
-export { CompanyBrand, ListPartnert, ListWork, PopularFieldWork, Oppurtunity };
+const ListTestimony = () => [
+    {
+        id: 1,
+        username: 'Anita Prasmawati',
+        company: 'PT Shopee International Indonesia',
+        profecy: 'Software Engineer',
+        photo: '../../assets/woman-disability-works.png',
+        story: `Awalnya saya berpikir bahwa kehidupan saya akan seperti ini hingga akhir hayat saya, tetapi tuhan berkehendak lain. 
+        Saya mencoba untuk mempelajari pemrograman yang diketahui pekerjaan tersebut tidak mengharuskan banyak bergerak tetapi berpikir atau logika. 
+        Setelah beberapa tahun silam, saya mencoba untuk mendaftar lowongan pekerjaan di Lodisia. Puji syukur tuhan, saya tidak menyangka dapat bekerja di salah satu perusahaan decacorn yang ada 
+        di Indonesia. Terima kasih untuk tuhan dan Lodisia yang telah mengubah hidup saya.`,
+        disability: [
+            {
+                id: 1,
+                name: 'Tunarungu',
+            },
+            {
+                id: 2,
+                name: 'Tunawicara',
+            },
+            {
+                id: 3,
+                name: 'Tunadaksa',
+            },
+        ],
+    },
+    {
+        id: 2,
+        username: 'Sri Wahyuni',
+        company: 'PT Pertamina (Persero)',
+        profecy: 'Data Center Technician',
+        photo: '../../assets/deaf-work.png',
+        story: `Awalnya saya berpikir bahwa kehidupan saya akan seperti ini hingga akhir hayat saya, tetapi tuhan berkehendak lain. 
+        Saya mencoba untuk mempelajari pemrograman yang diketahui pekerjaan tersebut tidak mengharuskan banyak bergerak tetapi berpikir atau logika. 
+        Setelah beberapa tahun silam, saya mencoba untuk mendaftar lowongan pekerjaan di Lodisia. Puji syukur tuhan, saya tidak menyangka dapat bekerja di salah satu perusahaan decacorn yang ada 
+        di Indonesia. Terima kasih untuk tuhan dan Lodisia yang telah mengubah hidup saya.`,
+        disability: [
+            {
+                id: 1,
+                name: 'Tunarungu',
+            },
+            {
+                id: 2,
+                name: 'Tunawicara',
+            },
+        ],
+    },
+    {
+        id: 3,
+        username: 'Budi Utomo',
+        company: 'Google Indonesia',
+        profecy: 'Customer Service',
+        photo: '../../assets/blind-works.png',
+        story: `Awalnya saya berpikir bahwa kehidupan saya akan seperti ini hingga akhir hayat saya, tetapi tuhan berkehendak lain. 
+        Saya mencoba untuk mempelajari pemrograman yang diketahui pekerjaan tersebut tidak mengharuskan banyak bergerak tetapi berpikir atau logika. 
+        Setelah beberapa tahun silam, saya mencoba untuk mendaftar lowongan pekerjaan di Lodisia. Puji syukur tuhan, saya tidak menyangka dapat bekerja di salah satu perusahaan decacorn yang ada 
+        di Indonesia. Terima kasih untuk tuhan dan Lodisia yang telah mengubah hidup saya.`,
+        disability: [
+            {
+                id: 1,
+                name: 'Tunanetra',
+            },
+        ],
+    },
+]
+
+export { CompanyBrand, ListPartnert, ListWork, PopularFieldWork, Oppurtunity, ListTestimony };

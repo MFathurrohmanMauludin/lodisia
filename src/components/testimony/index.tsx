@@ -1,9 +1,21 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, ScrollShadow } from "@nextui-org/react"
 import imageWoman from "../../assets/woman-disability-works.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
-const Testimony = () => {
+interface Props {
+    id: number;
+    username: string;
+    company: string;
+    profecy: string;
+    photo: string;
+    story: string;
+    disability: any;
+    control: { nextContent: any; prevContent: any };
+}
+
+const Testimony = (getData: Props) => {
     return (
         <div className="relative flex justify-items-center px-16" id="slideButton">
             <div className="absolute w-[90%] top-[50%] z-20">
@@ -11,6 +23,7 @@ const Testimony = () => {
                     <Button
                         isIconOnly
                         className="border-1 bg-white hover:!opacity-100 -ml-6 text-gray-400"
+                        onClick={() => getData.control.prevContent()}
                         variant="solid"
                         color="default"
                         radius="full"
@@ -22,6 +35,7 @@ const Testimony = () => {
                     <Button
                         isIconOnly
                         className="border-1 bg-white !hover:bg-white text-gray-400"
+                        onClick={() => getData.control.nextContent()}
                         variant="solid"
                         color="default"
                         radius="full"
@@ -38,17 +52,24 @@ const Testimony = () => {
                     <h2 className="text-3xl font-semibold" tabIndex={0}>Apa pendapat mereka tentang kami?</h2>
                     <p className="py-4 pr-8" tabIndex={0}>
                         <ScrollShadow className="w-auto h-[200px]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias libero tempore cum enim architecto ratione est? Ipsam ducimus laudantium voluptatum hic repellat fugit placeat necessitatibus voluptas, suscipit unde! Illo, itaque maxime? Quasi magni inventore, eligendi ea commodi laborum odio laboriosam pariatur dolorem, consequuntur dicta quibusdam assumenda harum deleniti quisquam?
+                            {getData.story}
                         </ScrollShadow>
                     </p>
-                    <div className="flex items-center gap-x-3" aria-label="kelainan yang dimiliki Anita Prasmawati">
-                        <span className="border-1 border-slate-400 px-4 py-1 rounded-full" tabIndex={0}>Tunarungu</span>
-                        <span className="border-1 border-slate-400 px-4 py-1 rounded-full" tabIndex={0}>Tunadaksa</span>
-                        <span className="border-1 border-slate-400 px-4 py-1 rounded-full" tabIndex={0}>Tunawicara</span>
+                    <div className="flex items-center gap-x-3" aria-label="kelainan yang dimiliki Anita Prasmawati" tabIndex={0}>
+                        {
+                            getData.disability.map((data: any) => (
+                                <span className="border-1 border-slate-400 px-4 py-1 rounded-full" tabIndex={0} key={data.id}>{data.name}</span>
+                            ))
+                        }
                     </div>
                     <div className="flex flex-col mt-4">
-                        <h4 className="font-extrabold" tabIndex={0} aria-label="ditulis oleh">Anita Prasmawati</h4>
-                        <span tabIndex={0}>Diterima di PT Shopee International Indonesia sebagai <span className="font-semibold capitalize">Software Engineer</span></span>
+                        <h4 className="font-extrabold" tabIndex={0} aria-label="ditulis oleh">{getData.username}</h4>
+                        <span tabIndex={0}>Diterima di {getData.company} sebagai <span className="font-semibold capitalize">{getData.profecy}</span></span>
+                        <div className="flex items-center gap-x-2 py-4">
+                            <button className="p-[6px] border-2 border-gray-500 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full"></button>
+                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full"></button>
+                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full"></button>
+                        </div>
                     </div>
                 </div>
 
