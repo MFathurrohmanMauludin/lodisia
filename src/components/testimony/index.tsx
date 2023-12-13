@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, ScrollShadow } from "@nextui-org/react"
-// import imageWoman from "../../assets/woman-disability-works.png"
-import imageBlind from "../../assets/blind-worker.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"
 
@@ -79,12 +77,12 @@ const Testimony = (getData: Props) => {
                     <div className="relative overflow-hidden pt-16 px-10">
                         <div className="static flex justify-center items-center">
                             <img
-                                className="ml-8 w-auto h-[300px] object-cover bg-center z-10"
-                                srcSet={imageBlind}
+                                className="ml-4 w-auto h-[300px] object-cover bg-center z-10"
+                                src={getData.photo}
                                 width={500}
                                 height={300}
                                 alt="photo testimony" />
-                            <div className="absolute top-[75px] z-0 rotate-45 bg-slate-300/30 w-[240px] h-[240px] inline-block rounded-2xl" />
+                            <div className="absolute top-[75px] z-0 rotate-45 bg-slate-300/30 w-[264px] h-[264px] inline-block rounded-2xl" />
                         </div>
                     </div>
                 </div>

@@ -146,7 +146,7 @@ const ListTestimony = () => [
         username: 'Anita Prasmawati',
         company: 'PT Shopee International Indonesia',
         profecy: 'Software Engineer',
-        photo: 'quadriplegic-worker.png',
+        photo: "https://i.ibb.co/VM7nJxJ/Rectangle-2.png",
         story: `Awalnya saya berpikir bahwa kehidupan saya akan seperti ini hingga akhir hayat saya, tetapi tuhan berkehendak lain. 
         Saya mencoba untuk mempelajari pemrograman yang diketahui pekerjaan tersebut tidak mengharuskan banyak bergerak tetapi berpikir atau logika. 
         Setelah beberapa tahun silam, saya mencoba untuk mendaftar lowongan pekerjaan di Lodisia. Puji syukur tuhan, saya tidak menyangka dapat bekerja di salah satu perusahaan decacorn yang ada 
@@ -171,7 +171,7 @@ const ListTestimony = () => [
         username: 'Sri Wahyuni',
         company: 'PT Pertamina (Persero)',
         profecy: 'Data Center Technician',
-        photo: 'deaf-worker.png',
+        photo: 'https://i.ibb.co/8rwj8n2/Rectangle-3.png',
         story: `Awalnya saya berpikir bahwa kehidupan saya akan seperti ini hingga akhir hayat saya, tetapi tuhan berkehendak lain. 
         Saya mencoba untuk mempelajari pemrograman yang diketahui pekerjaan tersebut tidak mengharuskan banyak bergerak tetapi berpikir atau logika. 
         Setelah beberapa tahun silam, saya mencoba untuk mendaftar lowongan pekerjaan di Lodisia. Puji syukur tuhan, saya tidak menyangka dapat bekerja di salah satu perusahaan decacorn yang ada 
@@ -192,7 +192,7 @@ const ListTestimony = () => [
         username: 'Budi Utomo',
         company: 'Google Indonesia',
         profecy: 'Customer Service',
-        photo: 'blind-worker.png',
+        photo: 'https://i.ibb.co/92hVtpj/Rectangle-1.png',
         story: `Awalnya saya berpikir bahwa kehidupan saya akan seperti ini hingga akhir hayat saya, tetapi tuhan berkehendak lain. 
         Saya mencoba untuk mempelajari pemrograman yang diketahui pekerjaan tersebut tidak mengharuskan banyak bergerak tetapi berpikir atau logika. 
         Setelah beberapa tahun silam, saya mencoba untuk mendaftar lowongan pekerjaan di Lodisia. Puji syukur tuhan, saya tidak menyangka dapat bekerja di salah satu perusahaan decacorn yang ada 
