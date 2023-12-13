@@ -48,7 +48,7 @@ const Testimony = () => {
                     </div>
                     <div className="flex flex-col mt-4">
                         <h4 className="font-extrabold" tabIndex={0} aria-label="ditulis oleh">Anita Prasmawati</h4>
-                        <span tabIndex={0}>Diterima di PT Shopee International Indonesia</span>
+                        <span tabIndex={0}>Diterima di PT Shopee International Indonesia sebagai <span className="font-semibold capitalize">Software Engineer</span></span>
                     </div>
                 </div>
 
