@@ -26,7 +26,7 @@ const Opportunity = () => {
                                             <FontAwesomeIcon fontSize={24} icon={getIcon[data.icon]} />
                                         </div>
                                         <div className="pt-4">
-                                            <h4 className="font-semibold text-[21px] capitalize">{data.title}</h4>
+                                            <span className="font-semibold text-[21px] capitalize">{data.title}</span>
                                             <p className="mt-1">{data.description}</p>
                                         </div>
                                     </CardBody>

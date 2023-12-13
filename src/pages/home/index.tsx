@@ -28,8 +28,14 @@ class Home extends React.Component<Props, State>{
             testimonyActive: '',
             counter: 0,
         }
+    }
 
-        setInterval(this.nextStory, 10000);
+    componentDidMount(): void {
+        this.nextStory
+    }
+
+    componentWillUnmount(): void {
+        setInterval(this.nextStory, 10000)
     }
 
     prevStory = () => {

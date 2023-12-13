@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
                 {/* tentang perusahaan */}
                 <div className="flex flex-col grow gap-y-3">
-                    <h5 className="text-[18px] font-medium">Tentang Kami</h5>
+                    <span className="text-[18px] font-semibold">Tentang Kami</span>
                     <ul className="space-y-2">
                         <li>Lodisia</li>
                         <li>Mitra Kami</li>
@@ -24,7 +24,7 @@ const Footer = () => {
 
                 {/* pekerjaan tersedia */}
                 <div className="w-[300px] flex flex-col grow gap-y-3">
-                    <h5 className="text-[18px] font-medium">Pekerjaan banyak dicari</h5>
+                    <span className="text-[18px] font-semibold">Pekerjaan banyak dicari</span>
                     <div className="flex flex-wrap items-center gap-2 text-[12px]">
                         <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Web Developer</a>
                         <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Accounting</a>
@@ -37,7 +37,7 @@ const Footer = () => {
 
                 {/* pertanyaan yang sering ditanyakan */}
                 <div className="flex flex-col grow gap-y-3">
-                    <h5 className="text-[18px] font-medium">Sering ditanyakan</h5>
+                    <span className="text-[18px] font-semibold">Sering ditanyakan</span>
                     <ul className="space-y-2">
                         <li>Lodasi itu apa?</li>
                         <li>Apakah Lodasi ini resmi?</li>
@@ -47,7 +47,7 @@ const Footer = () => {
 
                 {/* dukungan untuk pengguna */}
                 <div className="flex flex-col grow gap-y-3">
-                    <h5 className="text-[18px] font-medium">Dukungan</h5>
+                    <span className="text-[18px] font-semibold">Dukungan</span>
                     <ul className="space-y-2">
                         <li>Hubungi Kami</li>
                         <li>Syarat & Ketentuan</li>
@@ -59,7 +59,7 @@ const Footer = () => {
                 {/* sosial media */}
                 <div className="grow space-y-4">
                     <div className="flex flex-col gap-y-3">
-                        <h5 className="text-[18px] font-medium">Ikuti Kami</h5>
+                        <span className="text-[18px] font-semibold">Ikuti Kami</span>
                         <ul className="flex flex-row md:flex-wrap space-x-4">
                             <li><a href="#" aria-label="ikuti instagram kami"><img className="max-w-md h-[32px]" src={instagramIcon} alt="ikuti instagram kami" width={32} height={32} /></a></li>
                             <li><a className="text-blue-500" aria-label="ikuti instagram kami" href="#"><FontAwesomeIcon fontSize={32} icon={faFacebookSquare} /></a></li>
@@ -68,9 +68,9 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="flex flex-col gap-y-3">
-                        <h5 className="text-[14px] font-medium">Unduh Versi Mobile</h5>
+                        <span className="text-[14px] font-medium">Unduh Versi Mobile</span>
                         <ul className="flex flex-row space-x-4">
-                            <li><a className="text-blue-500" href="#">Google Play</a></li>
+                            <li><a className="text-slate-900" href="#">Google Play</a></li>
                             <li><a className="text-slate-900" href="#">App Store</a></li>
                         </ul>
                     </div>

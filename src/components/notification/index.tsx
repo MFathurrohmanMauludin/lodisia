@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Notification = () => {
     return (
-        <div className="text-[24px] text-gray-400 hover:text-gray-700">
+        <div className="text-[24px] text-gray-400 hover:text-gray-700" tabIndex={0}>
             <FontAwesomeIcon icon={faBell} />
         </div>
     )

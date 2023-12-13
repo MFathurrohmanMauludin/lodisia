@@ -17,15 +17,15 @@ const Header = () => {
                     <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="#">Daftar Perusahaan</a>
                 </div>
                 <div className="flex items-center flex-row gap-x-4">
-                    <a href="#"
-                        className="text-[24px] text-gray-400 hover:text-gray-700" aria-aria-label="Loker yang disimpan">
-                        <FontAwesomeIcon icon={faSearch} />
-                    </a>
+                    <button
+                        className="text-[24px] text-gray-400 hover:text-gray-700" aria-label="tombol pencarian">
+                        <FontAwesomeIcon icon={faSearch} aria-label="gambar pencarian" />
+                    </button>
                     <Notification />
-                    <a href="#"
-                        className="text-[24px] text-gray-400 hover:text-gray-700" aria-aria-label="Loker yang disimpan">
-                        <FontAwesomeIcon icon={faAccessibleIcon} />
-                    </a>
+                    <button
+                        className="text-[24px] text-gray-400 hover:text-gray-700" aria-label="tombol akses disabilitas">
+                        <FontAwesomeIcon icon={faAccessibleIcon} aria-label="ikon disabilitas" />
+                    </button>
                     <div className="flex items-center gap-x-2 ml-2 text-[16px] font-medium">
                         <a
                             href="#"

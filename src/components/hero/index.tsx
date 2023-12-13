@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="flex flex-col">
                 <h1 className="text-5xl leading-tight">Temukan <span className="font-extrabold capitalize">pekerjaan impian</span> Anda dengan mudah dan nyaman</h1>
                 <div className="py-8">
-                    <h5>Dengan sepenuh hati, kami membantu para disabilitas untuk menemukan lapangan pekerjaan yang sesuai dengan minat, bakat dan kemampuannya tanpa harus menunda terlalu lama</h5>
+                    Dengan sepenuh hati, kami membantu para disabilitas untuk menemukan lapangan pekerjaan yang sesuai dengan minat, bakat dan kemampuannya tanpa harus menunda terlalu lama
                 </div>
                 <div className="flex items-center">
                     <Button size="lg" radius="md" color="primary" variant="shadow">
@@ -18,15 +18,15 @@ const Hero = () => {
                 <div className="grid grid-cols-3 gap-x-4 pt-8">
                     <div className="flex flex-col">
                         <span className="font-bold text-[24px]">1.760.390</span>
-                        <h3 className="font-semibold text-slate-950/60">Disabilitas Terbantu</h3>
+                        <div className="font-semibold text-slate-950/60">Disabilitas Terbantu</div>
                     </div>
                     <div className="flex flex-col">
                         <span className="font-bold text-[24px]">25.438</span>
-                        <h3 className="font-semibold text-slate-950/60">Perusahaan Aktif</h3>
+                        <div className="font-semibold text-slate-950/60">Perusahaan Aktif</div>
                     </div>
                     <div className="flex flex-col">
                         <span className="font-bold text-[24px]">200</span>
-                        <h3 className="font-semibold text-slate-950/60">Bidang Pekerjaan</h3>
+                        <div className="font-semibold text-slate-950/60">Bidang Pekerjaan</div>
                     </div>
                 </div>
             </div>

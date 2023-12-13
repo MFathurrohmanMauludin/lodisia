@@ -49,11 +49,11 @@ const Testimony = (getData: Props) => {
                 {/* testimony */}
                 <div className="flex flex-col">
                     <h2 className="text-3xl font-semibold" tabIndex={0}>Apa pendapat mereka tentang kami?</h2>
-                    <p className="py-4 pr-8" tabIndex={0}>
-                        <ScrollShadow className="w-auto h-[200px]">
+                    <div className="py-4 pr-8 text-[16px]" tabIndex={0}>
+                        <ScrollShadow className="w-auto h-[240px]">
                             {getData.story}
                         </ScrollShadow>
-                    </p>
+                    </div>
                     <div className="flex items-center gap-x-3" aria-label="kelainan yang dimiliki Anita Prasmawati" tabIndex={0}>
                         {
                             getData.disability.map((data: any) => (
@@ -62,19 +62,19 @@ const Testimony = (getData: Props) => {
                         }
                     </div>
                     <div className="flex flex-col mt-4">
-                        <h4 className="font-extrabold" tabIndex={0} aria-label="ditulis oleh">{getData.username}</h4>
+                        <div className="font-extrabold" tabIndex={0} aria-label="ditulis oleh">{getData.username}</div>
                         <span tabIndex={0}>Diterima di {getData.company} sebagai <span className="font-semibold capitalize">{getData.profecy}</span></span>
                         <div className="flex items-center gap-x-2 py-4">
-                            <button className="p-[6px] border-2 border-gray-500 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full"></button>
-                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full"></button>
-                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full"></button>
+                            <button className="p-[6px] border-2 border-gray-500 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full" aria-label="0"></button>
+                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full" aria-label="1"></button>
+                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full" aria-label="2"></button>
                         </div>
                     </div>
                 </div>
 
                 {/* photo */}
                 <div className="flex flex-col justify-center items-center">
-                    <div className="relative overflow-hidden pt-16 px-10">
+                    <div className="relative overflow-hidden pt-16 px-10 bg-[url('https://i.ibb.co/8X4nd8P/Frame-2-2.png')] bg-center bg-contain">
                         <div className="static flex justify-center items-center">
                             <img
                                 className="ml-4 w-auto h-[300px] object-cover bg-center z-10"
@@ -82,7 +82,7 @@ const Testimony = (getData: Props) => {
                                 width={500}
                                 height={300}
                                 alt="photo testimony" />
-                            <div className="absolute top-[75px] z-0 rotate-45 bg-slate-300/30 w-[264px] h-[264px] inline-block rounded-2xl" />
+                            <div className="absolute top-[50px] -z-10 rotate-45 bg-[url('https://i.ibb.co/GnZRWZm/Frame-21-1.png')] bg-center bg-fill w-[350px] h-[350px] inline-block rounded-2xl" />
                         </div>
                     </div>
                 </div>
