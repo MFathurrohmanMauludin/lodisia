@@ -42,6 +42,12 @@ div#slideButton:hover button#nextContent {
     transition: transform ease-in 0.5s;
 }
 
+/* list work */
+#posting-card:hover {
+    transform: translateY(-10px);
+    transition: all ease-in 0.3s;
+}
+
 a#detailWork svg#arrowButton {
     transform: rotate(-45deg) translate(0px);
     transition: all ease-out 0.3s;
