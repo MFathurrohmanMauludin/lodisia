@@ -8,6 +8,8 @@ import Partnert from "../../components/partner"
 import Testimony from "../../components/testimony"
 import TopWork from "../../components/top-work"
 import { ListTestimony } from "../../utils/data"
+import WorkList from "../../components/list-work"
+
 
 interface Props {
 
@@ -59,6 +61,7 @@ class Home extends React.Component<Props, State>{
                 <Hero />
                 <Brand />
                 <TopWork />
+                <WorkList />
                 <Opportunity />
                 <Testimony
                     id={this.state.counter}
