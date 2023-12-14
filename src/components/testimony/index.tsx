@@ -11,7 +11,8 @@ interface Props {
     photo: string;
     story: string;
     disability: any;
-    control: { nextContent: any; prevContent: any };
+    dataPointer: any;
+    control: { nextContent: any; prevContent: any, pointerContent: any };
 }
 
 const Testimony = (getData: Props) => {
@@ -65,9 +66,11 @@ const Testimony = (getData: Props) => {
                         <div className="font-extrabold" tabIndex={0} aria-label="ditulis oleh">{getData.username}</div>
                         <span tabIndex={0}>Diterima di {getData.company} sebagai <span className="font-semibold capitalize">{getData.profecy}</span></span>
                         <div className="flex items-center gap-x-2 py-4">
-                            <button className="p-[6px] border-2 border-gray-500 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full" aria-label="0"></button>
-                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full" aria-label="1"></button>
-                            <button className="p-[6px] border-2 border-gray-500/10 bg-gray-400/30 inline-block focus-within:px-4 hover:px-4 ease-in duration-300 rounded-full" aria-label="2"></button>
+                            {
+                                getData.dataPointer.map((data: any, index: any) => (
+                                    <button key={data.id} onClick={() => getData.control.pointerContent(index)} className={`p-[6px] ${index === getData.id ? 'border-2 border-gray-500' : 'border-2 border-white'} bg-gray-300 inline-block hover:px-4 ease-in duration-300 rounded-full`} aria-label="0"></button>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
@@ -82,7 +85,7 @@ const Testimony = (getData: Props) => {
                                 width={500}
                                 height={300}
                                 alt="photo testimony" />
-                            <div className="absolute top-[50px] -z-10 rotate-45 bg-[url('https://i.ibb.co/GnZRWZm/Frame-21-1.png')] bg-center bg-fill w-[350px] h-[350px] inline-block rounded-2xl" />
+                            <div className="absolute top-[0px] -z-10 rotate-0 bg-[url('https://i.ibb.co/GnZRWZm/Frame-21-1.png')] bg-center bg-fill w-[350px] h-[350px] inline-block rounded-2xl" />
                         </div>
                     </div>
                 </div>

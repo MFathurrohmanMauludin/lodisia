@@ -46,6 +46,10 @@ class Home extends React.Component<Props, State>{
         this.setState({ counter: this.state.counter === 2 ? 0 : this.state.counter + 1 });
     }
 
+    getIdStory = (id: any) => {
+        this.setState({ counter: id })
+    }
+
     render() {
         const getCounter = this.state.counter;
         const data = this.state.testimony[getCounter];
@@ -57,16 +61,18 @@ class Home extends React.Component<Props, State>{
                 <TopWork />
                 <Opportunity />
                 <Testimony
-                    id={data.id}
+                    id={this.state.counter}
                     username={data.username}
                     company={data.company}
                     profecy={data.profecy}
                     photo={data.photo}
                     story={data.story}
                     disability={data.disability}
+                    dataPointer={this.state.testimony}
                     control={{
                         nextContent: this.nextStory,
-                        prevContent: this.prevStory
+                        prevContent: this.prevStory,
+                        pointerContent: this.getIdStory
                     }}
                 />
                 <Invitation />
