@@ -7,7 +7,7 @@ import Opportunity from "../../components/opportunity"
 import Partnert from "../../components/partner"
 import Testimony from "../../components/testimony"
 import TopWork from "../../components/top-work"
-import { ListTestimony } from "../../utils/data"
+import { ListTestimony, ListWork } from "../../utils/data"
 import WorkList from "../../components/list-work"
 
 
@@ -16,6 +16,7 @@ interface Props {
 }
 
 interface State {
+    workList: any;
     testimony: any;
     testimonyActive: any;
     counter: number;
@@ -26,6 +27,7 @@ class Home extends React.Component<Props, State>{
         super(props);
 
         this.state = {
+            workList: ListWork(),
             testimony: ListTestimony(),
             testimonyActive: '',
             counter: 0,
@@ -61,7 +63,7 @@ class Home extends React.Component<Props, State>{
                 <Hero />
                 <Brand />
                 <TopWork />
-                <WorkList />
+                <WorkList work={this.state.workList} />
                 <Opportunity />
                 <Testimony
                     id={this.state.counter}

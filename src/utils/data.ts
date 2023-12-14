@@ -69,16 +69,76 @@ const ListWork = () => [
         id: 1,
         name: 'Software Engineer',
         company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
-        LevelWork: 'Entry Level',
-        urlPoster: 'https://i.ibb.co/k4cw0MJ/victory-hatsune-miku.png',
-        StyleWork: 'On-site',
-        Location: 'Jakarta Utara',
-        StartDate: '12/14/2023',
-        FinishDate: '12/21/2023',
-        jobDesc: '',
-        generalCriteria: '',
-        importantCriteria: '',
-        regulations: '',
+        imgUrl: 'https://i.ibb.co/k4cw0MJ/victory-hatsune-miku.png',
+        logo: 'https://i.ibb.co/bryBvh9/logo-shopee.png',
+        levelWork: 'Entry Level',
+        styleWork: 'On-site',
+        typeContract: 'Full-time',
+        location: 'Jakarta Utara',
+        startDate: '12/14/2023',
+        finishDate: '12/21/2023',
+        jobDesc: 'deskripsi pekerjaan',
+        generalCriteria: 'kriteria umum',
+        importantCriteria: 'kriteria khusus/penting',
+        regulations: 'persyaratan yang harus dipenuhi',
+        disability: [
+            {
+                id: 1,
+                name: "Buta Warna",
+            },
+            {
+                id: 2,
+                name: "Tunarungu",
+            }
+        ],
+        createdBy: 'Asuna Yuuki',
+        createdAt: '12/14/2023',
+    },
+    {
+        id: 2,
+        name: 'Software Engineer',
+        company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/k4cw0MJ/victory-hatsune-miku.png',
+        logo: 'https://i.ibb.co/bryBvh9/logo-shopee.png',
+        levelWork: 'Entry Level',
+        styleWork: 'On-site',
+        typeContract: 'Full-time',
+        location: 'Jakarta Utara',
+        startDate: '12/14/2023',
+        finishDate: '12/21/2023',
+        jobDesc: 'deskripsi pekerjaan',
+        generalCriteria: 'kriteria umum',
+        importantCriteria: 'kriteria khusus/penting',
+        regulations: 'persyaratan yang harus dipenuhi',
+        disability: [
+            {
+                id: 1,
+                name: "Buta Warna",
+            },
+            {
+                id: 2,
+                name: "Tunarungu",
+            }
+        ],
+        createdBy: 'Asuna Yuuki',
+        createdAt: '12/14/2023',
+    },
+    {
+        id: 3,
+        name: 'Software Engineer',
+        company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/s59gTc3/shopee.jpg',
+        logo: 'https://i.ibb.co/bryBvh9/logo-shopee.png',
+        levelWork: 'Entry Level',
+        styleWork: 'On-site',
+        typeContract: 'Full-time',
+        location: 'Jakarta Utara',
+        startDate: '12/14/2023',
+        finishDate: '12/21/2023',
+        jobDesc: 'deskripsi pekerjaan',
+        generalCriteria: 'kriteria umum',
+        importantCriteria: 'kriteria khusus/penting',
+        regulations: 'persyaratan yang harus dipenuhi',
         disability: [
             {
                 id: 1,
@@ -98,6 +158,7 @@ const CompanyList = () => [
     {
         id: 1,
         name: 'PT Shopee Internasional Indonesia',
+        about: 'tentang perusahaan',
     }
 ]
 
