@@ -67,11 +67,39 @@ const ListPartnert = () => [
 const ListWork = () => [
     {
         id: 1,
-        name: '',
-        company: 1, // mengambil data dari list perusahaan
-        createdAt: '',
-    }
+        name: 'Software Engineer',
+        company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
+        LevelWork: 'Entry Level',
+        urlPoster: 'https://i.ibb.co/k4cw0MJ/victory-hatsune-miku.png',
+        StyleWork: 'On-site',
+        Location: 'Jakarta Utara',
+        StartDate: '12/14/2023',
+        FinishDate: '12/21/2023',
+        jobDesc: '',
+        generalCriteria: '',
+        importantCriteria: '',
+        regulations: '',
+        disability: [
+            {
+                id: 1,
+                name: "Buta Warna",
+            },
+            {
+                id: 2,
+                name: "Tunarungu",
+            }
+        ],
+        createdBy: 'Asuna Yuuki',
+        createdAt: '12/14/2023',
+    },
 ];
+
+const CompanyList = () => [
+    {
+        id: 1,
+        name: 'PT Shopee Internasional Indonesia',
+    }
+]
 
 const PopularFieldWork = () => [
     {
@@ -206,4 +234,4 @@ const ListTestimony = () => [
     },
 ]
 
-export { CompanyBrand, ListPartnert, ListWork, PopularFieldWork, Oppurtunity, ListTestimony };
+export { CompanyBrand, CompanyList, ListPartnert, ListWork, PopularFieldWork, Oppurtunity, ListTestimony };

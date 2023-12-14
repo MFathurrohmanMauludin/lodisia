@@ -34,7 +34,7 @@ const CardPosting = () => {
                     <div className="flex flex-row flex-wrap justify-between">
                         <div className="flex items-center gap-x-1 text-tiny"><FontAwesomeIcon fontSize={14} icon={faLocationDot} aria-label="ikon lokasi" /> <span aria-label="lokasi penempatan">Bandung</span></div>
                         <div className="flex items-center gap-x-2 text-tiny">
-                            <span>On-site</span>
+                            <span aria-label="">On-site</span>
                             <div className="bg-gray-950 p-[1px] inline-block rounded-full"></div>
                             <span>Full-time</span>
                         </div>
