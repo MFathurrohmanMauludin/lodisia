@@ -9,7 +9,7 @@ const WorkList = (getData: Props) => {
     const dayDate = (data: number) => new Date(data).getDate();
     const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { month: 'long', year: 'numeric' });
 
-    const countDay = (finish: number) => new Date(finish).getDate() - new Date().getDate();
+    const countDay = (finish: number) => Math.ceil((new Date(finish).getTime() - new Date().getTime()) / ((1000 * 3600) * 24));
 
 
     return (
