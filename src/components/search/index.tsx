@@ -1,7 +1,7 @@
-const index = () => {
+const SearchField = () => {
     return (
-        <div></div>
+        <div>Search Field</div>
     )
 }
 
-export default index
+export default SearchField

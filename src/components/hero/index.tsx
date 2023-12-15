@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className="grid grid-cols-2 p-8">
             <div className="flex flex-col">
-                <h1 className="text-5xl leading-tight">Temukan <span className="font-extrabold capitalize">pekerjaan impian</span> Anda dengan mudah dan nyaman</h1>
+                <h1 className="text-[48px] lg:text-2xl leading-tight">Temukan <span className="font-extrabold capitalize">pekerjaan impian</span> Anda dengan mudah dan nyaman</h1>
                 <div className="py-8">
                     Dengan sepenuh hati, kami membantu para disabilitas untuk menemukan lapangan pekerjaan yang sesuai dengan minat, bakat dan kemampuannya tanpa harus menunda terlalu lama
                 </div>
