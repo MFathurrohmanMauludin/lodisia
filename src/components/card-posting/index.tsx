@@ -14,6 +14,8 @@ interface Props {
     styleWork: string;
     typeContract: string;
     location: string;
+    dateStarted: string;
+    countDown: string;
     disability: any;
 }
 
@@ -22,17 +24,18 @@ const CardPosting = (getData: Props) => {
         <>
             <Card className="py-4" id="posting-card">
                 <CardHeader className="pb-0 pt-2 px-4 flex flex-row items-center gap-x-3">
+                    {/* logo perusahaan */}
                     <Avatar className="saturate-0" src={getData.logo} size="md" alt={`logo ${getData.name}`} />
                     <div className="capitalize leading-5">
                         <div className="flex items-center gap-x-2 text-[14px] tracking-wider">
-                            {/*  */}
-                            <span className="font-bold" tabIndex={0}>{getData.name}</span>
+                            {/* nama pekerjaan */}
+                            <span className="font-bold line-clamp-1 max-w-[20ch]" tabIndex={0}>{getData.name}</span>
                             <div className="bg-gray-950/30 p-[2px] inline-block rounded-full"></div>
                             {/* posisi pekerjaan */}
-                            <span className="text-tiny font-medium" aria-label="posisi-pekerjaan">{getData.level}</span>
+                            <span className="text-tiny font-medium" aria-label="posisi-pekerjaan" tabIndex={0}>{getData.level}</span>
                         </div>
                         {/* nama perusahaan */}
-                        <span className="flex items-center gap-x-1 text-tiny text-default-500">
+                        <span className="flex items-center gap-x-1 text-tiny text-default-500" tabIndex={0}>
                             <FontAwesomeIcon
                                 icon={faBuilding}
                                 aria-label="ikon gedung" /> {getData.company}
@@ -43,8 +46,8 @@ const CardPosting = (getData: Props) => {
 
                     {/* poster atau pamflet */}
                     <Image
-                        src="https://i.ibb.co/k4cw0MJ/victory-hatsune-miku.png"
-                        className="w-[500px] h-[250px] bg-gray-950/60 object-top object-cover bg-cover rounded-xl saturate-0"
+                        src={getData.imgUrl}
+                        className="w-[500px] h-[250px] bg-gray-950/60 object-center object-contain bg-cover rounded-xl saturate-0"
                         alt="Card background"
                         width={500}
                         loading="lazy"
@@ -61,15 +64,17 @@ const CardPosting = (getData: Props) => {
                                 aria-label="ikon kalendar" />
                             <span
                                 className="mt-1"
-                                aria-label="batas waktu lawmaran">
-                                14 - 21 Desember 2023
+                                aria-label="batas waktu lawmaran"
+                                tabIndex={0}>
+                                {getData.dateStarted}
                             </span>
                         </div>
 
                         {/* batas lamaran */}
                         <span
                             className="text text-slate-900 text-tiny font-medium tracking-wide bg-gray-300 border-1 px-2 py-[2px] rounded"
-                            aria-label="waktu lamaran">Tersisa 7 Hari</span>
+                            aria-label="waktu lamaran"
+                            tabIndex={0}>{getData.countDown === '0' ? 'Sudah Ditutup' : `Tersisa ${getData.countDown} Hari`}</span>
                     </div>
 
                     <div className="flex flex-row flex-wrap justify-between">
@@ -81,15 +86,17 @@ const CardPosting = (getData: Props) => {
                                 fontSize={14}
                                 icon={faLocationDot}
                                 aria-label="ikon lokasi" />
-                            <span aria-label="lokasi penempatan">{getData.location}</span>
+                            <span aria-label="lokasi penempatan" tabIndex={0}>{getData.location}</span>
                         </div>
 
                         {/* posisi dan gaya pekerjaan */}
                         <div className="flex items-center gap-x-2 text-tiny">
                             <span
-                                aria-label="kategori kontrak">{getData.typeContract}</span>
+                                aria-label="kategori kontrak"
+                                tabIndex={0}>{getData.typeContract}
+                            </span>
                             <div className="bg-gray-950 p-[1px] inline-block rounded-full"></div>
-                            <span>{getData.styleWork}</span>
+                            <span tabIndex={0}>{getData.styleWork}</span>
                         </div>
                     </div>
 
@@ -101,12 +108,6 @@ const CardPosting = (getData: Props) => {
                                     {data.name}
                                 </span>
                             ))}
-                        {/* <span
-                            className="border-1 border-slate-400 px-3 py-1 tracking-wide rounded-full"
-                            tabIndex={0}
-                            key={1}>Buta Warna</span>
-                        <span className="border-1 border-slate-400 px-3 py-1 tracking-wide rounded-full" tabIndex={0} key={2}>Tunarungu</span>
-                        <span className="border-1 border-slate-400 px-3 py-1 tracking-wide rounded-full" tabIndex={0} key={3}>Tunadaksa</span> */}
                     </div>
                 </CardBody>
 

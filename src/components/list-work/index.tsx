@@ -6,6 +6,12 @@ interface Props {
 }
 
 const WorkList = (getData: Props) => {
+    const dayDate = (data: number) => new Date(data).getDate();
+    const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { month: 'long', year: 'numeric' });
+
+    const countDay = (finish: number) => new Date(finish).getDate() - new Date().getDate();
+
+
     return (
         <div className="px-16 py-24">
             <div className="grid lg:grid-cols-2 grid-cols-3 grid-flow-row gap-4">
@@ -22,7 +28,9 @@ const WorkList = (getData: Props) => {
                             styleWork={data.styleWork}
                             location={data.location}
                             disability={data.disability}
-                            typeContract={data.typeContract} />
+                            typeContract={data.typeContract}
+                            dateStarted={`${dayDate(data.startDate)} - ${dayDate(data.finishDate)} ${finishDate(data.finishDate)}`}
+                            countDown={`${countDay(data.finishDate) < 0 ? 0 : countDay(data.finishDate)}`} />
                     ))
                 }
             </div>

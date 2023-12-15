@@ -67,16 +67,16 @@ const ListPartnert = () => [
 const ListWork = () => [
     {
         id: 1,
-        name: 'Software Engineer',
-        company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
-        imgUrl: 'https://i.ibb.co/k4cw0MJ/victory-hatsune-miku.png',
-        logo: 'https://i.ibb.co/bryBvh9/logo-shopee.png',
-        levelWork: 'Entry Level',
+        name: 'Google Cloud Engineer',
+        company: 'Google Indonesia', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/741z5Kz/google-hiring.jpg',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.png',
+        levelWork: 'Executive',
         styleWork: 'On-site',
         typeContract: 'Full-time',
-        location: 'Jakarta Utara',
-        startDate: '12/14/2023',
-        finishDate: '12/21/2023',
+        location: 'Jakarta Selatan',
+        startDate: '12/18/2023',
+        finishDate: '12/25/2023',
         jobDesc: 'deskripsi pekerjaan',
         generalCriteria: 'kriteria umum',
         importantCriteria: 'kriteria khusus/penting',
@@ -88,7 +88,7 @@ const ListWork = () => [
             },
             {
                 id: 2,
-                name: "Tunarungu",
+                name: "Tuna daksa",
             }
         ],
         createdBy: 'Asuna Yuuki',
@@ -97,13 +97,13 @@ const ListWork = () => [
     {
         id: 2,
         name: 'Software Engineer',
-        company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
-        imgUrl: 'https://i.ibb.co/k4cw0MJ/victory-hatsune-miku.png',
-        logo: 'https://i.ibb.co/bryBvh9/logo-shopee.png',
-        levelWork: 'Entry Level',
+        company: 'PT Tokopedia', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
+        logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
+        levelWork: 'Mid-Senior Level',
         styleWork: 'On-site',
         typeContract: 'Full-time',
-        location: 'Jakarta Utara',
+        location: 'Jakarta',
         startDate: '12/14/2023',
         finishDate: '12/21/2023',
         jobDesc: 'deskripsi pekerjaan',
@@ -113,28 +113,24 @@ const ListWork = () => [
         disability: [
             {
                 id: 1,
-                name: "Buta Warna",
-            },
-            {
-                id: 2,
-                name: "Tunarungu",
+                name: "Tuna daksa",
             }
         ],
-        createdBy: 'Asuna Yuuki',
+        createdBy: 'Vladilena Milize',
         createdAt: '12/14/2023',
     },
     {
         id: 3,
-        name: 'Software Engineer',
+        name: 'Frontend Developer',
         company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
-        imgUrl: 'https://i.ibb.co/s59gTc3/shopee.jpg',
+        imgUrl: 'https://i.ibb.co/jVyp5mW/shopee.jpg',
         logo: 'https://i.ibb.co/bryBvh9/logo-shopee.png',
         levelWork: 'Entry Level',
         styleWork: 'On-site',
         typeContract: 'Full-time',
         location: 'Jakarta Utara',
-        startDate: '12/14/2023',
-        finishDate: '12/21/2023',
+        startDate: '12/1/2023',
+        finishDate: '12/19/2023',
         jobDesc: 'deskripsi pekerjaan',
         generalCriteria: 'kriteria umum',
         importantCriteria: 'kriteria khusus/penting',
@@ -142,14 +138,64 @@ const ListWork = () => [
         disability: [
             {
                 id: 1,
-                name: "Buta Warna",
+                name: "Tuna daksa",
             },
             {
                 id: 2,
-                name: "Tunarungu",
+                name: "Tuna rungu",
+            },
+        ],
+        createdBy: 'Akihisa Yuko',
+        createdAt: '12/14/2023',
+    },
+    {
+        id: 4,
+        name: 'Desain Grafis & Layout Buku',
+        company: 'Penerbit Mega Cakrawala', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/CPcGhFf/poster-lowongan.jpg',
+        logo: 'https://kerjabilitas.com/user_image/user2/logo_1ddb8c66a6869268383249cd38025070.jpg',
+        levelWork: 'Entry Level',
+        styleWork: 'On-site',
+        typeContract: 'Part-time',
+        location: 'Yogyakarta',
+        startDate: '12/1/2023',
+        finishDate: '12/18/2023',
+        jobDesc: 'deskripsi pekerjaan',
+        generalCriteria: 'kriteria umum',
+        importantCriteria: 'kriteria khusus/penting',
+        regulations: 'persyaratan yang harus dipenuhi',
+        disability: [
+            {
+                id: 1,
+                name: "Tuna daksa",
             }
         ],
-        createdBy: 'Asuna Yuuki',
+        createdBy: 'Akihisa Yuko',
+        createdAt: '12/14/2023',
+    },
+    {
+        id: 5,
+        name: 'Desain Grafis & Layout Buku',
+        company: 'Penerbit Mega Cakrawala', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/g6PrJtb/accounting-poster.jpg',
+        logo: 'https://i.ibb.co/fXVD0DC/logo-win.png',
+        levelWork: 'Entry Level',
+        styleWork: 'On-site',
+        typeContract: 'Casual',
+        location: 'Yogyakarta',
+        startDate: '12/1/2023',
+        finishDate: '12/10/2023',
+        jobDesc: 'deskripsi pekerjaan',
+        generalCriteria: 'kriteria umum',
+        importantCriteria: 'kriteria khusus/penting',
+        regulations: 'persyaratan yang harus dipenuhi',
+        disability: [
+            {
+                id: 1,
+                name: "Tuna daksa",
+            }
+        ],
+        createdBy: 'Akihisa Yuko',
         createdAt: '12/14/2023',
     },
 ];
