@@ -28,28 +28,31 @@ const Accesibility = () => {
                             icon={'faHeadphones'} />
 
                         <AccesibileButton
-                            id={0}
+                            id={1}
                             name={'voice navigation'}
                             icon={'faMicrophone'} />
 
                         <AccesibileButton
-                            id={0}
+                            id={2}
                             name={'color blind'}
                             icon={'faEye'} />
 
                         <AccesibileButton
-                            id={0}
+                            id={3}
                             name={'low vision'}
                             icon={'faLowVision'} />
 
                         <AccesibileButton
-                            id={0}
+                            id={4}
                             name={'dyslexia'}
                             icon={'faFont'} />
 
                     </div>
-                </PopoverContent>
 
+                    <Button
+
+                    />
+                </PopoverContent>
             </Popover>
         </>
     )

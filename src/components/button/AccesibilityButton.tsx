@@ -17,6 +17,7 @@ const AccesibileButton = (getData: Props) => {
   return (
     <>
       <Button
+        id={`${getData.id}`}
         className="py-[38px] px-3 border-1"
         color="default"
         variant="bordered"
