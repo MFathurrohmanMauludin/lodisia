@@ -153,7 +153,7 @@ const ListWork = () => [
         name: 'Desain Grafis & Layout Buku',
         company: 'Penerbit Mega Cakrawala', // mengambil data dari list perusahaan
         imgUrl: 'https://i.ibb.co/CPcGhFf/poster-lowongan.jpg',
-        logo: 'https://kerjabilitas.com/user_image/user2/logo_1ddb8c66a6869268383249cd38025070.jpg',
+        logo: 'https://i.ibb.co/HXk4bY8/logo-mega-cakrawala-1.jpg',
         levelWork: 'Entry Level',
         styleWork: 'On-site',
         typeContract: 'Part-time',

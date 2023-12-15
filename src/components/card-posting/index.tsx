@@ -22,7 +22,7 @@ interface Props {
 const CardPosting = (getData: Props) => {
     return (
         <>
-            <Card className="py-4" id="posting-card">
+            <Card className="py-4 hover:-translate-y-2.5 hover:transition-all ease-in duration-300" id={`${getData.id}`}>
                 <CardHeader className="pb-0 pt-2 px-4 flex flex-row items-center gap-x-3">
                     {/* logo perusahaan */}
                     <Avatar className="saturate-0" src={getData.logo} size="md" alt={`logo ${getData.name}`} />
@@ -114,9 +114,9 @@ const CardPosting = (getData: Props) => {
                 {/* detail pekerjaan */}
                 <div className="flex justify-end gap-x-4 px-4">
                     <a
-                        href="detail-pekerjaan&id=1"
-                        className="flex items-center gap-x-2"
-                        id="detailWork">
+                        href={`detail-pekerjaan&id=${getData.id}`}
+                        className="flex items-center gap-x-2 detailWork"
+                    >
                         <span className="text-[14px]">Lihat lebih lanjut</span>
                         <FontAwesomeIcon icon={faArrowRight} aria-label="panah ke samping" id="arrowButton" />
                     </a>

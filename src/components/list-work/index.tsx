@@ -1,5 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Button, Link } from "@nextui-org/react";
 import CardPosting from "../card-posting"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-regular-svg-icons";
 
 interface Props {
     work: any;
@@ -11,12 +14,12 @@ const WorkList = (getData: Props) => {
     const countDay = (finish: number) => Math.ceil((new Date(finish).getTime() - new Date().getTime()) / ((1000 * 3600) * 24));
 
     return (
-        <div className="px-16 py-24">
+        <div className="px-16 pt-16">
+            <h2 className="py-4 text-xl font-semibold">Lowongan Kerja Terbaru</h2>
             <div className="grid lg:grid-cols-2 grid-cols-3 grid-flow-row gap-4">
                 {
                     getData.work.map((data: any) => (
                         <CardPosting
-                            key={data.id}
                             id={data.id}
                             logo={data.logo}
                             name={data.name}
@@ -31,6 +34,25 @@ const WorkList = (getData: Props) => {
                             countDown={`${countDay(data.finishDate) < 0 ? 0 : countDay(data.finishDate)}`} />
                     ))
                 }
+            </div>
+
+            {/* button lihat semua - center */}
+            <div className="flex justify-center mt-8">
+                <div className="flex items-center gap-x-2 w-full">
+                    <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
+                    <Button
+                        href="#"
+                        as={Link}
+                        variant="light"
+                        color="default"
+                        radius="full"
+                        startContent={<FontAwesomeIcon icon={faEye}
+                            aria-label="icon mata" />}
+                        aria-label="lihat semua lowongan tersedia">
+                        Lihat Semua Lowongan
+                    </Button>
+                    <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
+                </div>
             </div>
         </div>
     )

@@ -48,13 +48,13 @@ div#slideButton:hover button#nextContent {
     transition: all ease-in 0.3s;
 }
 
-a#detailWork svg#arrowButton {
+a.detailWork svg#arrowButton {
     transform: rotate(-45deg) translate(0px);
     transition: all ease-out 0.3s;
 }
 
-a#detailWork:hover svg#arrowButton,
-a#detailWork:focus-within svg#arrowButton {
+a.detailWork:hover svg#arrowButton,
+a.detailWork:focus-within svg#arrowButton {
     transform: rotate(-45deg) translate(8px);
     transition: all ease-in 0.3s;
 }
