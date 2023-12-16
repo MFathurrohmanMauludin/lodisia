@@ -13,11 +13,16 @@ import './App.css'
 import Header from './components/header'
 import Footer from './components/footer'
 import Home from './pages/home'
+import SearchPage from './pages/search'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/Search",
+    element: <SearchPage />,
   },
 ])
 
