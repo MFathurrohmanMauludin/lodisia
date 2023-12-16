@@ -2,12 +2,17 @@ import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react"
 import AccesibileButton from "../button/AccesibilityButton"
+import { useState } from "react"
 
 const Accesibility = () => {
+    const [isOpen, setOpen] = useState(false);
+
     return (
         <>
             <Popover
                 key={1}
+                isOpen={isOpen}
+                onOpenChange={(open) => setOpen(open)}
                 placement="bottom"
                 color="default">
                 <PopoverTrigger>
@@ -24,22 +29,17 @@ const Accesibility = () => {
                     <div className="grid grid-cols-3 gap-4">
                         <AccesibileButton
                             id={0}
-                            name={'screen reader'}
-                            icon={'faHeadphones'} />
-
-                        <AccesibileButton
-                            id={1}
-                            name={'voice navigation'}
-                            icon={'faMicrophone'} />
+                            name={'buta total'}
+                            icon={'faPersonWalkingWithCane'} />
 
                         <AccesibileButton
                             id={2}
-                            name={'color blind'}
+                            name={'buta warna'}
                             icon={'faEye'} />
 
                         <AccesibileButton
                             id={3}
-                            name={'low vision'}
+                            name={'penglihatan rendah'}
                             icon={'faLowVision'} />
 
                         <AccesibileButton
@@ -50,8 +50,14 @@ const Accesibility = () => {
                     </div>
 
                     <Button
-
-                    />
+                        className="mt-4"
+                        variant="light"
+                        color="default"
+                        aria-label="tombol tutup navigasi"
+                        onPress={() => setOpen(false)}
+                    >
+                        Tutup Navigasi
+                    </Button>
                 </PopoverContent>
             </Popover>
         </>

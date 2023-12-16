@@ -24,7 +24,7 @@ const AccesibileButton = (getData: Props) => {
         size="md"
         onPress={() => console.log('1')}
         radius="sm"
-        aria-label="tombol buta warna">
+        aria-label={getData.name}>
         <div className="flex flex-col items-center gap-y-3">
           <FontAwesomeIcon
             fontSize={24}
