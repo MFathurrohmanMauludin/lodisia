@@ -53,6 +53,8 @@ const Accesibility = () => {
                         className="mt-4"
                         variant="light"
                         color="default"
+                        size="sm"
+                        radius="full"
                         aria-label="tombol tutup navigasi"
                         onPress={() => setOpen(false)}
                     >

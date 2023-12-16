@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Avatar, Button, Listbox, ListboxItem, ListboxSection, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react"
 import { useState } from "react"
-import { faBell } from "@fortawesome/free-regular-svg-icons"
+import { faBell, faBuilding } from "@fortawesome/free-regular-svg-icons"
 
 const Notification = () => {
     const [isOpen, setOpen] = useState(false);
@@ -26,23 +26,27 @@ const Notification = () => {
                 </PopoverTrigger>
                 <PopoverContent className="rounded-lg p-4">
                     <Listbox variant="flat" aria-label="Listbox menu with sections">
-                        <ListboxSection title="Actions">
+                        <ListboxSection title="Notifikasi Terbaru">
                             <ListboxItem
                                 key="new"
-                                description="Create a new file"
-                                startContent={(<Avatar className="p-4" src="" radius="full" size="sm" alt="gambar perusahaan" />)}
+                                description={(
+                                    <div className="space-x-1">
+                                        <FontAwesomeIcon icon={faBuilding} /><span aria-label="nama perusahaan">PT Tokopedia</span>
+                                    </div>
+                                )}
+                                startContent={(<Avatar className="flex-shrink-0" size="md" src="https://i.ibb.co/wQHcPJP/tokopedia-logo.webp" radius="full" alt="gambar perusahaan" />)}
                             >
                                 <div className="flex items-center gap-x-2">
-                                    <span>Software Engineer</span>
+                                    <span className="text-md text-semibold" aria-label="nama pekerjaan">Software Engineer</span>
                                     <div className="p-[2px] bg-slate-950/60 inline-block rounded-full"></div>
-                                    <span className="text-tiny text-slate-500">15 Desember 2023</span>
+                                    <span className="text-tiny text-slate-500" aria-label="informasi">1 Hari Lalu</span>
                                 </div>
                             </ListboxItem>
                         </ListboxSection>
                     </Listbox>
 
                     <Button
-                        className="mt-4"
+                        className="mt-4 rounded-full"
                         variant="light"
                         color="default"
                         size="sm"
