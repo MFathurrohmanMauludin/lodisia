@@ -6,8 +6,8 @@ const Hero = () => {
     return (
         <div className="grid grid-cols-2 p-8">
             <div className="flex flex-col">
-                <h1 className="text-[48px] lg:text-2xl leading-tight">Temukan <span className="font-extrabold capitalize">pekerjaan impian</span> Anda dengan mudah dan nyaman</h1>
-                <div className="py-8">
+                <h1 className="text-[48px] lg:text-2xl leading-tight" tabIndex={0}>Temukan <span className="font-extrabold capitalize">pekerjaan impian</span> Anda dengan mudah dan nyaman</h1>
+                <div className="py-8" tabIndex={0}>
                     Dengan sepenuh hati, kami membantu para disabilitas untuk menemukan lapangan pekerjaan yang sesuai dengan minat, bakat dan kemampuannya tanpa harus menunda terlalu lama
                 </div>
                 <div className="flex items-center">
@@ -16,15 +16,15 @@ const Hero = () => {
                     </Button>
                 </div>
                 <div className="grid grid-cols-3 gap-x-4 pt-8">
-                    <div className="flex flex-col">
-                        <span className="font-bold text-[24px]">1.760.390</span>
+                    <div className="flex flex-col" tabIndex={0}>
+                        <span className="font-bold text-[24px]" >1.760.390</span>
                         <div className="font-semibold text-slate-950/60">Disabilitas Terbantu</div>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col" tabIndex={0}>
                         <span className="font-bold text-[24px]">25.438</span>
                         <div className="font-semibold text-slate-950/60">Perusahaan Aktif</div>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col" tabIndex={0}>
                         <span className="font-bold text-[24px]">200</span>
                         <div className="font-semibold text-slate-950/60">Bidang Pekerjaan</div>
                     </div>
