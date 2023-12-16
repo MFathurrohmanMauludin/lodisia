@@ -1,9 +1,8 @@
-import DropDown from "../button/DropDown";
 import Notification from "../notification";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Link } from "@nextui-org/react";
 import Accesibility from "../accessibility";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const Header = () => {
     const logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/2560px-Facebook.png";
@@ -17,24 +16,24 @@ const Header = () => {
                 <div className="flex items-center md:hidden gap-x-4 text-[16px] capitalize">
                     <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="/">Beranda</a>
                     <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="#">Memulai Karir</a>
-                    <DropDown />
+                    <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="/cari-pekerjaan">Cari Pekerjaan</a>
                     <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="#">Daftar Perusahaan</a>
                 </div>
 
                 {/* right content */}
                 <div className="flex items-center flex-row gap-x-4">
+                    <Notification />
+                    <Accesibility />
                     <Button
-                        href="/search"
+                        href="/lowongan-tersimpan"
                         as={Link}
                         variant="light"
                         color="default"
                         className="text-[24px] text-gray-400 hover:text-gray-700"
                         isIconOnly
-                        aria-label="tombol pencarian">
-                        <FontAwesomeIcon icon={faSearch} aria-label="gambar pencarian" />
+                        aria-label="tombol lowongan tersimpan">
+                        <FontAwesomeIcon icon={faHeart} aria-label="gambar pencarian" />
                     </Button>
-                    <Notification />
-                    <Accesibility />
                     <div className="flex items-center gap-x-2 ml-2 text-[16px] font-medium">
                         <a
                             href="#"

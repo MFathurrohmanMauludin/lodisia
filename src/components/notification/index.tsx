@@ -20,7 +20,7 @@ const Notification = () => {
                         color="default"
                         variant="light"
                         isIconOnly
-                        aria-label="tombol akses disabilitas">
+                        aria-label="tombol akses notifikasi">
                         <FontAwesomeIcon fontSize={24} icon={faBell} aria-label="ikon disabilitas" />
                     </Button>
                 </PopoverTrigger>

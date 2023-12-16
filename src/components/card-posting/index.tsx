@@ -29,13 +29,13 @@ const CardPosting = (getData: Props) => {
                     <div className="capitalize leading-5">
                         <div className="flex items-center gap-x-2 text-[14px] tracking-wider">
                             {/* nama pekerjaan */}
-                            <span className="font-bold line-clamp-1 max-w-[20ch]" tabIndex={0}>{getData.name}</span>
+                            <span className="font-bold line-clamp-1 max-w-[20ch]" aria-label={`nama pekerjaan ${getData.name}`} tabIndex={0}>{getData.name}</span>
                             <div className="bg-gray-950/30 p-[2px] inline-block rounded-full"></div>
                             {/* posisi pekerjaan */}
-                            <span className="text-tiny font-medium" aria-label="posisi-pekerjaan" tabIndex={0}>{getData.level}</span>
+                            <span className="text-tiny font-medium" aria-label={`posisi pekerjaan ${getData.level}`} tabIndex={0}>{getData.level}</span>
                         </div>
                         {/* nama perusahaan */}
-                        <span className="flex items-center gap-x-1 text-tiny text-default-500" tabIndex={0}>
+                        <span className="flex items-center gap-x-1 text-tiny text-default-500" aria-label={`nama perusahaan ${getData.company}`} tabIndex={0}>
                             <FontAwesomeIcon
                                 icon={faBuilding}
                                 aria-label="ikon gedung" /> {getData.company}
@@ -48,9 +48,10 @@ const CardPosting = (getData: Props) => {
                     <Image
                         src={getData.imgUrl}
                         className="w-[500px] h-[250px] bg-gray-950/60 object-center object-contain bg-cover rounded-xl saturate-0"
-                        alt="Card background"
                         width={500}
                         loading="lazy"
+                        alt={`poster lowongan ${getData.name}`}
+                        tabIndex={0}
                     />
 
                     <div className="flex flex-row flex-wrap justify-between items-center pt-3 pb-1">
@@ -64,7 +65,7 @@ const CardPosting = (getData: Props) => {
                                 aria-label="ikon kalendar" />
                             <span
                                 className="mt-1"
-                                aria-label="batas waktu lawmaran"
+                                aria-label={`batas waktu lamaran ${getData.dateStarted}`}
                                 tabIndex={0}>
                                 {getData.dateStarted}
                             </span>
@@ -73,7 +74,7 @@ const CardPosting = (getData: Props) => {
                         {/* batas lamaran */}
                         <span
                             className="text text-slate-900 text-tiny font-medium tracking-wide bg-gray-300 border-1 px-2 py-[2px] rounded"
-                            aria-label="waktu lamaran"
+                            aria-label={`waktu lamaran tersisa ${getData.countDown} hari`}
                             tabIndex={0}>{getData.countDown === '0' ? 'Sudah Ditutup' : `Tersisa ${getData.countDown} Hari`}</span>
                     </div>
 
@@ -86,22 +87,22 @@ const CardPosting = (getData: Props) => {
                                 fontSize={14}
                                 icon={faLocationDot}
                                 aria-label="ikon lokasi" />
-                            <span aria-label="lokasi penempatan" tabIndex={0}>{getData.location}</span>
+                            <span aria-label={`lokasi penempatan ${getData.location}`} tabIndex={0}>{getData.location}</span>
                         </div>
 
                         {/* posisi dan gaya pekerjaan */}
                         <div className="flex items-center gap-x-2 text-tiny">
                             <span
-                                aria-label="kategori kontrak"
+                                aria-label={`kategori kontrak ${getData.typeContract}`}
                                 tabIndex={0}>{getData.typeContract}
                             </span>
                             <div className="bg-gray-950 p-[1px] inline-block rounded-full"></div>
-                            <span tabIndex={0}>{getData.styleWork}</span>
+                            <span aria-label={`gaya pekerjaan ${getData.styleWork}`} tabIndex={0}>{getData.styleWork}</span>
                         </div>
                     </div>
 
                     {/* kebutuhan disabilitas */}
-                    <div className="flex flex-wrap items-center gap-2 py-3 text-[12px] font-medium">
+                    <div className="flex flex-wrap items-center gap-2 py-3 text-[12px] font-medium" aria-label={`${getData.name} dapat diisi oleh penderita`} tabIndex={0}>
                         {
                             getData.disability.map((data: any) => (
                                 <span className="border-1 border-slate-400 px-3 py-1 tracking-wide rounded-full" tabIndex={0} key={data.id}>
