@@ -24,7 +24,7 @@ const Header = () => {
                 {/* right content */}
                 <div className="flex items-center flex-row gap-x-4">
                     <Button
-                        href="#search"
+                        href="/search"
                         as={Link}
                         variant="light"
                         color="default"
