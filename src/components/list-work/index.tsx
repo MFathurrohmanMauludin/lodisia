@@ -20,6 +20,7 @@ const WorkList = (getData: Props) => {
                 {
                     getData.work.map((data: any) => (
                         <CardPosting
+                            key={data.id}
                             id={data.id}
                             logo={data.logo}
                             name={data.name}
