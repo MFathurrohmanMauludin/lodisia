@@ -15,9 +15,9 @@ const Header = () => {
                 {/* center content */}
                 <div className="flex items-center md:hidden gap-x-4 text-[16px] capitalize">
                     <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="/">Beranda</a>
-                    <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="#">Memulai Karir</a>
+                    <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="/memulai-karir">Memulai Karir</a>
                     <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="/cari-pekerjaan">Cari Pekerjaan</a>
-                    <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="#">Daftar Perusahaan</a>
+                    <a className="px-2 py-2 text-slate-600 hover:text-slate-950 font-medium" href="/daftar-perusahaan">Daftar Perusahaan</a>
                 </div>
 
                 {/* right content */}

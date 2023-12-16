@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     element: <SearchPage />,
   },
   {
-    path: "/mulai-karir",
+    path: "/memulai-karir",
     element: <StartCarier />,
   },
   {
