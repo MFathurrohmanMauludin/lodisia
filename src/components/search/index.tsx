@@ -12,7 +12,7 @@ const SearchField = () => {
                     size="sm"
                     isClearable
                     radius="full"
-                    placeholder="Cari Lowongan Kerja disini..."
+                    placeholder="Cari Lowongan Kerja di sini..."
                     startContent={
                         <FontAwesomeIcon className="flex-shrink-0 text-gray-400" fontSize={16} icon={faSearch} />
                     }
