@@ -6,7 +6,7 @@ const Hero = () => {
     const imgUrl = 'https://i.ibb.co/CKrsnKP/right-content.jpg';
 
     return (
-        <div className="grid grid-cols-2 md:grid-cols-1 p-8">
+        <div className="grid grid-cols-2 md:grid-cols-1 p-8 sm:p-4">
             <div className="flex flex-col">
                 <h1 className="text-[48px] lg:text-2xl leading-tight" tabIndex={0}>Temukan <span className="font-extrabold capitalize">pekerjaan impian</span> Anda dengan mudah dan nyaman</h1>
                 <div className="py-8" tabIndex={0}>

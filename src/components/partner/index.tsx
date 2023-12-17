@@ -7,7 +7,7 @@ const Partnert = () => {
         <div className="pb-24">
             <h2 className="text-center text-4xl font-medium"><span className="font-semibold">Mitra Kami</span></h2>
             <div className="w-full flex justify-center py-8">
-                <div className="flex flex-wrap justify-center items-center gap-x-20 gap-y-9 w-[70%]">
+                <div className="flex flex-wrap justify-center items-center gap-x-20 gap-y-9 px-16">
                     {data.map((data: any) => (
                         <img
                             key={data.id}
