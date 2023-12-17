@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Link } from "@nextui-org/react";
 import Accesibility from "../accessibility";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import Login from "../login";
+import SignUp from "../sign-up";
 
 const Header = () => {
     const logo = "https://i.ibb.co/nD7MXWP/lodisia.png";
@@ -35,18 +37,8 @@ const Header = () => {
                         <FontAwesomeIcon icon={faHeart} aria-label="gambar pencarian" />
                     </Button>
                     <div className="flex items-center gap-x-2 ml-2 text-[16px] font-medium">
-                        <a
-                            href="#"
-                            className="text-slate-700 hover:text-slate-900 tracking-wide px-4 py-[6px] rounded-full"
-                        >
-                            Login
-                        </a>
-                        <a
-                            href="#"
-                            className="border-1 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-white tracking-wide px-4 py-[6px] rounded-full"
-                        >
-                            Sign up
-                        </a>
+                        <Login />
+                        <SignUp />
                     </div>
                 </div>
             </nav>
