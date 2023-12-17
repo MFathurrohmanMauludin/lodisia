@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button, Image } from "@nextui-org/react"
 
 const Hero = () => {
-    const imgUrl = 'https://i.ibb.co/CKrsnKP/right-content.jpg';
+    const imgUrl = 'https://i.ibb.co/NrM6pps/loker.webp';
 
     return (
         <div className="grid grid-cols-2 md:grid-cols-1 p-8 sm:p-4">
@@ -33,7 +33,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center md:pt-32">
-                <Image className="flex-shrink" src={imgUrl} width={500} height={500} loading="eager" />
+                <Image className="flex-shrink" alt="banner" src={imgUrl} width={500} height={500} loading="eager" />
             </div>
         </div>
     )

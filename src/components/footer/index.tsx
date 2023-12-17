@@ -27,13 +27,13 @@ const Footer = () => {
                 {/* pekerjaan tersedia */}
                 <div className="w-[300px] flex flex-col grow gap-y-3">
                     <span className="text-[18px] font-semibold">Pekerjaan banyak dicari</span>
-                    <div className="flex flex-wrap items-center gap-2 text-[12px]">
-                        <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Web Developer</a>
-                        <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Accounting</a>
-                        <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Entry Data</a>
-                        <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Customer Service</a>
-                        <a href="#" className="border-1 border-slate-900 px-3 py-1 rounded-full">Graphic Designer</a>
-                        <a href="#" className=" bg-slate-900 text-white px-3 py-1 rounded-full">Lihat Selengkapnya</a>
+                    <div className="flex flex-wrap items-center gap-2 text-[12px] text-cyan-700">
+                        <a href="#" className="border-1 border-cyan-500 px-3 py-1 rounded-full">Web Developer</a>
+                        <a href="#" className="border-1 border-cyan-500 px-3 py-1 rounded-full">Accounting</a>
+                        <a href="#" className="border-1 border-cyan-500 px-3 py-1 rounded-full">Entry Data</a>
+                        <a href="#" className="border-1 border-cyan-500 px-3 py-1 rounded-full">Customer Service</a>
+                        <a href="#" className="border-1 border-cyan-500 px-3 py-1 rounded-full">Graphic Designer</a>
+                        <a href="#" className=" bg-cyan-700 text-white px-3 py-1 rounded-full">Lihat Selengkapnya</a>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
             <div className="flex justify-between bg-stone-950/80 text-white p-4">
                 <span>
-                    &copy; {(year === 2023) ? `2023` : `2023 - ${year}`} PT. Loker Disabilitas Indonesia
+                    &copy; {(year === 2023) ? `2023` : `2023 - ${year}`} PT Lodisia
                 </span>
                 <div className="space-x-4">
                     <a href="#">Term of Service</a>
