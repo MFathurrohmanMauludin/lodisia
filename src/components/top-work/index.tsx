@@ -9,7 +9,7 @@ const TopWork = () => {
     const iconRegular: any = icons;
 
     return (
-        <div className="w-full px-16">
+        <div className="w-full px-16 sm:px-4">
             <h2 className="text-xl font-semibold">Bidang Pekerjaan Popular</h2>
             <div className="flex flex-wrap md:justify-center gap-x-8 gap-y-4 py-4">
                 {

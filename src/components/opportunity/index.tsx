@@ -10,14 +10,14 @@ const Opportunity = () => {
 
 
     return (
-        <div className="py-36 px-16">
+        <div className="py-36 px-16 sm:px-4">
             <div className="flex md:flex-wrap md:gap-y-8 md:flex-row">
                 <div className="flex flex-col grow-0 w-[100%] pe-4 mt-3 gap-y-4">
                     <h2 className="text-3xl font-extrabold">Apa yang anda dapatkan dari kami?</h2>
                     <p>Kami berikan beberapa keuntungan dari platform ini yang belum pernah anda dapatkan di dalam hidup anda.</p>
                 </div>
                 <div className="grow">
-                    <div className="grid grid-cols-2 grid-flow-row gap-4">
+                    <div className="grid grid-cols-2 sm:grid-cols-1 grid-flow-row gap-4">
                         {
                             getData.map((data: any) => (
                                 <Card className="hover:drop-shadow-md shadow-slate-950/10" shadow="none" radius="sm" key={data.id} isPressable>

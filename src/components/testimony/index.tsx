@@ -17,7 +17,7 @@ interface Props {
 
 const Testimony = (getData: Props) => {
     return (
-        <div className="relative flex justify-items-center px-16" id="slideButton">
+        <div className="relative flex justify-items-center px-16 sm:px-4" id="slideButton">
             <div className="absolute w-[90%] top-[50%] z-20">
                 <div className="flex justify-between" id="slideActive">
                     <Button
@@ -46,12 +46,12 @@ const Testimony = (getData: Props) => {
                     </Button>
                 </div>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 sm:grid-cols-1">
                 {/* testimony */}
                 <div className="flex flex-col">
                     <h2 className="text-3xl font-semibold" tabIndex={0}>Apa pendapat mereka tentang kami?</h2>
                     <div className="py-4 pr-8 text-[16px]" tabIndex={0}>
-                        <ScrollShadow className="w-auto h-[240px]">
+                        <ScrollShadow className="w-auto h-[240px]" isEnabled={false}>
                             {getData.story}
                         </ScrollShadow>
                     </div>

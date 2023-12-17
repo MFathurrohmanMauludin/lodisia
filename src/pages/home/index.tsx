@@ -63,7 +63,7 @@ class Home extends React.Component<Props, State>{
                 <Hero />
                 <Brand />
                 <TopWork />
-                <div className="px-16 pt-16">
+                <div className="px-16 pt-16 sm:px-4">
                     <WorkList work={this.state.workList} headLine={"Lowongan Kerja Terbaru"} />
                 </div>
                 <Opportunity />

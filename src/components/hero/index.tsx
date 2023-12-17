@@ -1,10 +1,12 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Button } from "@nextui-org/react"
+import { Button, Image } from "@nextui-org/react"
 
 const Hero = () => {
+    const imgUrl = 'https://i.ibb.co/CKrsnKP/right-content.jpg';
+
     return (
-        <div className="grid grid-cols-2 p-8">
+        <div className="grid grid-cols-2 md:grid-cols-1 p-8">
             <div className="flex flex-col">
                 <h1 className="text-[48px] lg:text-2xl leading-tight" tabIndex={0}>Temukan <span className="font-extrabold capitalize">pekerjaan impian</span> Anda dengan mudah dan nyaman</h1>
                 <div className="py-8" tabIndex={0}>
@@ -30,8 +32,8 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col">
-                2
+            <div className="flex flex-col justify-center items-center md:pt-32">
+                <Image className="flex-shrink" src={imgUrl} width={500} height={500} loading="eager" />
             </div>
         </div>
     )
