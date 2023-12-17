@@ -30,22 +30,26 @@ const Accesibility = () => {
                         <AccesibileButton
                             id={0}
                             name={'buta total'}
-                            icon={'faPersonWalkingWithCane'} />
+                            icon={'faPersonWalkingWithCane'}
+                            control={() => console.log('buta total')} />
 
                         <AccesibileButton
                             id={1}
                             name={'buta warna'}
-                            icon={'faEye'} />
+                            icon={'faEye'}
+                            control={() => console.log('proses')} />
 
                         <AccesibileButton
                             id={2}
                             name={'penglihatan rendah'}
-                            icon={'faLowVision'} />
+                            icon={'faLowVision'}
+                            control={() => console.log('penglihatan rendah')} />
 
                         <AccesibileButton
                             id={3}
                             name={'dyslexia'}
-                            icon={'faFont'} />
+                            icon={'faFont'}
+                            control={() => console.log('dyslexia')} />
 
                     </div>
 

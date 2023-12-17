@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
 import HeadLine from "../title";
 import { useLocation } from "react-router-dom";
+import { statusBlind } from "../../utils/BlindColor";
 
 interface Props {
     work: any;
@@ -22,7 +23,7 @@ const WorkList = (getData: Props) => {
     return (
         <>
             <HeadLine headLine={getData.headLine} />
-            <div className="grid lg:grid-cols-2 grid-cols-3 grid-flow-row gap-4">
+            <div className={`grid lg:grid-cols-2 grid-cols-3 grid-flow-row gap-4 ${statusBlind() ? 'saturate-0' : 'saturate-100'}`}>
                 {
                     getData.work.map((data: any) => (
                         <CardPosting

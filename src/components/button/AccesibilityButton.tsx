@@ -8,6 +8,7 @@ interface Props {
   id: number;
   name: string;
   icon: any;
+  control: any;
 }
 
 const AccesibileButton = (getData: Props) => {
@@ -22,7 +23,7 @@ const AccesibileButton = (getData: Props) => {
         color="default"
         variant="bordered"
         size="md"
-        onPress={() => console.log('1')}
+        onPress={() => getData.control()}
         radius="sm"
         aria-label={getData.name}>
         <div className="flex flex-col items-center gap-y-2">
