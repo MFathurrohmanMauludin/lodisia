@@ -23,7 +23,7 @@ const SearchField = (data: Props) => {
                         size="sm"
                         isClearable
                         radius="full"
-                        placeholder="Cari Perusahaan/Nama Pekerjaan di sini..."
+                        placeholder="Cari Nama Perusahaan/Nama Pekerjaan di sini..."
                         startContent={<FontAwesomeIcon className="flex-shrink-0 text-gray-400" fontSize={16} icon={faSearch} />} />
 
                     <Button
@@ -46,15 +46,15 @@ const SearchField = (data: Props) => {
                         <Select
                             key={1}
                             color="default"
-                            label="Pekerjaan"
+                            label="Bidang Pekerjaan"
                             radius="sm"
-                            placeholder="Pilih pekerjaan"
+                            placeholder="Pilih bidang pekerjaan"
                             className="max-w-xs"
                         >
                             <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
-                            <SelectItem key={1} value={'it & software'}>Web Developer</SelectItem>
-                            <SelectItem key={2} value={'keuangan & akuntansi'}>Data Warehousing</SelectItem>
-                            <SelectItem key={3} value={'pemasaran & periklanan'}>UI Designer</SelectItem>
+                            <SelectItem key={1} value={'it & software'}>IT & Software</SelectItem>
+                            <SelectItem key={2} value={'keuangan & akuntansi'}>Keuangan & Akuntansi</SelectItem>
+                            <SelectItem key={3} value={'pemasaran & periklanan'}>Pemasaran & Periklanan</SelectItem>
                         </Select>
                         :
                         ''
