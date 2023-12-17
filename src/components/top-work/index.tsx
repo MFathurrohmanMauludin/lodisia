@@ -15,7 +15,7 @@ const TopWork = () => {
                 {
                     getData.map((data) => (
                         <Card className="shadow-lg shadow-stone-400/30 hover:-translate-y-4 focus-within:-translate-y-4" shadow="sm" radius="none" key={data.id} isPressable>
-                            <CardBody className="flex flex-row gap-4 items-center overflow-visible p-4">
+                            <CardBody className="flex flex-row items-center gap-4 overflow-visible p-4 text-cyan-700">
                                 <FontAwesomeIcon size="lg" icon={iconRegular[data.icon]} /> <span>{data.name}</span>
                             </CardBody>
                         </Card>

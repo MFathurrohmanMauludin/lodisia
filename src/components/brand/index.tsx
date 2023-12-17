@@ -11,7 +11,7 @@ const Brand = () => {
                     {data.map((data: any) => (
                         <img
                             key={data.id}
-                            className="w-auto h-[32px] saturate-0 hover:saturate-100 object-cover bg-center"
+                            className="w-auto h-[32px] hover:saturate-100 object-cover bg-center"
                             src={data.logo}
                             width={240}
                             height={32}

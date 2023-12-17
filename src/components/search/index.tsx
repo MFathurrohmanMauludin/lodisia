@@ -27,6 +27,7 @@ const SearchField = (data: Props) => {
                         startContent={<FontAwesomeIcon className="flex-shrink-0 text-gray-400" fontSize={16} icon={faSearch} />} />
 
                     <Button
+                        className="text-gray-600"
                         variant="light"
                         color="default"
                         size="md"

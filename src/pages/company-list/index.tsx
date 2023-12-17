@@ -2,7 +2,7 @@
 import React from "react";
 import { CompanyList } from "../../utils/data";
 import SearchField from "../../components/search";
-import CompanyCard from "../../components/card-compay";
+import CompanyCard from "../../components/card-company";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 interface Props {

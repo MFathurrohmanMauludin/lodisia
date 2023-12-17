@@ -44,7 +44,7 @@ const WorkList = (getData: Props) => {
                 <div className="flex items-center gap-x-2 w-full">
                     <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
                     <Button
-                        href="#"
+                        href="/cari-pekerjaan"
                         as={Link}
                         variant="light"
                         color="default"

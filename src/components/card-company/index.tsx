@@ -37,8 +37,6 @@ const CompanyCard = (data: Props) => {
 
                     <p className="text-small line-clamp-2 mt-2 text-slate-800" tabIndex={0}>{data.about}</p>
                 </CardBody>
-
-                {/* card footer */}
             </Card>
         </>
     )

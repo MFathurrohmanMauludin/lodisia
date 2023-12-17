@@ -25,7 +25,7 @@ const CardPosting = (getData: Props) => {
             <Card className="py-4 hover:-translate-y-2.5 hover:transition-all ease-in duration-300" id={`${getData.id}`}>
                 <CardHeader className="pb-0 pt-2 px-4 flex flex-row items-center gap-x-3">
                     {/* logo perusahaan */}
-                    <Avatar className="saturate-0" src={getData.logo} size="md" alt={`logo ${getData.name}`} />
+                    <Avatar src={getData.logo} size="md" alt={`logo ${getData.name}`} />
                     <div className="capitalize leading-5">
                         <div className="flex items-center gap-x-2 text-[14px] tracking-wider">
                             {/* nama pekerjaan */}
@@ -47,7 +47,7 @@ const CardPosting = (getData: Props) => {
                     {/* poster atau pamflet */}
                     <Image
                         src={getData.imgUrl}
-                        className="w-[500px] h-[250px] bg-gray-950/60 object-center object-contain bg-cover rounded-xl saturate-0"
+                        className="w-[500px] h-[250px] bg-gray-950/60 object-center object-contain bg-cover rounded-xl"
                         width={500}
                         loading="lazy"
                         alt={`poster lowongan ${getData.name}`}
@@ -58,7 +58,7 @@ const CardPosting = (getData: Props) => {
 
                         {/* tanggal diterima pekerjaan */}
                         <div
-                            className="flex items-center gap-x-1 text-small">
+                            className="flex items-center text-gray-500 gap-x-1 text-small">
                             <FontAwesomeIcon
                                 fontSize={14}
                                 icon={faCalendarCheck}
@@ -73,7 +73,7 @@ const CardPosting = (getData: Props) => {
 
                         {/* batas lamaran */}
                         <span
-                            className="text text-slate-900 text-tiny font-medium tracking-wide bg-gray-300 border-1 px-2 py-[2px] rounded"
+                            className="text text-white text-tiny font-medium tracking-wide bg-red-600 px-2 py-[2px] rounded"
                             aria-label={`waktu lamaran tersisa ${getData.countDown} hari`}
                             tabIndex={0}>{getData.countDown === '0' ? 'Sudah Ditutup' : `Tersisa ${getData.countDown} Hari`}</span>
                     </div>
@@ -82,7 +82,7 @@ const CardPosting = (getData: Props) => {
 
                         {/* lokasi penempatan */}
                         <div
-                            className="flex items-center gap-x-1 text-tiny">
+                            className="flex items-center text-gray-500 gap-x-1 text-tiny">
                             <FontAwesomeIcon
                                 fontSize={14}
                                 icon={faLocationDot}
