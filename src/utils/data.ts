@@ -203,9 +203,40 @@ const ListWork = () => [
 const CompanyList = () => [
     {
         id: 1,
-        name: 'PT Shopee Internasional Indonesia',
+        name: 'PT Tokopedia',
+        banner: 'https://i.ibb.co/f0cZkX8/tokopedia.jpg',
+        logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
+        jobs: 1,
+        posts: 5,
+        about: 'Tokopedia merupakan salah satu situs jual beli online di Indonesia yang perkembangannya terhitung cepat dan memiliki tujuan untuk memudahkan setiap masyarakat',
+    },
+    {
+        id: 2,
+        name: 'PT Pertamina (Persero)',
+        banner: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/PertaminaHO1.jpg/500px-PertaminaHO1.jpg',
+        logo: 'https://static.republika.co.id/uploads/images/inpicture_slide/pertamina-_131128123540-120.jpg',
+        jobs: 7,
+        posts: 5,
         about: 'tentang perusahaan',
-    }
+    },
+    {
+        id: 3,
+        name: 'PT Kereta Api Indonedia',
+        banner: 'https://emitennews.com/uploads/news/image_1675772735.png',
+        logo: 'https://keretaapikita.com/wp-content/uploads/2020/09/Logo-Baru-PT-KAI.jpg',
+        jobs: 4,
+        posts: 3,
+        about: 'tentang perusahaan',
+    },
+    {
+        id: 4,
+        name: 'PT PLN (Persero)',
+        banner: 'https://www.tambang.co.id/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-13.05.51.jpeg',
+        logo: 'https://pln24.files.wordpress.com/2013/07/perusahaan_listrik_negara.png',
+        jobs: 4,
+        posts: 3,
+        about: 'tentang perusahaan',
+    },
 ]
 
 const PopularFieldWork = () => [

@@ -5,12 +5,12 @@ import Accesibility from "../accessibility";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const Header = () => {
-    const logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/2560px-Facebook.png";
+    const logo = "https://i.ibb.co/nD7MXWP/lodisia.png";
     return (
         <header className="w-full py-3 px-4 shadow-md rounded-b-xl">
             <nav className="flex justify-between items-center">
                 {/* left content */}
-                <img src={logo} alt="logo" className="w-[127px] h-[36px] object-cover bg-center" />
+                <img src={logo} alt="logo" className="w-[127px] h-[36px] object-contain bg-cover bg-center" />
 
                 {/* center content */}
                 <div className="flex items-center md:hidden gap-x-4 text-[16px] capitalize">

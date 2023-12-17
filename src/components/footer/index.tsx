@@ -6,11 +6,13 @@ import { faTiktok } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
     const year = new Date().getFullYear();
+    const logo = "https://i.ibb.co/nD7MXWP/lodisia.png";
+
     return (
         <>
             <div className="flex lg:flex-wrap lg:gap-y-8 md:flex-wrap md:gap-8 gap-x-4 px-4 py-8 rounded-t-lg">
                 <div className="flex flex-col grow">
-                    <img src="" alt="Lodisia Logo" width={127} height={36} />
+                    <img src={logo} className="w-[100px] object-contain bg-cover bg-center" alt="Lodisia Logo" width={127} height={36} />
                 </div>
                 {/* tentang perusahaan */}
                 <div className="flex flex-col grow gap-y-3">
