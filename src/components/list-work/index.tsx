@@ -4,6 +4,7 @@ import CardPosting from "../card-posting"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
 import HeadLine from "../title";
+import { useLocation } from "react-router-dom";
 
 interface Props {
     work: any;
@@ -14,6 +15,9 @@ const WorkList = (getData: Props) => {
     const dayDate = (data: number) => new Date(data).getDate();
     const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { month: 'long', year: 'numeric' });
     const countDay = (finish: number) => Math.ceil((new Date(finish).getTime() - new Date().getTime()) / ((1000 * 3600) * 24));
+
+    const location = useLocation();
+    const { pathname } = location;
 
     return (
         <>
@@ -40,23 +44,27 @@ const WorkList = (getData: Props) => {
             </div>
 
             {/* button lihat semua - center */}
-            <div className="flex justify-center mt-8">
-                <div className="flex items-center gap-x-2 w-full">
-                    <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
-                    <Button
-                        href="/cari-pekerjaan"
-                        as={Link}
-                        variant="light"
-                        color="default"
-                        radius="full"
-                        startContent={<FontAwesomeIcon icon={faEye}
-                            aria-label="icon mata" />}
-                        aria-label="lihat semua lowongan tersedia">
-                        Lihat Semua Lowongan
-                    </Button>
-                    <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
-                </div>
-            </div>
+            {
+                pathname === '/' ?
+                    <div className="flex justify-center mt-8">
+                        <div className="flex items-center gap-x-2 w-full">
+                            <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
+                            <Button
+                                href="/cari-pekerjaan"
+                                as={Link}
+                                variant="light"
+                                color="default"
+                                radius="full"
+                                startContent={<FontAwesomeIcon icon={faEye}
+                                    aria-label="icon mata" />}
+                                aria-label="lihat semua lowongan tersedia">
+                                Lihat Semua Lowongan
+                            </Button>
+                            <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
+                        </div>
+                    </div>
+                    : ''
+            }
         </>
     )
 }

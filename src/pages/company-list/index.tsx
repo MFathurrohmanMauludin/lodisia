@@ -35,7 +35,7 @@ class Company extends React.Component<Props, State>{
                 <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 py-8 px-16">
                     {
                         this.state.companyData.map((data: any) => (
-                            <CompanyCard id={data.id} name={data.name} banner={data.banner} logo={data.logo} job={data.jobs} post={data.posts} about={data.about} />
+                            <CompanyCard key={data.id} id={data.id} name={data.name} banner={data.banner} logo={data.logo} job={data.jobs} post={data.posts} about={data.about} />
                         ))
                     }
                 </div>

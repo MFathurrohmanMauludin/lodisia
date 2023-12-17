@@ -33,17 +33,17 @@ const Accesibility = () => {
                             icon={'faPersonWalkingWithCane'} />
 
                         <AccesibileButton
-                            id={2}
+                            id={1}
                             name={'buta warna'}
                             icon={'faEye'} />
 
                         <AccesibileButton
-                            id={3}
+                            id={2}
                             name={'penglihatan rendah'}
                             icon={'faLowVision'} />
 
                         <AccesibileButton
-                            id={4}
+                            id={3}
                             name={'dyslexia'}
                             icon={'faFont'} />
 

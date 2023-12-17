@@ -31,7 +31,7 @@ class SearchPage extends React.Component<Props, State>{
                     locationSelect: true,
                     experienceSelect: true
                 }} />
-                <div className="px-16">
+                <div className="px-16 pb-16">
                     <WorkList work={this.state.workData} headLine={"Lowongan Tersedia"} />
                 </div>
             </>

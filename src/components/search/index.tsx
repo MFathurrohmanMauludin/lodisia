@@ -66,7 +66,7 @@ const SearchField = (data: Props) => {
                 {
                     data.select.styleSelect ?
                         <Select
-                            key={1}
+                            key={2}
                             color="default"
                             label="Gaya Pekerjaan"
                             radius="sm"
@@ -86,7 +86,7 @@ const SearchField = (data: Props) => {
                 {
                     data.select.experienceSelect ?
                         <Select
-                            key={1}
+                            key={3}
                             color="default"
                             label="Tingkatan Pengalaman"
                             radius="sm"
@@ -105,7 +105,7 @@ const SearchField = (data: Props) => {
                 {
                     data.select.sectorSelect ?
                         <Select
-                            key={1}
+                            key={4}
                             color="default"
                             label="Sektor Pekerjaan"
                             radius="sm"
@@ -126,7 +126,7 @@ const SearchField = (data: Props) => {
                 {
                     data.select.locationSelect ?
                         <Select
-                            key={1}
+                            key={5}
                             color="default"
                             label="Lokasi Pekerjaan"
                             radius="sm"
