@@ -24,7 +24,13 @@ class SearchPage extends React.Component<Props, State>{
     render() {
         return (
             <>
-                <SearchField />
+                <SearchField select={{
+                    workSelect: true,
+                    sectorSelect: false,
+                    styleSelect: true,
+                    locationSelect: true,
+                    experienceSelect: true
+                }} />
                 <div className="px-16">
                     <WorkList work={this.state.workData} headLine={"Lowongan Tersedia"} />
                 </div>

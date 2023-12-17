@@ -25,7 +25,13 @@ class Company extends React.Component<Props, State>{
     render() {
         return (
             <>
-                <SearchField />
+                <SearchField select={{
+                    workSelect: false,
+                    styleSelect: false,
+                    experienceSelect: false,
+                    sectorSelect: true,
+                    locationSelect: true,
+                }} />
                 <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 py-8 px-16">
                     {
                         this.state.companyData.map((data: any) => (

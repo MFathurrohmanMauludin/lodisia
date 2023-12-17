@@ -2,7 +2,17 @@ import { faMicrophone, faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button, Input, Select, SelectItem } from "@nextui-org/react"
 
-const SearchField = () => {
+interface Props {
+    select: {
+        workSelect: boolean;
+        styleSelect: boolean;
+        sectorSelect: boolean;
+        locationSelect: boolean;
+        experienceSelect: boolean;
+    }
+}
+
+const SearchField = (data: Props) => {
     return (
         <div className="pt-16 pb-4 px-16">
             <div className="flex justify-center">
@@ -29,67 +39,108 @@ const SearchField = () => {
 
             {/* berdasarkan select button */}
             <div className="flex justify-center gap-x-4 pt-4">
+
                 {/* work field */}
-                <Select
-                    key={1}
-                    color="default"
-                    label="Bidang Pekerjaan"
-                    radius="sm"
-                    placeholder="Pilih bidang pekerjaan"
-                    className="max-w-xs"
-                >
-                    <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
-                    <SelectItem key={1} value={'IT & Software'}>IT & Software</SelectItem>
-                    <SelectItem key={2} value={'Keuangan & Akuntansi'}>Kesehatan & Kecantikan</SelectItem>
-                    <SelectItem key={3} value={'Keuangan & Akuntansi'}>Pemasaran & Periklanan</SelectItem>
-                </Select>
+                {
+                    data.select.workSelect ?
+                        <Select
+                            key={1}
+                            color="default"
+                            label="Pekerjaan"
+                            radius="sm"
+                            placeholder="Pilih pekerjaan"
+                            className="max-w-xs"
+                        >
+                            <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
+                            <SelectItem key={1} value={'it & software'}>Web Developer</SelectItem>
+                            <SelectItem key={2} value={'keuangan & akuntansi'}>Data Warehousing</SelectItem>
+                            <SelectItem key={3} value={'pemasaran & periklanan'}>UI Designer</SelectItem>
+                        </Select>
+                        :
+                        ''
+                }
+
 
                 {/* work style */}
-                <Select
-                    key={1}
-                    color="default"
-                    label="Gaya Pekerjaan"
-                    radius="sm"
-                    placeholder="Pilih gaya pekerjaan"
-                    className="max-w-xs"
-                >
-                    <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
-                    <SelectItem key={1} value={'remote'}>Remote</SelectItem>
-                    <SelectItem key={2} value={'hybrid'}>Hybrid</SelectItem>
-                    <SelectItem key={3} value={'onsite'}>On-site</SelectItem>
-                </Select>
+                {
+                    data.select.styleSelect ?
+                        <Select
+                            key={1}
+                            color="default"
+                            label="Gaya Pekerjaan"
+                            radius="sm"
+                            placeholder="Pilih gaya pekerjaan"
+                            className="max-w-xs"
+                        >
+                            <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
+                            <SelectItem key={1} value={'remote'}>Remote</SelectItem>
+                            <SelectItem key={2} value={'hybrid'}>Hybrid</SelectItem>
+                            <SelectItem key={3} value={'onsite'}>On-site</SelectItem>
+                        </Select>
+                        : ''
+                }
+
 
                 {/* experience level */}
-                <Select
-                    key={1}
-                    color="default"
-                    label="Tingkatan Pengalaman"
-                    radius="sm"
-                    placeholder="Pilih tingkatan pengalaman"
-                    className="max-w-xs"
-                >
-                    <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
-                    <SelectItem key={1} value={'entry level'}>Entry Level</SelectItem>
-                    <SelectItem key={2} value={'mid-senior level'}>Mid-Senior Level</SelectItem>
-                    <SelectItem key={3} value={'executive'}>Executive</SelectItem>
-                </Select>
+                {
+                    data.select.experienceSelect ?
+                        <Select
+                            key={1}
+                            color="default"
+                            label="Tingkatan Pengalaman"
+                            radius="sm"
+                            placeholder="Pilih tingkatan pengalaman"
+                            className="max-w-xs"
+                        >
+                            <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
+                            <SelectItem key={1} value={'entry level'}>Entry Level</SelectItem>
+                            <SelectItem key={2} value={'mid-senior level'}>Mid-Senior Level</SelectItem>
+                            <SelectItem key={3} value={'executive'}>Executive</SelectItem>
+                        </Select>
+                        : ''
+                }
 
-                {/* experience level */}
-                <Select
-                    key={1}
-                    color="default"
-                    label="Lokasi Pekerjaan"
-                    radius="sm"
-                    placeholder="Pilih lokasi pekerjaan"
-                    className="max-w-xs"
-                >
-                    <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
-                    <SelectItem key={1} value={'Jakarta'}>Jakarta</SelectItem>
-                    <SelectItem key={2} value={'Jawa Barat'}>Jawa Barat</SelectItem>
-                    <SelectItem key={3} value={'Jawa Timur'}>Jawa Timur</SelectItem>
-                    <SelectItem key={4} value={'Jawa Tengah'}>Jawa Tengah</SelectItem>
-                    <SelectItem key={5} value={'Jawa Tengah'}>Yogyakarta</SelectItem>
-                </Select>
+                {/* sector */}
+                {
+                    data.select.sectorSelect ?
+                        <Select
+                            key={1}
+                            color="default"
+                            label="Sektor Pekerjaan"
+                            radius="sm"
+                            placeholder="Pilih bidang pekerjaan"
+                            className="max-w-xs"
+                        >
+                            <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
+                            <SelectItem key={1} value={'it & software'}>Badan Usaha Milik Negara (BUMN)</SelectItem>
+                            <SelectItem key={2} value={'keuangan & akuntansi'}>Industri Tekstil</SelectItem>
+                            <SelectItem key={3} value={'pemasaran & periklanan'}>Industri Teknologi</SelectItem>
+                        </Select>
+                        :
+                        ''
+                }
+
+
+                {/* location */}
+                {
+                    data.select.locationSelect ?
+                        <Select
+                            key={1}
+                            color="default"
+                            label="Lokasi Pekerjaan"
+                            radius="sm"
+                            placeholder="Pilih lokasi pekerjaan"
+                            className="max-w-xs"
+                        >
+                            <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
+                            <SelectItem key={1} value={'Jakarta'}>Jakarta</SelectItem>
+                            <SelectItem key={2} value={'Jawa Barat'}>Jawa Barat</SelectItem>
+                            <SelectItem key={3} value={'Jawa Timur'}>Jawa Timur</SelectItem>
+                            <SelectItem key={4} value={'Jawa Tengah'}>Jawa Tengah</SelectItem>
+                            <SelectItem key={5} value={'Jawa Tengah'}>Yogyakarta</SelectItem>
+                        </Select>
+                        : ''
+                }
             </div>
         </div>
     )
