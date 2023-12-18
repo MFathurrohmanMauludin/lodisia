@@ -16,14 +16,23 @@ interface Props {
 const CompanyCard = (data: Props) => {
     return (
         <>
-            <Card className="border-1 inline-block border-slate-500/10 hover:border-cyan-500 hover:-translate-y-2 ease-in duration-300 rounded-lg" key={data.id}>
+            <Card className="hover:border-cyan-500 hover:-translate-y-2 ease-in duration-300 rounded-lg" key={data.id}>
                 {/* card head */}
-                <CardHeader>
-                    <div className="flex flex-col">
-                        <Image className="border-1 border-white z-0 h-[120px] object-cover bg-cover bg-top" width={300} height={120} src={data.banner} alt="tokopedia" radius="sm" loading="lazy" />
-                        <div className="flex justify-center translate-x-0 -mt-8 w-">
-                            <Avatar className="border-4 border-white object-cover bg-cover bg-center" src={data.logo} size="lg" alt="brand perusahaan" />
-                        </div>
+                <CardHeader className="grid grid-cols-1">
+                    <Image
+                        className="object-cover bg-cover bg-top border-1 z-0 border-white h-[150px]"
+                        width={300}
+                        height={150}
+                        src={data.banner}
+                        alt="tokopedia"
+                        radius="sm"
+                        loading="lazy" />
+                    <div className="flex justify-center -mt-8 w-">
+                        <Avatar
+                            className="border-4 border-white object-cover bg-cover bg-center"
+                            src={data.logo}
+                            size="lg"
+                            alt="brand perusahaan" />
                     </div>
                 </CardHeader>
 

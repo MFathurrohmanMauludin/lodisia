@@ -19,16 +19,16 @@ const Hero = () => {
                 </div>
                 <div className="grid grid-cols-3 gap-x-4 pt-8">
                     <div className="flex flex-col" tabIndex={0}>
-                        <span className="font-bold text-[24px]" >1.760.390</span>
-                        <div className="font-semibold text-slate-950/60">Disabilitas Terbantu</div>
+                        <span className="font-bold text-[24px] sm:text-[21px]" >1.760.390</span>
+                        <div className="font-semibold text-slate-950/60 sm:text-[16px]">Disabilitas Terbantu</div>
                     </div>
                     <div className="flex flex-col" tabIndex={0}>
-                        <span className="font-bold text-[24px]">25.438</span>
-                        <div className="font-semibold text-slate-950/60">Perusahaan Aktif</div>
+                        <span className="font-bold text-[24px] sm:text-[21px]">25.438</span>
+                        <div className="font-semibold text-slate-950/60 sm:text-[16px]">Perusahaan Aktif</div>
                     </div>
                     <div className="flex flex-col" tabIndex={0}>
-                        <span className="font-bold text-[24px]">200</span>
-                        <div className="font-semibold text-slate-950/60">Bidang Pekerjaan</div>
+                        <span className="font-bold text-[24px] sm:text-[21px]">200</span>
+                        <div className="font-semibold text-slate-950/60 sm:text-[16px]">Bidang Pekerjaan</div>
                     </div>
                 </div>
             </div>

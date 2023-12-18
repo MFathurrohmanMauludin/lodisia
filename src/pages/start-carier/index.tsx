@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { faClock } from "@fortawesome/free-regular-svg-icons"
 import { faReadme } from "@fortawesome/free-brands-svg-icons"
+import HeadLine from "../../components/title"
 
 const StartCarier = () => {
     return (
         <>
-            <div className="px-16 py-8">
-                <div className="grid grid-cols-3">
+            <div className="px-16 py-8 sm:!px-4">
+                <HeadLine headLine={'Beberapa Tips dari kami untuk Anda'} />
+                <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
                     <Card className="p-4">
                         <CardHeader className="border-1 p-0 rounded-lg">
                             <Image className="object-cover bg-cover bg-center" src={imgUrl} alt="photo posting" width={300} height={250} />

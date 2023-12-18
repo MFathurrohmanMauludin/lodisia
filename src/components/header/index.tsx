@@ -38,7 +38,7 @@ const Header = () => {
                             aria-label="tombol lowongan tersimpan">
                             <FontAwesomeIcon icon={faHeart} aria-label="gambar pencarian" />
                         </Button>
-                        <div className="flex items-center sm:hidden gap-x-2 ml-2 text-[16px] font-medium">
+                        <div className="flex items-center sm:hidden md:hidden gap-x-2 ml-2 text-[16px] font-medium">
                             <Login />
                             <SignUp />
                         </div>

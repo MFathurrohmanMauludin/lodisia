@@ -6,7 +6,7 @@ import { Button, Link } from "@nextui-org/react"
 const NavigationBottom = () => {
     return (
         <>
-            <div className="w-full sm:!fixed z-40 py-3 px-4 rounded-t-xl bg-white/60 backdrop-blur-sm border-t-1 bottom-0">
+            <div className="w-full hidden sm:fixed sm:block md:block md:fixed z-40 py-3 px-4 rounded-t-xl bg-white/60 backdrop-blur-sm border-t-1 bottom-0">
                 <div className="flex justify-around items-center gapx-x-4">
                     <Button
                         href="/"
