@@ -1,0 +1,9 @@
+{
+    "name": "lodisia",
+    "short_name": "lodisia",
+    "theme_color": "#3fcbea",
+    "background_color": "#ffffff",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+}
