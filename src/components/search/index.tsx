@@ -17,8 +17,8 @@ const SearchField = (data: Props) => {
     const location = useLocation();
     const { pathname } = location;
     return (
-        <div className="pt-16 pb-4 px-16 sm:pt-10 sm:px-0">
-            <div className="flex justify-center sm:px-4">
+        <div className="pt-16 pb-4 px-16 sm:pt-10 md:px-0 sm:px-0">
+            <div className="flex justify-center md:px-4 sm:px-4">
                 <div className="flex items-center w-[500px] gap-x-2">
                     <Input
                         variant="bordered"
@@ -42,7 +42,7 @@ const SearchField = (data: Props) => {
             </div>
 
             {/* berdasarkan select button */}
-            <div className="flex justify-center sm:justify-start sm:px-4 sm:scrollbar-hide sm:overflow-x-scroll gap-x-4 pt-4">
+            <div className="flex justify-center md:px-4 md:justify-start sm:justify-start sm:px-4 sm:scrollbar-hide md:scrollbar-hide md:overflow-x-scroll sm:overflow-x-scroll gap-x-4 pt-4">
 
                 {/* work field */}
                 {
