@@ -14,7 +14,7 @@ interface Props {
 
 const SearchField = (data: Props) => {
     return (
-        <div className="pt-16 pb-4 px-16">
+        <div className="pt-16 pb-4 px-16 sm:px-0">
             <div className="flex justify-center">
                 <div className="flex items-center w-[500px] gap-x-2">
                     <Input
@@ -39,7 +39,7 @@ const SearchField = (data: Props) => {
             </div>
 
             {/* berdasarkan select button */}
-            <div className="flex justify-center gap-x-4 pt-4">
+            <div className="flex justify-center sm:justify-start sm:px-4 sm:scrollbar-hide sm:overflow-x-scroll gap-x-4 pt-4">
 
                 {/* work field */}
                 {
