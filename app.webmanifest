@@ -1,7 +1,7 @@
 {
     "id": "lodisia-1",
     "start_url": "./index.html",
-    "name": "Lodisia - Lowongan kerja disabilitas Indonesia",
+    "name": "Lodisia",
     "short_name": "Lodisia",
     "description": "Lodisia adalah platform yang menyediakan lowongan kerja untuk penyandang disabilitas di Indonesia",
     "display": "standalone",
