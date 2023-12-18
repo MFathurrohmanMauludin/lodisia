@@ -17,6 +17,7 @@ import SearchPage from './pages/search'
 import StartCarier from './pages/start-carier'
 import Company from './pages/company-list'
 import SkipToContent from './components/skip-content'
+import SaveJobs from './pages/save-jobs'
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,11 @@ const router = createBrowserRouter([
   {
     path: "/daftar-perusahaan",
     element: <Company />,
-  }
+  },
+  {
+    path: "/lowongan-tersimpan",
+    element: <SaveJobs />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

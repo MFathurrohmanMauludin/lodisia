@@ -17,7 +17,7 @@ const SearchField = (data: Props) => {
     const location = useLocation();
     const { pathname } = location;
     return (
-        <div className="pt-16 pb-4 px-16 sm:py-4 sm:px-0">
+        <div className="pt-16 pb-4 px-16 sm:pt-10 sm:px-0">
             <div className="flex justify-center sm:px-4">
                 <div className="flex items-center w-[500px] gap-x-2">
                     <Input
