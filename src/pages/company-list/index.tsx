@@ -32,7 +32,7 @@ class Company extends React.Component<Props, State>{
                     sectorSelect: true,
                     locationSelect: true,
                 }} />
-                <div className="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-3 gap-4 py-8 px-16">
+                <div className="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 sm:py-0 sm:px-4 lg:grid-cols-3 gap-4 py-8 px-16">
                     {
                         this.state.companyData.map((data: any) => (
                             <CompanyCard key={data.id} id={data.id} name={data.name} banner={data.banner} logo={data.logo} job={data.jobs} post={data.posts} about={data.about} />

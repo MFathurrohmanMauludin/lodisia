@@ -14,8 +14,8 @@ interface Props {
 
 const SearchField = (data: Props) => {
     return (
-        <div className="pt-16 pb-4 px-16 sm:px-0">
-            <div className="flex justify-center">
+        <div className="pt-16 pb-4 px-16 sm:py-4 sm:px-0">
+            <div className="flex justify-center sm:px-4">
                 <div className="flex items-center w-[500px] gap-x-2">
                     <Input
                         variant="bordered"
