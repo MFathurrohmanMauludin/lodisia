@@ -8,8 +8,8 @@ const Invitation = () => {
                     <h1 className="text-3xl font-semibold tracking-wider px-8">Apakah kamu siap untuk mencari pekerjaan impianmu sekarang?</h1>
                 </div>
                 <div className="flex justify-center items-center gap-x-4">
-                    <Button variant="solid" color="primary" size="lg">Ayo Cari Sekarang</Button>
-                    <Button variant="bordered" color="primary" size="lg">Hubungi Kami</Button>
+                    <Button variant="solid" color="primary" size="lg" radius="full">Ayo Cari Sekarang</Button>
+                    <Button variant="bordered" color="primary" size="lg" radius="full">Hubungi Kami</Button>
                 </div>
             </div>
         </div>

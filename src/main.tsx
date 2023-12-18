@@ -16,6 +16,7 @@ import Home from './pages/home'
 import SearchPage from './pages/search'
 import StartCarier from './pages/start-carier'
 import Company from './pages/company-list'
+import SkipToContent from './components/skip-content'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <SkipToContent />
     <Header />
     <RouterProvider router={router} />
     <Footer />
