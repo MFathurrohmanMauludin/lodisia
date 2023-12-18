@@ -11,7 +11,7 @@ const Login = () => {
 
     return (
         <>
-            <Button onPress={onOpen} color="default" size="md" variant="light" radius="full">Log in</Button>
+            <Button onPress={onOpen} color="default" size="md" variant="light" radius="full">Login</Button>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
@@ -20,7 +20,7 @@ const Login = () => {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
+                            <ModalHeader className="flex flex-col gap-1">Login</ModalHeader>
                             <ModalBody>
                                 <Input
                                     autoFocus
@@ -30,9 +30,9 @@ const Login = () => {
                                     label="Email"
                                     placeholder="Masukan E-Mail"
                                     variant="bordered"
-                                    isInvalid={!regExp.test(mail)}
+                                    isInvalid={mail.length <= 0 ? false : true}
                                     onValueChange={setMail}
-                                    errorMessage={!regExp.test(mail) ? "Mohon masukan alamat email yang valid" : ""}
+                                    errorMessage={!regExp.test(mail) && mail.length >= 1 ? "Mohon masukan alamat email yang valid" : ""}
                                 />
                                 <Input
                                     endContent={
@@ -49,7 +49,7 @@ const Login = () => {
                                             label: "text-small",
                                         }}
                                     >
-                                        Remember me
+                                        Ingatkan saya
                                     </Checkbox>
                                     <Link color="primary" href="#" size="sm">
                                         Lupa password?
@@ -61,7 +61,7 @@ const Login = () => {
                                     Close
                                 </Button>
                                 <Button color="primary" onPress={onClose} radius="full">
-                                    Sign in
+                                    Login
                                 </Button>
                             </ModalFooter>
                         </>

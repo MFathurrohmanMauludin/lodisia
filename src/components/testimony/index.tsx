@@ -46,11 +46,11 @@ const Testimony = (getData: Props) => {
                     </Button>
                 </div>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-1">
+            <div className="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
                 {/* testimony */}
                 <div className="flex flex-col">
                     <h2 className="text-3xl font-semibold" tabIndex={0}>Apa pendapat mereka tentang kami?</h2>
-                    <div className="py-4 pr-8 text-[16px]" tabIndex={0}>
+                    <div className="py-4 pr-8 sm:pr-4 md:pr-4 text-[16px]" tabIndex={0}>
                         <ScrollShadow className="w-auto h-[240px]" isEnabled={false}>
                             {getData.story}
                         </ScrollShadow>
@@ -68,7 +68,7 @@ const Testimony = (getData: Props) => {
                         <div className="flex items-center gap-x-2 py-4">
                             {
                                 getData.dataPointer.map((data: any, index: any) => (
-                                    <button key={data.id} onClick={() => getData.control.pointerContent(index)} className={`p-[6px] ${index === getData.id ? 'border-2 border-gray-500' : 'border-2 border-white'} bg-gray-300 inline-block hover:px-4 ease-in duration-300 rounded-full`} aria-label="0"></button>
+                                    <button key={data.id} onClick={() => getData.control.pointerContent(index)} className={`p-[6px] md:p-[10px] ${index === getData.id ? 'border-2 border-cyan-600 bg-cyan-500' : 'border-2 border-white'} bg-gray-300 inline-block hover:px-4 md:hover:px-5 ease-in duration-300 rounded-full`} aria-label="0"></button>
                                 ))
                             }
                         </div>
@@ -77,15 +77,15 @@ const Testimony = (getData: Props) => {
 
                 {/* photo */}
                 <div className="flex flex-col justify-center items-center">
-                    <div className="relative overflow-hidden pt-16 px-10 bg-[url('https://i.ibb.co/8X4nd8P/Frame-2-2.png')] bg-center bg-contain">
+                    <div className="relative overflow-hidden bg-no-repeat pt-16 px-10 bg-[url('https://i.ibb.co/8X4nd8P/Frame-2-2.png')] bg-center bg-contain">
                         <div className="static flex justify-center items-center">
                             <img
-                                className="ml-4 w-auto h-[300px] object-cover bg-center z-10"
+                                className="ml-4 w-auto h-[300px] object-cover bg-center bg-no-repeat z-10"
                                 src={getData.photo}
                                 width={500}
                                 height={300}
                                 alt="photo testimony" />
-                            <div className="absolute top-[0px] -z-10 rotate-0 bg-[url('https://i.ibb.co/GnZRWZm/Frame-21-1.png')] bg-center bg-fill w-[350px] h-[350px] inline-block rounded-2xl" />
+                            <div className="absolute top-[0px] bg-no-repeat -z-10 rotate-0 bg-[url('https://i.ibb.co/GnZRWZm/Frame-21-1.png')] bg-center bg-fill w-[350px] h-[350px] inline-block rounded-2xl" />
                         </div>
                     </div>
                 </div>
