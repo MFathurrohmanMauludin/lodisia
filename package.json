@@ -1,8 +1,12 @@
 {
-  "name": "vite-project",
+  "name": "lodisia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "M Fathurrohman Mauludin",
+    "email": "fathurdiakfari@gmail.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
