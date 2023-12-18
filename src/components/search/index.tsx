@@ -1,6 +1,7 @@
 import { faMicrophone, faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button, Input, Select, SelectItem } from "@nextui-org/react"
+import { useLocation } from "react-router-dom";
 
 interface Props {
     select: {
@@ -13,6 +14,8 @@ interface Props {
 }
 
 const SearchField = (data: Props) => {
+    const location = useLocation();
+    const { pathname } = location;
     return (
         <div className="pt-16 pb-4 px-16 sm:py-4 sm:px-0">
             <div className="flex justify-center sm:px-4">
@@ -23,7 +26,7 @@ const SearchField = (data: Props) => {
                         size="sm"
                         isClearable
                         radius="full"
-                        placeholder="Cari Nama Perusahaan/Nama Pekerjaan di sini..."
+                        placeholder={`Cari Nama Perusahaan${pathname === '/cari-pekerjaan' ? "/Nama Pekerjaan" : ""} di sini...`}
                         startContent={<FontAwesomeIcon className="flex-shrink-0 text-gray-400" fontSize={16} icon={faSearch} />} />
 
                     <Button
