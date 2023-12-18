@@ -11,7 +11,7 @@ const Header = () => {
     const logo = "https://i.ibb.co/nD7MXWP/lodisia.png";
     return (
         <>
-            <header className="w-full sm:sticky top-0 z-40 py-3 px-4 shadow-md rounded-b-xl bg-white">
+            <header className="w-full md:sticky sm:sticky top-0 z-40 py-3 px-4 shadow-md rounded-b-xl bg-white">
                 <nav className="flex justify-between items-center">
                     {/* left content */}
                     <img src={logo} alt="logo" className="w-[127px] h-[36px] object-contain bg-cover bg-center" />
