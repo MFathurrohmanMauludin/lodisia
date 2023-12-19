@@ -12,7 +12,7 @@ const Accesibility = () => {
 
     // color blind
     const getBody = document.querySelector('body');
-    isColorBlind ? getBody?.setAttribute('class', 'saturate-0') : getBody?.setAttribute('class', 'saturate-100')
+    isColorBlind ? getBody?.setAttribute('class', 'saturate-0') : getBody?.setAttribute('class', '')
 
     return (
         <>

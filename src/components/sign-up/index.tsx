@@ -3,14 +3,13 @@ import { Button, Modal, ModalContent, ModalHeader, ModalBody, Input, ModalFooter
 import { MailIcon } from "../../assets/MailIcon";
 import { EyeFilledIcon } from "../../assets/EyeFilledIcon";
 import { EyeSlashFilledIcon } from "../../assets/EyeSlashFilledIcon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const SignUp = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const [isVisibleCreatePassword, setIsVisibleCreatePassword] = useState(false);
-    const [isVisibleReEnterPassword, setIsVisibleReEnterPassword] = useState(false);
-
     const createPassword = () => setIsVisibleCreatePassword(!isVisibleCreatePassword);
-    const reEnterPassword = () => setIsVisibleReEnterPassword(!isVisibleReEnterPassword);
 
     return (
         <>
@@ -25,13 +24,25 @@ const SignUp = () => {
                         <>
                             <ModalHeader className="flex flex-col gap-1">Sign up</ModalHeader>
                             <ModalBody>
+                                {/* enter full name */}
+                                <Input
+                                    autoFocus
+                                    endContent={
+                                        <FontAwesomeIcon icon={faUser} className="text-[24px] text-default-400 pointer-events-none flex-shrink-0" />
+                                    }
+                                    label="Full Name"
+                                    placeholder="Masukan nama lengkap anda"
+                                    variant="bordered"
+                                />
+
+                                {/* enter email */}
                                 <Input
                                     autoFocus
                                     endContent={
                                         <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                                     }
                                     label="Email"
-                                    placeholder="Enter your email"
+                                    placeholder="Masukan email anda"
                                     variant="bordered"
                                 />
 
@@ -50,23 +61,6 @@ const SignUp = () => {
                                         </button>
                                     }
                                     type={isVisibleCreatePassword ? "text" : "password"}
-                                />
-
-                                {/* re-enter password */}
-                                <Input
-                                    label="Re-enter Password"
-                                    variant="bordered"
-                                    placeholder="Re-enter your password"
-                                    endContent={
-                                        <button className="focus:outline-none" type="button" onClick={reEnterPassword}>
-                                            {isVisibleReEnterPassword ? (
-                                                <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-                                            ) : (
-                                                <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-                                            )}
-                                        </button>
-                                    }
-                                    type={isVisibleReEnterPassword ? "text" : "password"}
                                 />
                             </ModalBody>
 

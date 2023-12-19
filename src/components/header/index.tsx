@@ -12,7 +12,7 @@ const Header = () => {
     const logo = "https://i.ibb.co/nD7MXWP/lodisia.png";
     return (
         <>
-            <header className="w-full sticky md:sticky sm:sticky top-0 z-40 py-3 px-4 shadow-md rounded-b-xl bg-white">
+            <header className="w-full md:sticky sm:sticky top-0 z-20 py-3 px-4 shadow-md rounded-b-xl bg-white">
                 <SkipToContent />
                 <nav className="flex justify-between items-center">
                     {/* left content */}
