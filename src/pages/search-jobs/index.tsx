@@ -10,6 +10,7 @@ interface Props {
 
 interface State {
     workData: any;
+    filter: any;
 }
 
 class SearchPage extends React.Component<Props, State>{
@@ -18,10 +19,18 @@ class SearchPage extends React.Component<Props, State>{
 
         this.state = {
             workData: ListWork(),
+            filter: [],
         }
     }
 
+    filterDataWithSearch = (search: any) => {
+        const getData = this.state.workData.filter((data: any) => search.includes(data.name))
+        console.log(getData);
+    }
+
     render() {
+        // this.filterDataWithSearch('Software Engineer');
+
         return (
             <>
                 <SearchField select={{

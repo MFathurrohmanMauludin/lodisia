@@ -22,7 +22,7 @@ const SearchField = (data: Props) => {
                 <div className="flex items-center w-[500px] gap-x-2">
                     <Input
                         variant="bordered"
-                        color="default"
+                        color="primary"
                         size="sm"
                         isClearable
                         radius="full"
