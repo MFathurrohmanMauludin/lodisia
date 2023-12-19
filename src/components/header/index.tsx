@@ -1,6 +1,6 @@
 import Notification from "../notification";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Link, Tooltip } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import Accesibility from "../accessibility";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import Login from "../login";
@@ -30,24 +30,16 @@ const Header = () => {
                     <div className="flex items-center flex-row gap-x-2">
                         <Notification />
                         <Accesibility />
-                        <Tooltip
-                            showArrow={true}
-                            content="lowongan tersimpan"
+                        <Button
+                            href="/lowongan-tersimpan"
+                            as={Link}
+                            variant="light"
                             color="default"
-                            placement="bottom"
-                            radius="sm"
-                        >
-                            <Button
-                                href="/lowongan-tersimpan"
-                                as={Link}
-                                variant="light"
-                                color="default"
-                                className="text-[24px] text-gray-400 hover:text-gray-700"
-                                isIconOnly
-                                aria-label="tombol lowongan tersimpan">
-                                <FontAwesomeIcon icon={faHeart} aria-label="gambar pencarian" />
-                            </Button>
-                        </Tooltip>
+                            className="text-[24px] text-gray-400 hover:text-gray-700"
+                            isIconOnly
+                            aria-label="tombol lowongan tersimpan">
+                            <FontAwesomeIcon icon={faHeart} aria-label="gambar pencarian" />
+                        </Button>
                         <div className="flex items-center sm:hidden md:hidden gap-x-2 ml-2 text-[16px] font-medium">
                             <Login />
                             <SignUp />
