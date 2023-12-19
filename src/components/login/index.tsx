@@ -28,7 +28,7 @@ const Login = () => {
                                         <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                                     }
                                     label="Email"
-                                    placeholder="Masukan E-Mail"
+                                    placeholder="Masukan email"
                                     variant="bordered"
                                     isInvalid={mail.length <= 0 ? false : true}
                                     onValueChange={setMail}
