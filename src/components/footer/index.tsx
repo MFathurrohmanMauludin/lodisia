@@ -18,9 +18,9 @@ const Footer = () => {
                 <div className="flex flex-col grow gap-y-3">
                     <span className="text-[18px] font-semibold">Tentang Kami</span>
                     <ul className="space-y-2">
-                        <li>Lodisia</li>
-                        <li>Mitra Kami</li>
-                        <li>Berita</li>
+                        <li><a href="#">Lodisia</a>Lodisia</li>
+                        <li><a href="#">Mitra Kami</a>Mitra Kami</li>
+                        <li><a href="#">Berita</a></li>
                     </ul>
                 </div>
 
@@ -41,9 +41,9 @@ const Footer = () => {
                 <div className="flex flex-col grow gap-y-3">
                     <span className="text-[18px] font-semibold">Sering ditanyakan</span>
                     <ul className="space-y-2">
-                        <li>Lodasi itu apa?</li>
-                        <li>Apakah Lodasi ini resmi?</li>
-                        <li>Apa pekerjaan untuk Tunatera?</li>
+                        <li><a href="#">Lodisia itu apa?</a></li>
+                        <li><a href="#">Apakah Lodisia ini resmi?</a></li>
+                        <li><a href="#">Apa pekerjaan untuk Tunanetra?</a></li>
                     </ul>
                 </div>
 
@@ -51,10 +51,10 @@ const Footer = () => {
                 <div className="flex flex-col grow gap-y-3">
                     <span className="text-[18px] font-semibold">Dukungan</span>
                     <ul className="space-y-2">
-                        <li>Hubungi Kami</li>
-                        <li>Syarat & Ketentuan</li>
-                        <li>Kebijakan Privasi</li>
-                        <li>FAQ</li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
 
