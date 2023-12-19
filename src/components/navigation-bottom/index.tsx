@@ -115,7 +115,7 @@ const NavigationBottom = () => {
                                 {/* signup */}
                                 <Tab key="Sign up" title="Sign up">
                                     <form className="flex flex-col gap-4 h-[300px]">
-                                        <Input isRequired label="Nama Lengkap" placeholder="Masukan nama anda" type="password" />
+                                        <Input isRequired label="Nama Lengkap" placeholder="Masukan nama lengkap anda" type="password" />
                                         <Input isRequired label="Email" placeholder="Masukan email anda" type="email" />
                                         <Input
                                             isRequired

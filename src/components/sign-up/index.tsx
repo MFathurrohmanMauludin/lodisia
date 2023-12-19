@@ -30,7 +30,7 @@ const SignUp = () => {
                                     endContent={
                                         <FontAwesomeIcon icon={faUser} className="text-[24px] text-default-400 pointer-events-none flex-shrink-0" />
                                     }
-                                    label="Full Name"
+                                    label="Nama Lengkap"
                                     placeholder="Masukan nama lengkap anda"
                                     variant="bordered"
                                 />
@@ -48,9 +48,9 @@ const SignUp = () => {
 
                                 {/* create password */}
                                 <Input
-                                    label="Create Password"
+                                    label="Buat Password"
                                     variant="bordered"
-                                    placeholder="Masukkan password"
+                                    placeholder="Masukan password"
                                     endContent={
                                         <button className="focus:outline-none" type="button" onClick={createPassword}>
                                             {isVisibleCreatePassword ? (
