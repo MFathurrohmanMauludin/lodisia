@@ -22,7 +22,7 @@ const Opportunity = () => {
                             getData.map((data: any) => (
                                 <Card className="hover:drop-shadow-md shadow-slate-950/10" shadow="none" radius="sm" key={data.id} isPressable>
                                     <CardBody className="flex flex-col overflow-visible p-4">
-                                        <div className="flex justify-center items-center p-4 border border-slate-500 max-w-[48px] max-h-[48px] rounded-md">
+                                        <div className="flex justify-center items-center p-4 border-1 border-cyan-500 max-w-[48px] max-h-[48px] rounded-md text-cyan-500">
                                             <FontAwesomeIcon fontSize={24} icon={getIcon[data.icon]} />
                                         </div>
                                         <div className="pt-4">
