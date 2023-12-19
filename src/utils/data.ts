@@ -221,7 +221,7 @@ const CompanyList = () => [
     },
     {
         id: 3,
-        name: 'PT Kereta Api Indonedia',
+        name: 'PT Kereta Api Indonesia',
         banner: 'https://emitennews.com/uploads/news/image_1675772735.png',
         logo: 'https://keretaapikita.com/wp-content/uploads/2020/09/Logo-Baru-PT-KAI.jpg',
         jobs: 4,
