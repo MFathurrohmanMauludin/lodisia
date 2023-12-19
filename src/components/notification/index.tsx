@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Avatar, Button, Listbox, ListboxItem, ListboxSection, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react"
+import { Avatar, Button, Listbox, ListboxItem, ListboxSection, Popover, PopoverContent, PopoverTrigger, Tooltip } from "@nextui-org/react"
 import { useState } from "react"
 import { faBell, faBuilding } from "@fortawesome/free-regular-svg-icons"
 
@@ -15,14 +15,21 @@ const Notification = () => {
                 placement="bottom"
                 color="default">
                 <PopoverTrigger>
-                    <Button
-                        className="text-gray-400 hover:text-gray-700"
+                    <Tooltip
+                        showArrow={true}
+                        content="notifikasi"
                         color="default"
-                        variant="light"
-                        isIconOnly
-                        aria-label="tombol akses notifikasi">
-                        <FontAwesomeIcon fontSize={24} icon={faBell} aria-label="ikon disabilitas" />
-                    </Button>
+                        radius="sm"
+                        placement="bottom">
+                        <Button
+                            className="text-gray-400 hover:text-gray-700"
+                            color="default"
+                            variant="light"
+                            isIconOnly
+                            aria-label="tombol akses notifikasi">
+                            <FontAwesomeIcon fontSize={24} icon={faBell} aria-label="ikon disabilitas" />
+                        </Button>
+                    </Tooltip>
                 </PopoverTrigger>
                 <PopoverContent className="rounded-lg p-4">
                     <Listbox variant="flat" aria-label="Listbox menu with sections">

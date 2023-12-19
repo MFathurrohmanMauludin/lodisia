@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Button, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react"
+import { Button, Popover, PopoverContent, PopoverTrigger, Tooltip } from "@nextui-org/react"
 import AccesibileButton from "../button/AccesibilityButton"
 import { useState } from "react"
 
@@ -23,14 +23,21 @@ const Accesibility = () => {
                 placement="bottom"
                 color="default">
                 <PopoverTrigger>
-                    <Button
+                    <Tooltip
+                        showArrow={true}
+                        content="aksesibilitas"
                         color="default"
-                        variant="light"
-                        className="text-[24px] text-gray-400 hover:text-gray-700"
-                        isIconOnly
-                        aria-label="tombol akses disabilitas">
-                        <FontAwesomeIcon icon={faAccessibleIcon} aria-label="ikon disabilitas" />
-                    </Button>
+                        radius="sm"
+                        placement="bottom">
+                        <Button
+                            color="default"
+                            variant="light"
+                            className="text-[24px] text-gray-400 hover:text-gray-700"
+                            isIconOnly
+                            aria-label="tombol akses disabilitas">
+                            <FontAwesomeIcon icon={faAccessibleIcon} aria-label="ikon disabilitas" />
+                        </Button>
+                    </Tooltip>
                 </PopoverTrigger>
                 <PopoverContent className="rounded-lg p-4">
                     <div className="grid grid-cols-3 gap-4">
