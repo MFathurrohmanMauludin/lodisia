@@ -1,7 +1,7 @@
 const DetailJobs = () => {
     return (
         <>
-            Sedang dibuat
+
         </>
     )
 }

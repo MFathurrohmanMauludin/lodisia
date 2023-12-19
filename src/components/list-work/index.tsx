@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Link } from "@nextui-org/react";
-import CardPosting from "../card-posting"
+import CardJob from "../card-job"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
 import HeadLine from "../title";
@@ -25,7 +25,7 @@ const WorkList = (getData: Props) => {
             <div className={`grid sm:grid-cols-1 lg:grid-cols-2 grid-cols-3 grid-flow-row gap-4`}>
                 {
                     getData.work.map((data: any) => (
-                        <CardPosting
+                        <CardJob
                             key={data.id}
                             id={data.id}
                             logo={data.logo}

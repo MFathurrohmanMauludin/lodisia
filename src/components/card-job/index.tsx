@@ -19,7 +19,7 @@ interface Props {
     disability: any;
 }
 
-const CardPosting = (getData: Props) => {
+const CardJob = (getData: Props) => {
     return (
         <>
             <Card className="py-4 hover:-translate-y-2.5 hover:transition-all ease-in duration-300" id={`${getData.id}`}>
@@ -127,4 +127,4 @@ const CardPosting = (getData: Props) => {
     )
 }
 
-export default CardPosting
+export default CardJob
