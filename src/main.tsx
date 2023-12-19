@@ -19,6 +19,7 @@ import Company from './pages/company-list'
 import SaveJobs from './pages/save-jobs'
 import DetailJobs from './pages/detail-jobs'
 import DetailCompany from './pages/detail-company'
+import NavigationBottom from './components/navigation-bottom'
 
 const router = createBrowserRouter([
   {
@@ -56,5 +57,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Header />
     <RouterProvider router={router} />
     <Footer />
+    <NavigationBottom />
   </React.StrictMode>,
 )

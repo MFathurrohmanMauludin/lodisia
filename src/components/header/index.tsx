@@ -5,7 +5,6 @@ import Accesibility from "../accessibility";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import Login from "../login";
 import SignUp from "../sign-up";
-import NavigationBottom from "../navigation-bottom";
 import SkipToContent from "../skip-content";
 
 const Header = () => {
@@ -47,7 +46,6 @@ const Header = () => {
                     </div>
                 </nav>
             </header>
-            <NavigationBottom />
         </>
     )
 }
