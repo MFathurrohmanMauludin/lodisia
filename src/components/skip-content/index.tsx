@@ -4,7 +4,7 @@ const SkipToContent = () => {
     return (
         <>
             <Button
-                className="absolute z-10 -translate-y-10 translate-x-40 focus-within:translate-y-4 transition-all ease-in duration-300 font-semibold"
+                className="absolute z-50 -translate-y-40 translate-x-40 focus-within:translate-y-0 transition-all ease-in duration-300 font-semibold"
                 href="#main-content"
                 as={Link}
                 color="primary"

@@ -16,7 +16,6 @@ import Home from './pages/home'
 import SearchPage from './pages/search-jobs'
 import StartCarier from './pages/start-carier'
 import Company from './pages/company-list'
-import SkipToContent from './components/skip-content'
 import SaveJobs from './pages/save-jobs'
 import DetailJobs from './pages/detail-jobs'
 import DetailCompany from './pages/detail-company'
@@ -54,7 +53,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <SkipToContent />
     <Header />
     <RouterProvider router={router} />
     <Footer />
