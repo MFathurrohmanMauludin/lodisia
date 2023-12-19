@@ -12,6 +12,7 @@ interface Props {
 
 interface State {
     companyData: any;
+    filterData: any;
 }
 
 class Company extends React.Component<Props, State>{
@@ -20,10 +21,18 @@ class Company extends React.Component<Props, State>{
 
         this.state = {
             companyData: CompanyList(),
+            filterData: [],
         }
     }
 
+    filterCompanyWithSearch = (event: any) => {
+        const getData = this.state.companyData.filter((data: any) => data.name.toLowerCase().includes(event.target.value));
+        this.setState({ filterData: getData });
+    }
+
     render() {
+        const getData = this.state.filterData.length <= 0 ? this.state.companyData : this.state.filterData;
+
         return (
             <>
                 <SearchField select={{
@@ -32,12 +41,13 @@ class Company extends React.Component<Props, State>{
                     experienceSelect: false,
                     sectorSelect: true,
                     locationSelect: true,
-                }} />
+                }}
+                    control={this.filterCompanyWithSearch} />
                 <div className="pb-16 px-16 sm:!px-4 ">
                     <HeadLine headLine={'Daftar Perusahaan Terkini'} />
                     <div className="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-4">
                         {
-                            this.state.companyData.map((data: any) => (
+                            getData.map((data: any) => (
                                 <CompanyCard key={data.id} id={data.id} name={data.name} banner={data.banner} logo={data.logo} job={data.jobs} post={data.posts} about={data.about} />
                             ))
                         }

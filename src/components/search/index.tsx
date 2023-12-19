@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { faMicrophone, faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button, Input, Select, SelectItem } from "@nextui-org/react"
@@ -10,12 +11,15 @@ interface Props {
         sectorSelect: boolean;
         locationSelect: boolean;
         experienceSelect: boolean;
-    }
+    },
+    control: any;
 }
 
 const SearchField = (data: Props) => {
     const location = useLocation();
     const { pathname } = location;
+
+
     return (
         <div className="pt-16 pb-4 px-16 sm:pt-10 md:px-0 sm:px-0">
             <div className="flex justify-center md:px-4 sm:px-4">
@@ -26,6 +30,7 @@ const SearchField = (data: Props) => {
                         size="sm"
                         isClearable
                         radius="full"
+                        onChange={data.control}
                         placeholder={`Cari Nama Perusahaan${pathname === '/cari-pekerjaan' ? "/Nama Pekerjaan" : ""} di sini...`}
                         startContent={<FontAwesomeIcon className="flex-shrink-0 text-gray-400" fontSize={16} icon={faSearch} />} />
 
@@ -110,15 +115,18 @@ const SearchField = (data: Props) => {
                         <Select
                             key={4}
                             color="default"
-                            label="Sektor Pekerjaan"
+                            label="Sektor Perusahaan"
                             radius="sm"
-                            placeholder="Pilih bidang pekerjaan"
+                            placeholder="Pilih Sektor Perusahaan"
                             className="max-w-xs"
                         >
-                            <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>
-                            <SelectItem key={1} value={'it & software'}>Badan Usaha Milik Negara (BUMN)</SelectItem>
-                            <SelectItem key={2} value={'keuangan & akuntansi'}>Industri Tekstil</SelectItem>
-                            <SelectItem key={3} value={'pemasaran & periklanan'}>Industri Teknologi</SelectItem>
+                            <SelectItem key={0} value={'semua'}>Semua Sektor</SelectItem>
+                            <SelectItem key={1} value={'Teknologi'}>Teknologi</SelectItem>
+                            <SelectItem key={2} value={'keuangan'}>Keuangan</SelectItem>
+                            <SelectItem key={3} value={'kesehatan'}>Kesehatan</SelectItem>
+                            <SelectItem key={4} value={'transportasi'}>Transportasi</SelectItem>
+                            <SelectItem key={5} value={'logistik'}>Logistik</SelectItem>
+                            <SelectItem key={6} value={'bumn'}>Energi</SelectItem>
                         </Select>
                         :
                         ''
@@ -131,9 +139,9 @@ const SearchField = (data: Props) => {
                         <Select
                             key={5}
                             color="default"
-                            label="Lokasi Pekerjaan"
+                            label={pathname === '/cari-pekerjaan' ? 'Lokasi Pekerjaan' : 'Lokasi Perusahaan'}
                             radius="sm"
-                            placeholder="Pilih lokasi pekerjaan"
+                            placeholder={pathname === '/cari-pekerjaan' ? 'Pilih Lokasi Pekerjaan' : 'Pilih Lokasi Perusahaan'}
                             className="max-w-xs"
                         >
                             <SelectItem key={0} value={'semua'}>Semua Kategori</SelectItem>

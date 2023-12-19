@@ -10,7 +10,7 @@ interface Props {
 
 interface State {
     workData: any;
-    filter: any;
+    filterData: any;
 }
 
 class SearchPage extends React.Component<Props, State>{
@@ -19,17 +19,16 @@ class SearchPage extends React.Component<Props, State>{
 
         this.state = {
             workData: ListWork(),
-            filter: [],
+            filterData: [],
         }
     }
 
-    filterDataWithSearch = (search: any) => {
-        const getData = this.state.workData.filter((data: any) => search.includes(data.name))
-        console.log(getData);
+    filterJobsWithSearch = (event: any) => {
+        const getData = this.state.workData.filter((data: any) => data.name.toLowerCase().includes(event.target.value));
+        this.setState({ filterData: getData });
     }
 
     render() {
-        // this.filterDataWithSearch('Software Engineer');
 
         return (
             <>
@@ -39,9 +38,11 @@ class SearchPage extends React.Component<Props, State>{
                     styleSelect: true,
                     locationSelect: true,
                     experienceSelect: true
-                }} />
+                }}
+                    control={this.filterJobsWithSearch}
+                />
                 <div className="px-16 pb-16 md:px-4 sm:px-4">
-                    <WorkList work={this.state.workData} headLine={"Lowongan Tersedia"} />
+                    <WorkList work={this.state.filterData.length <= 0 ? this.state.workData : this.state.filterData} headLine={"Lowongan Tersedia"} />
                 </div>
             </>
         )
