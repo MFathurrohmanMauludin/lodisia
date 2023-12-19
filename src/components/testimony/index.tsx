@@ -55,7 +55,7 @@ const Testimony = (getData: Props) => {
                             {getData.story}
                         </ScrollShadow>
                     </div>
-                    <div className="flex items-center gap-x-3" aria-label="kelainan yang dimiliki Anita Prasmawati" tabIndex={0}>
+                    <div className="flex sm:flex-wrap sm:gap-y-4 items-center gap-x-3" aria-label="kelainan yang dimiliki Anita Prasmawati" tabIndex={0}>
                         {
                             getData.disability.map((data: any) => (
                                 <span className="border-1 border-slate-400 px-4 py-1 rounded-full" tabIndex={0} key={data.id}>{data.name}</span>

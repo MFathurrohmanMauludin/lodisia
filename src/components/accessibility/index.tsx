@@ -11,7 +11,7 @@ const Accesibility = () => {
     const [isBlind, setBlind] = useState(false);
 
     // color blind
-    const getBody = document.querySelector('body');
+    const getBody = document.getElementById('root');
     isColorBlind ? getBody?.setAttribute('class', 'saturate-0') : getBody?.setAttribute('class', '')
 
     return (
