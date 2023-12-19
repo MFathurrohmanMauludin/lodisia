@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react"
@@ -6,6 +7,12 @@ import { useState } from "react"
 
 const Accesibility = () => {
     const [isOpen, setOpen] = useState(false);
+    const [isColorBlind, setColorBlind] = useState(false);
+    const [isBlind, setBlind] = useState(false);
+
+    // color blind
+    const getBody = document.querySelector('body');
+    isColorBlind ? getBody?.setAttribute('class', 'saturate-0') : getBody?.setAttribute('class', 'saturate-100')
 
     return (
         <>
@@ -28,28 +35,33 @@ const Accesibility = () => {
                 <PopoverContent className="rounded-lg p-4">
                     <div className="grid grid-cols-3 gap-4">
                         <AccesibileButton
-                            id={0}
-                            name={'buta total'}
-                            icon={'faPersonWalkingWithCane'}
-                            control={() => console.log('buta total')} />
-
-                        <AccesibileButton
                             id={1}
                             name={'buta warna'}
                             icon={'faEye'}
-                            control={() => console.log('proses')} />
+                            control={() => setColorBlind(!isColorBlind)}
+                            label={isColorBlind} />
 
                         <AccesibileButton
                             id={2}
                             name={'penglihatan rendah'}
                             icon={'faLowVision'}
-                            control={() => console.log('penglihatan rendah')} />
+                            control={() => console.log('penglihatan rendah')}
+                            label={false} />
+
+                        <AccesibileButton
+                            id={0}
+                            name={'buta total'}
+                            icon={'faPersonWalkingWithCane'}
+                            control={() => setBlind(!isBlind)}
+                            label={isBlind} />
+
 
                         <AccesibileButton
                             id={3}
                             name={'dyslexia'}
                             icon={'faFont'}
-                            control={() => console.log('dyslexia')} />
+                            control={() => console.log('dyslexia')}
+                            label={false} />
 
                     </div>
 

@@ -9,6 +9,7 @@ interface Props {
   name: string;
   icon: any;
   control: any;
+  label: boolean;
 }
 
 const AccesibileButton = (getData: Props) => {
@@ -32,13 +33,20 @@ const AccesibileButton = (getData: Props) => {
             icon={getData.icon === 'faEye' ? regularIcon['faEye'] : solidIcon[getData.icon]}
             aria-label="ikon buta warna" />
           {
-            getData.name === 'buta total' || getData.name === 'buta warna' ? (
-              <span className="text-tiny capitalize leading-0">{getData.name}</span>
+            getData.name === 'buta warna' ? (
+              <>
+                <div className="flex flex-col">
+                  <span className="text-tiny capitalize leading-none">{getData.name}</span>
+                  {
+                    getData.label ? <span className="text-[10px] leading-none">Aktif</span> : ""
+                  }
+                </div>
+              </>
             ) :
               (
                 <div className="flex flex-col">
-                  <span className="text-tiny capitalize leading-0">{getData.name}</span>
-                  <span className="text-[8px] leading-none">coming soon</span>
+                  <span className="text-tiny capitalize leading-none">{getData.name}</span>
+                  <span className="text-[10px] leading-none">coming soon</span>
                 </div>
               )
           }

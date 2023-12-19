@@ -38,7 +38,7 @@ const CompanyCard = (data: Props) => {
 
                 {/* card body */}
                 <CardBody className="overflow-hidden -mt-3">
-                    <a href="#" className="text-[18px] tracking-wide capitalize font-medium text-blue-400" tabIndex={0}>{data.name}</a>
+                    <a href={`/detail-perusahaan?name=${data.name}`} className="text-[18px] tracking-wide capitalize font-medium text-blue-400" tabIndex={0}>{data.name}</a>
                     <div className="flex items-center gap-x-4 text-gray-500" tabIndex={0}>
                         <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faBriefcase} /> <span>{data.job} Loker Tersedia</span></div>
                         <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faNewspaper} /> <span>{data.post} Posting</span></div>

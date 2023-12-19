@@ -115,7 +115,7 @@ const CardPosting = (getData: Props) => {
                 {/* detail pekerjaan */}
                 <div className="flex justify-end gap-x-4 px-4">
                     <a
-                        href={`detail-pekerjaan&id=${getData.id}`}
+                        href={`detail-pekerjaan?name=${getData.name}&company=${getData.company}`}
                         className="flex items-center gap-x-2 detailWork"
                     >
                         <span className="text-[14px]">Lihat lebih lanjut</span>

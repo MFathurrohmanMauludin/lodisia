@@ -18,6 +18,8 @@ import StartCarier from './pages/start-carier'
 import Company from './pages/company-list'
 import SkipToContent from './components/skip-content'
 import SaveJobs from './pages/save-jobs'
+import DetailJobs from './pages/detail-jobs'
+import DetailCompany from './pages/detail-company'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
   {
     path: "/lowongan-tersimpan",
     element: <SaveJobs />,
+  },
+  {
+    path: "/detail-pekerjaan",
+    element: <DetailJobs />,
+  },
+  {
+    path: "/detail-perusahaan",
+    element: <DetailCompany />,
   },
 ])
 
