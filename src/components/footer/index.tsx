@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="flex flex-col grow gap-y-3">
                     <span className="text-[18px] font-semibold">Tentang Kami</span>
                     <ul className="space-y-2">
-                        <li><a href="#">Lodisia</a>Lodisia</li>
+                        <li><a href="#">Lodisia</a></li>
                         <li><a href="#">Mitra Kami</a>Mitra Kami</li>
                         <li><a href="#">Berita</a></li>
                     </ul>

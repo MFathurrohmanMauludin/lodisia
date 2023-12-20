@@ -73,7 +73,7 @@ const CardJob = (getData: Props) => {
 
                         {/* batas lamaran */}
                         <span
-                            className="text text-white text-tiny font-medium tracking-wide bg-red-600 px-2 py-[2px] rounded"
+                            className={`text text-white text-tiny font-medium tracking-wide ${getData.countDown === '0' ? 'bg-gray-400' : 'bg-red-600'} px-2 py-[2px] rounded`}
                             aria-label={`waktu lamaran tersisa ${getData.countDown} hari`}
                             tabIndex={0}>{getData.countDown === '0' ? 'Sudah Ditutup' : `Tersisa ${getData.countDown} Hari`}</span>
                     </div>
