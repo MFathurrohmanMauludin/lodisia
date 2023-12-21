@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { ListWork } from "../../utils/data";
-import InfoJob from "../../components/detail-jobs";
+import InfoJob from "../../components/detail-job";
 
 interface Props {
 
