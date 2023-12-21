@@ -35,7 +35,7 @@ const AnotherJobs = (getData: Props) => {
                 filterData.map((job: any) => (
                     <Card className="mt-4 rounded-md p-1 w-[350px] sm:w-full" key={job.id}>
                         <CardHeader className="flex flex-row gap-x-4">
-                            <Avatar src={job.logo} alt="logo 1" size="md" />
+                            <Avatar className="border-1 border-gray-500/10 object-cover object-center" src={job.logo} alt="logo 1" size="md" />
                             <div className="flex flex-col gap-y-1">
                                 <div className="flex items-center gap-x-2 text-[14px]" tabIndex={0}>
                                     <a
