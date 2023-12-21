@@ -102,8 +102,8 @@ const ListWork = () => [
         styleWork: 'On-site',
         typeContract: 'Full-time',
         location: 'Jakarta',
-        startDate: '12/14/2023',
-        finishDate: '12/21/2023',
+        startDate: '12/23/2023',
+        finishDate: '1/10/2024',
         jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
         salary: '10.000.000 - 15.000.000',
         disability: [
@@ -125,8 +125,8 @@ const ListWork = () => [
         styleWork: 'On-site',
         typeContract: 'Full-time',
         location: 'Jakarta Utara',
-        startDate: '12/1/2023',
-        finishDate: '12/19/2023',
+        startDate: '12/13/2023',
+        finishDate: '12/25/2023',
         jobDesc: 'deskripsi pekerjaan',
         salary: 'gaji pekerjaan',
         disability: [
@@ -152,8 +152,8 @@ const ListWork = () => [
         styleWork: 'On-site',
         typeContract: 'Part-time',
         location: 'Yogyakarta',
-        startDate: '12/1/2023',
-        finishDate: '12/18/2023',
+        startDate: '12/5/2023',
+        finishDate: '12/28/2023',
         jobDesc: 'deskripsi pekerjaan',
         salary: 'gaji pekerjaan',
         disability: [

@@ -27,7 +27,8 @@ const AnotherJobs = (getData: Props) => {
     const getId = matchId ? matchId[1] : 0;
 
     // filter data
-    const filterData = getData.listJobs.filter((job: any) => job.id !== parseInt(`${getId}`) && job.company !== company);
+    const descData = getData.listJobs.sort((a: any, b: any) => b.startDate - a.startDate);
+    const filterData = descData.filter((job: any) => job.id !== parseInt(`${getId}`) && job.company !== company);
 
     return (
         <>

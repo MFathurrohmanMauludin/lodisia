@@ -13,18 +13,23 @@ interface Props {
 
 const WorkList = (getData: Props) => {
     const dayDate = (data: number) => new Date(data).getDate();
+    const yearDate = (data: number) => new Date(data).getFullYear();
+
+    const startDate = (data: number) => new Date(data).toLocaleDateString('id', { month: 'short', year: 'numeric' });
     const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { day: 'numeric', month: 'long', year: 'numeric' });
     const countDay = (finish: number) => Math.ceil((new Date(finish).getTime() - new Date().getTime()) / ((1000 * 3600) * 24));
 
     const location = useLocation();
     const { pathname } = location;
 
+    const descData = getData.work.sort((a: any, b: any) => dayDate(b.startDate) - dayDate(a.startDate));
+
     return (
         <>
             <HeadLine headLine={getData.headLine} />
             <div className={`grid sm:grid-cols-1 lg:grid-cols-2 grid-cols-3 grid-flow-row gap-4`}>
                 {
-                    getData.work.map((data: any) => (
+                    descData.map((data: any) => (
                         <CardJob
                             key={data.id}
                             id={data.id}
@@ -37,7 +42,7 @@ const WorkList = (getData: Props) => {
                             location={data.location}
                             disability={data.disability}
                             typeContract={data.typeContract}
-                            dateStarted={`${dayDate(data.startDate)} - ${finishDate(data.finishDate)}`}
+                            dateStarted={`${dayDate(data.startDate)} ${yearDate(data.startDate) !== yearDate(data.finishDate) ? startDate(data.startDate) : ''} - ${finishDate(data.finishDate)}`}
                             countDown={`${countDay(data.finishDate) < 0 ? 0 : countDay(data.finishDate)}`} />
                     ))
                 }
