@@ -77,10 +77,8 @@ const ListWork = () => [
         location: 'Jakarta Selatan',
         startDate: '12/18/2023',
         finishDate: '12/25/2023',
-        jobDesc: 'deskripsi pekerjaan',
-        generalCriteria: 'kriteria umum',
-        importantCriteria: 'kriteria khusus/penting',
-        regulations: 'persyaratan yang harus dipenuhi',
+        jobDesc: '<div class="ql-content ql-editor"><span><p class="ql-align-justify"><span style="background-color: transparent; color: rgb(0, 0, 0);">This vacancy is managed in cooperation with Google Cloud ID for its Partner Technical Residency Program.&nbsp;</span></p><p class="ql-align-justify"><span style="background-color: transparent; color: rgb(0, 0, 0);">This vacancy is only open to graduates of the Bangkit Cloud Computing program.</span></p><p class="ql-align-justify"><strong style="background-color: transparent; color: rgb(0, 0, 0);">About the Google Cloud ID Partner Technical Residency Program:</strong></p><p class="ql-align-justify"><span style="background-color: transparent; color: rgb(0, 0, 0);">If you are hired for this position, you have the opportunity to join the Google Cloud ID Partner Technical Residency Program which includes a 6 monthly program of Google Cloud hand-holding activities such as:</span></p><ul><li class="ql-align-justify"><span style="background-color: transparent; color: rgb(0, 0, 0);">Monthly Study Gathering: Study gathering involving all new hires to transfer knowledge around technical, best practices, soft skills, and learning progress.</span></li><li class="ql-align-justify"><span style="background-color: transparent; color: rgb(0, 0, 0);">Mentorship: Pair with Google Cloud’s CE/PE for mentorship and gain insight from experts.</span></li><li class="ql-align-justify"><span style="background-color: transparent; color: rgb(0, 0, 0);">Shadow/Reverse Shadowing: Involve in real customer-facing activities and get feedback from Google Cloud CEs/PE.</span></li></ul><p><br></p><p><strong>Job Description:&nbsp;</strong></p><p>We are seeking a skilled Cloud Engineer with at least three years of experience to join our dynamic team. This role involves designing, implementing, and managing cloud-based systems and solutions to drive business efficiency and innovation.&nbsp;</p><h2><strong>Responsibilities</strong></h2><p>Key Responsibilities:</p><ul><li>Cloud Infrastructure Design and Implementation: Develop and deploy scalable, efficient cloud infrastructure solutions. This includes setting up cloud instances, storage solutions, and network configurations.</li><li>Automation and Optimization: Automate cloud deployments and optimize resources for better performance and cost efficiency. Familiarity with tools like Terraform, Ansible, or similar is required.</li><li>Security and Compliance: Ensure cloud environments comply with industry standards and company policies. Implement security measures to protect data and manage access controls.</li><li>Monitoring and Troubleshooting: Monitor cloud infrastructure for performance issues, outages, and security threats. Quick response and resolution of any operational issues in the cloud environment.</li><li>Collaboration and Support: Work closely with development teams to integrate cloud solutions into the software development life cycle. Provide cloud-related support and guidance to team members.</li></ul><p><br></p><p><strong>Qualifications: </strong></p><ul><li>Bachelor’s degree in Computer Science, Information Technology, or related field.</li><li>Minimum of three years of experience in cloud engineering, specifically with platforms like AWS, Google Cloud Platform (GCP), Azure, AliCloud, Huawei Cloud</li><li>Proficient in cloud services, including IaaS, PaaS, and SaaS, and in container technologies like Docker and Kubernetes.</li><li>Strong understanding of cloud security principles and hands-on experience in implementing security measures.</li><li>Experience in scripting and automation tools (e.g., Python, Bash, Terraform, Ansible)</li><li>Excellent problem-solving skills and ability to work in a fast-paced environment.</li><li>Strong communication and teamwork skills.</li></ul><p><br></p><p><strong>Benefits: </strong></p><ul><li>Competitive salary and performance bonuses.</li><li>Health insurance.</li><li>Flexible working hours and remote work options.</li><li>Professional development opportunities and training programs.</li><li>Working in a multinational&nbsp;environment</li></ul></span></div>',
+        salary: '30.000.000-50.000.000',
         disability: [
             {
                 id: 1,
@@ -106,10 +104,8 @@ const ListWork = () => [
         location: 'Jakarta',
         startDate: '12/14/2023',
         finishDate: '12/21/2023',
-        jobDesc: 'deskripsi pekerjaan',
-        generalCriteria: 'kriteria umum',
-        importantCriteria: 'kriteria khusus/penting',
-        regulations: 'persyaratan yang harus dipenuhi',
+        jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
+        salary: '10.000.000 - 15.000.000',
         disability: [
             {
                 id: 1,
@@ -132,9 +128,7 @@ const ListWork = () => [
         startDate: '12/1/2023',
         finishDate: '12/19/2023',
         jobDesc: 'deskripsi pekerjaan',
-        generalCriteria: 'kriteria umum',
-        importantCriteria: 'kriteria khusus/penting',
-        regulations: 'persyaratan yang harus dipenuhi',
+        salary: 'gaji pekerjaan',
         disability: [
             {
                 id: 1,
@@ -161,9 +155,7 @@ const ListWork = () => [
         startDate: '12/1/2023',
         finishDate: '12/18/2023',
         jobDesc: 'deskripsi pekerjaan',
-        generalCriteria: 'kriteria umum',
-        importantCriteria: 'kriteria khusus/penting',
-        regulations: 'persyaratan yang harus dipenuhi',
+        salary: 'gaji pekerjaan',
         disability: [
             {
                 id: 1,
@@ -186,9 +178,7 @@ const ListWork = () => [
         startDate: '12/1/2023',
         finishDate: '12/10/2023',
         jobDesc: 'deskripsi pekerjaan',
-        generalCriteria: 'kriteria umum',
-        importantCriteria: 'kriteria khusus/penting',
-        regulations: 'persyaratan yang harus dipenuhi',
+        salary: '',
         disability: [
             {
                 id: 1,
@@ -371,5 +361,6 @@ const ListTestimony = () => [
         ],
     },
 ]
+
 
 export { CompanyBrand, CompanyList, ListPartnert, ListWork, PopularFieldWork, Oppurtunity, ListTestimony };

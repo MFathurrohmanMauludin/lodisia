@@ -115,7 +115,7 @@ const CardJob = (getData: Props) => {
                 {/* detail pekerjaan */}
                 <div className="flex justify-end gap-x-4 px-4">
                     <a
-                        href={`detail-pekerjaan?name=${getData.name}&company=${getData.company}`}
+                        href={`detail-pekerjaan?name=${getData.name}&company=${getData.company.replace(/ +/g, '+')}?id=${getData.id}`}
                         className="flex items-center gap-x-2 detailWork"
                     >
                         <span className="text-[14px]">Lihat lebih lanjut</span>

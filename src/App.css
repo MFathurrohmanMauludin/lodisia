@@ -59,3 +59,12 @@ a.detailWork:focus-within svg#arrowButton {
     transform: rotate(-45deg) translate(8px);
     transition: all ease-in 0.3s;
 }
+
+#job-desc ul {
+    list-style-type: circle !important;
+    padding-left: 24px;
+}
+
+#job-desc p {
+    margin-top: 16px;
+}
