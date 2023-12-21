@@ -102,7 +102,10 @@ const CardJob = (getData: Props) => {
                     </div>
 
                     {/* kebutuhan disabilitas */}
-                    <div className="flex flex-wrap items-center gap-2 py-3 text-[12px] font-medium" aria-label={`${getData.name} dapat diisi oleh penderita`} tabIndex={0}>
+                    <div
+                        className="flex flex-wrap items-center gap-2 py-3 text-[12px] font-medium"
+                        aria-label={`${getData.name} dapat diisi oleh penderita`}
+                        tabIndex={0}>
                         {
                             getData.disability.map((data: any) => (
                                 <span className="border-1 border-slate-400 px-3 py-1 tracking-wide rounded-full" tabIndex={0} key={data.id}>

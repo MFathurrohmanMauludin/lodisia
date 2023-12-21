@@ -3,13 +3,10 @@ import AnotherJobs from "../another-job";
 
 interface Props {
     desc: string;
+    listJobs: any;
 }
 
 const JobDesc = (getData: Props) => {
-
-    // const parser = new DOMParser();
-    // const parsedHTML = parser.parseFromString(getData.desc, 'text/html');
-    // const bodyElement = parsedHTML.body;
 
     return (
         <>
@@ -22,7 +19,7 @@ const JobDesc = (getData: Props) => {
                     <div className="flex-shrink-0">
                         <span className="text-[21px] tracking-wide font-extrabold">Pekerjaan Lainnya</span>
                         <div className="gax-y-4">
-                            <AnotherJobs />
+                            <AnotherJobs listJobs={getData.listJobs} />
                         </div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ interface Props {
 
 const WorkList = (getData: Props) => {
     const dayDate = (data: number) => new Date(data).getDate();
-    const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { month: 'long', year: 'numeric' });
+    const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { day: 'numeric', month: 'long', year: 'numeric' });
     const countDay = (finish: number) => Math.ceil((new Date(finish).getTime() - new Date().getTime()) / ((1000 * 3600) * 24));
 
     const location = useLocation();
@@ -37,7 +37,7 @@ const WorkList = (getData: Props) => {
                             location={data.location}
                             disability={data.disability}
                             typeContract={data.typeContract}
-                            dateStarted={`${dayDate(data.startDate)} - ${dayDate(data.finishDate)} ${finishDate(data.finishDate)}`}
+                            dateStarted={`${dayDate(data.startDate)} - ${finishDate(data.finishDate)}`}
                             countDown={`${countDay(data.finishDate) < 0 ? 0 : countDay(data.finishDate)}`} />
                     ))
                 }

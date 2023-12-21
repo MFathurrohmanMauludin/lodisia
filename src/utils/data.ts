@@ -68,7 +68,7 @@ const ListWork = () => [
     {
         id: 1,
         name: 'Google Cloud Engineer',
-        company: 'Google Indonesia', // mengambil data dari list perusahaan
+        company: 'PT Google Indonesia', // mengambil data dari list perusahaan
         imgUrl: 'https://i.ibb.co/741z5Kz/google-hiring.jpg',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.png',
         levelWork: 'Executive',
@@ -145,7 +145,7 @@ const ListWork = () => [
     {
         id: 4,
         name: 'Desain Grafis & Layout Buku',
-        company: 'Penerbit Mega Cakrawala', // mengambil data dari list perusahaan
+        company: 'CV Penerbit Mega Cakrawala', // mengambil data dari list perusahaan
         imgUrl: 'https://i.ibb.co/CPcGhFf/poster-lowongan.jpg',
         logo: 'https://i.ibb.co/HXk4bY8/logo-mega-cakrawala-1.jpg',
         levelWork: 'Entry Level',
@@ -168,7 +168,7 @@ const ListWork = () => [
     {
         id: 5,
         name: 'Desain Grafis & Layout Buku',
-        company: 'Penerbit Mega Cakrawala', // mengambil data dari list perusahaan
+        company: 'CV Win', // mengambil data dari list perusahaan
         imgUrl: 'https://i.ibb.co/g6PrJtb/accounting-poster.jpg',
         logo: 'https://i.ibb.co/fXVD0DC/logo-win.png',
         levelWork: 'Entry Level',

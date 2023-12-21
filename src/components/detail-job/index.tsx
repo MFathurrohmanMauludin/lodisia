@@ -20,17 +20,12 @@ const InfoJob = (getData: Props) => {
 
     const matchId = regexId.exec(search);
     const getId = matchId ? matchId[1] : 0;
-    // console.log(getId);
-
-    // console.log(getData.data.filter((job: any) => job.id === parseInt(`${getId}`) && job.company === company));
-
 
     const filterData = getData.data.filter((job: any) => job.id === parseInt(`${getId}`) && job.company === company);
     return (
         <>
             <BannerJobs
-                data={filterData[0]}
-            />
+                data={filterData[0]} anotherJobs={getData.data} />
         </>
     )
 }

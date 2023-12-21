@@ -19,11 +19,12 @@ interface Props {
         salary: string,
         disability: any,
         jobDesc: any,
-    }
+    };
+
+    anotherJobs: any;
 }
 
 const BannerJobs = (getData: Props) => {
-    const logo = "https://source.unsplash.com/520x340?Google";
     const banner = "https://source.unsplash.com/1200x760?google+place";
 
     return (
@@ -35,7 +36,7 @@ const BannerJobs = (getData: Props) => {
                     <div className="flex flex-col justify-center items-center gap-y-4">
                         <Avatar
                             className="w-[100px] h-[100px]"
-                            src={logo}
+                            src={getData.data.logo}
                             size="lg"
                             radius="full"
                             alt="logo perusahaan" />
@@ -77,7 +78,7 @@ const BannerJobs = (getData: Props) => {
                             <div className="space-x-2">
                                 {
                                     getData.data.disability.map((data: any) => (
-                                        <span className="border-1 border-slate-400 px-3 py-1 tracking-wide rounded-full" tabIndex={0} key={data.id}>
+                                        <span className="border-1 border-slate-400 px-3 py-1 tracking-wide text-[14px] rounded-full" tabIndex={0} key={data.id}>
                                             {data.name}
                                         </span>
                                     ))
@@ -108,7 +109,7 @@ const BannerJobs = (getData: Props) => {
                 </div>
             </div>
 
-            <JobDesc desc={getData.data.jobDesc} />
+            <JobDesc desc={getData.data.jobDesc} listJobs={getData.anotherJobs} />
         </>
     )
 }
