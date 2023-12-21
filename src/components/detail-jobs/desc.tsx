@@ -12,7 +12,7 @@ const JobDesc = (getData: Props) => {
 
     return (
         <>
-            <div className="py-16 px-16 bg-white -mt-5 rounded-t-[24px]">
+            <div className="py-16 px-16 sm:p-8 bg-white -mt-5 rounded-t-[24px]">
                 <div className="flex sm:flex-wrap sm:gap-y-8 gap-x-4">
                     <div className="flex-shrink">
                         <span className="text-[21px] tracking-wide font-extrabold">Tentang pekerjaan</span>
