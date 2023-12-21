@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import AnotherJobs from "../another-job";
 
 interface Props {
     desc: string;
@@ -20,7 +21,9 @@ const JobDesc = (getData: Props) => {
                     </div>
                     <div className="flex-shrink-0">
                         <span className="text-[21px] tracking-wide font-extrabold">Pekerjaan Lainnya</span>
-                        <p>Sedang proses</p>
+                        <div className="gax-y-4">
+                            <AnotherJobs />
+                        </div>
                     </div>
                 </div>
             </div>
