@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Button, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react"
-import AccesibileButton from "../button/AccesibilityButton"
-import { useState } from "react"
+import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
+import AccesibileButton from "../button/AccesibilityButton";
+import { useEffect, useState } from "react";
 
 const Accesibility = () => {
     const [isOpen, setOpen] = useState(false);
@@ -11,8 +11,32 @@ const Accesibility = () => {
     const [isBlind, setBlind] = useState(false);
 
     // color blind
-    const getBody = document.getElementById('root');
-    isColorBlind ? getBody?.setAttribute('class', 'saturate-0') : getBody?.setAttribute('class', '')
+    const getBody = document.querySelector('body');
+    isColorBlind ? getBody?.setAttribute('class', 'saturate-0') : getBody?.setAttribute('class', '');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Check the scroll position using window.scrollY
+            const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+            // Adjust the threshold value based on when you want to close the modal
+            const scrollThreshold = 50;
+
+            // Close the modal if the scroll position exceeds the threshold
+            if (scrollY > scrollThreshold) {
+                setOpen(false);
+            }
+        };
+
+        // Attach the scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
 
     return (
         <>
