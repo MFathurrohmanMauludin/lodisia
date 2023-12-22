@@ -188,6 +188,52 @@ const ListWork = () => [
         createdBy: 'Akihisa Yuko',
         createdAt: '12/14/2023',
     },
+    {
+        id: 5,
+        name: 'Desain Grafis & Layout Buku',
+        company: 'CV Win', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/g6PrJtb/accounting-poster.jpg',
+        logo: 'https://i.ibb.co/fXVD0DC/logo-win.png',
+        levelWork: 'Entry Level',
+        styleWork: 'On-site',
+        typeContract: 'Casual',
+        location: 'Yogyakarta',
+        startDate: '12/1/2023',
+        finishDate: '12/10/2023',
+        jobDesc: 'deskripsi pekerjaan',
+        salary: '',
+        disability: [
+            {
+                id: 1,
+                name: "Tuna daksa",
+            }
+        ],
+        createdBy: 'Akihisa Yuko',
+        createdAt: '12/14/2023',
+    },
+    {
+        id: 5,
+        name: 'Desain Grafis & Layout Buku',
+        company: 'CV Win', // mengambil data dari list perusahaan
+        imgUrl: 'https://i.ibb.co/g6PrJtb/accounting-poster.jpg',
+        logo: 'https://i.ibb.co/fXVD0DC/logo-win.png',
+        levelWork: 'Entry Level',
+        styleWork: 'On-site',
+        typeContract: 'Casual',
+        location: 'Yogyakarta',
+        startDate: '12/1/2023',
+        finishDate: '12/10/2023',
+        jobDesc: 'deskripsi pekerjaan',
+        salary: '',
+        disability: [
+            {
+                id: 1,
+                name: "Tuna daksa",
+            }
+        ],
+        createdBy: 'Akihisa Yuko',
+        createdAt: '12/14/2023',
+    },
 ];
 
 const CompanyList = () => [

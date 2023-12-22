@@ -24,12 +24,14 @@ const WorkList = (getData: Props) => {
 
     const descData = getData.work.sort((a: any, b: any) => dayDate(b.startDate) - dayDate(a.startDate));
 
+    const limitData = pathname === '/' ? descData.slice(0, 6) : descData;
+
     return (
         <>
             <HeadLine headLine={getData.headLine} />
             <div className={`grid sm:grid-cols-1 lg:grid-cols-2 grid-cols-3 grid-flow-row gap-4`}>
                 {
-                    descData.map((data: any) => (
+                    limitData.map((data: any) => (
                         <CardJob
                             key={data.id}
                             id={data.id}
