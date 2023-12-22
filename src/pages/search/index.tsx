@@ -44,6 +44,7 @@ class SearchPage extends React.Component<Props, State>{
                 <div className="px-16 pb-16 md:px-4 sm:px-4">
                     <WorkList work={this.state.filterData.length <= 0 ? this.state.workData : this.state.filterData} headLine={"Lowongan Tersedia"} />
                 </div>
+
             </>
         )
     }

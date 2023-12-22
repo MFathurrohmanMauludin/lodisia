@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Button, Link } from "@nextui-org/react";
+import { Button, Link, Pagination } from "@nextui-org/react";
 import CardJob from "../card-job"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
@@ -70,7 +70,10 @@ const WorkList = (getData: Props) => {
                             <div className="grow h-[2px] bg-slate-400/30 inline-block rounded-full"></div>
                         </div>
                     </div>
-                    : ''
+                    :
+                    <div className="flex justify-center pt-8">
+                        <Pagination showControls total={10} initialPage={1} />
+                    </div>
             }
         </>
     )
