@@ -68,3 +68,8 @@ a.detailWork:focus-within svg#arrowButton {
 #job-desc p {
     margin-top: 16px;
 }
+
+/* disqus */
+div#disqus_thread iframe[sandbox] {
+    max-height: 0px !important;
+}

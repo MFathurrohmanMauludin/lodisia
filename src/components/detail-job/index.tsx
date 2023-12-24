@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useLocation } from "react-router-dom";
 import BannerJobs from "./banner";
+import DisqusComponent from "../disqus";
 
 interface Props {
     data: any;
@@ -26,6 +27,7 @@ const InfoJob = (getData: Props) => {
         <>
             <BannerJobs
                 data={filterData[0]} anotherJobs={getData.data} />
+            <DisqusComponent />
         </>
     )
 }
