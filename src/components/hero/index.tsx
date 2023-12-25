@@ -1,6 +1,6 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Button, Image } from "@nextui-org/react"
+import { Button, Image, Link } from "@nextui-org/react"
 
 const Hero = () => {
     const imgUrl = 'https://i.ibb.co/NrM6pps/loker.webp';
@@ -14,7 +14,7 @@ const Hero = () => {
                         Dengan sepenuh hati, kami membantu para disabilitas untuk menemukan lapangan pekerjaan yang sesuai dengan minat, bakat dan kemampuannya tanpa harus menunda terlalu lama
                     </div>
                     <div className="flex items-center">
-                        <Button size="lg" radius="full" color="primary" variant="shadow">
+                        <Button href="/cari-pekerjaan" as={Link} size="lg" radius="full" color="primary" variant="shadow">
                             <FontAwesomeIcon icon={faSearch} /> <span className="font-medium">Ayo temukan</span>
                         </Button>
                     </div>
