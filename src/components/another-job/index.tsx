@@ -43,7 +43,7 @@ const AnotherJobs = (getData: Props) => {
                                         href={`detail-pekerjaan?name=${job.name}&company=${job.company.replace(/ +/g, '+')}?id=${job.id}`}
                                         className={`${job.name.length <= 19 ? 'w-auto' : 'max-w-[20ch]'} line-clamp-1 overflow-hidden font-semibold tracking-wider`}>{job.name}</a>
                                     <div className="inline-block p-[2px] bg-gray-500 rounded-full"></div>
-                                    <span className="text-tiny">{job.levelWork}</span>
+                                    <span className="text-tiny sm:line-clamp-1">{job.levelWork}</span>
                                 </div>
                                 <span className="text-tiny text-gray-500 flex items-center gap-x-1"><FontAwesomeIcon icon={faBuilding} />{job.company}</span>
                             </div>

@@ -16,7 +16,7 @@ const JobDesc = (getData: Props) => {
                         <span className="text-[21px] tracking-wide font-extrabold">Tentang pekerjaan</span>
                         <div className="mt-4" id="job-desc" dangerouslySetInnerHTML={{ __html: getData.desc }} />
                     </div>
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 sm:w-full">
                         <span className="text-[21px] tracking-wide font-extrabold">Pekerjaan Lainnya</span>
                         <div className="gax-y-4">
                             <AnotherJobs listJobs={getData.listJobs} />
