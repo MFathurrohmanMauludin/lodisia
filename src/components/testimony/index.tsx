@@ -18,7 +18,7 @@ interface Props {
 const Testimony = (getData: Props) => {
     return (
         <div className="relative flex justify-items-center px-16 sm:px-4" id="slideButton">
-            <div className="absolute w-[90%] top-[50%] z-20">
+            <div className="absolute sm:hidden w-[90%] top-[50%] z-20">
                 <div className="flex justify-between" id="slideActive">
                     <Button
                         isIconOnly
