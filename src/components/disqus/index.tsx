@@ -21,7 +21,7 @@ const DisqusComponent = () => {
                             url: `https://lodisia-netlify-app.disqus.com/embed.js`,
                             identifier: `${getId}`,
                             title: 'komentar',
-                            language: 'id' //e.g. for Traditional Chinese (Taiwan)	
+                            language: 'id' // indonesia language
                         }
                     }
                 />

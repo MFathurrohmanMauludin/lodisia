@@ -2,8 +2,9 @@
 import { faStopCircle, faHeart } from "@fortawesome/free-regular-svg-icons"
 import { faLocationArrow, faWallet, faBriefcase, faPaperclip } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Avatar, Button } from "@nextui-org/react"
+import { Avatar, Button, useDisclosure } from "@nextui-org/react"
 import JobDesc from "./desc"
+import Apply from "../apply"
 
 interface Props {
     data: {
@@ -26,6 +27,7 @@ interface Props {
 
 const BannerJobs = (getData: Props) => {
     const banner = "https://source.unsplash.com/1200x760?google+place";
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
         <>
@@ -94,6 +96,7 @@ const BannerJobs = (getData: Props) => {
                                 radius="full"
                                 size="md"
                                 startContent={<FontAwesomeIcon fontSize={21} icon={faPaperclip} />}
+                                onPress={onOpen}
                             >Lamar</Button>
                             <Button
                                 className="text-[16px]"
@@ -104,12 +107,12 @@ const BannerJobs = (getData: Props) => {
                                 startContent={<FontAwesomeIcon fontSize={21} icon={faHeart} aria-label="ikon favorite" />}
                             >Simpan</Button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <JobDesc desc={getData.data.jobDesc} listJobs={getData.anotherJobs} />
+            <Apply open={isOpen} onOpenChange={onOpenChange} />
         </>
     )
 }
