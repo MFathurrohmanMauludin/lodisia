@@ -1,10 +1,19 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { faInstagram, faTiktok, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Avatar, Button, Link } from "@nextui-org/react"
+import { Avatar, Button, Link } from "@nextui-org/react";
 import InfoCompany from "../../components/detail-company";
+// import { CompanyList } from "../../utils/data";
+import { useLocation } from "react-router-dom";
 
 const DetailCompany = () => {
+    const location = useLocation();
+    const { search } = location;
     const imgUrl = "https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp";
+
+    // const filter = CompanyList().filter((data: any) => data.)
+
+    console.log(search);
 
     return (
         <>
@@ -20,7 +29,20 @@ const DetailCompany = () => {
                     </div>
                 </div>
                 <div className="flex-shrink px-4">
-                    <InfoCompany />
+                    <InfoCompany
+                        company={undefined}
+                        jobs={undefined}
+                        posts={undefined}
+                        detail={{
+                            about: "",
+                            location: "",
+                            name: "",
+                            operation: "",
+                            sector: "",
+                            socmed: undefined,
+                            url: "",
+                            ceo: ""
+                        }} />
                     <div className="flex flex-row pt-4">
                         <span className="text-[18px] font-semibold">Perusahaan Lainnya</span>
                     </div>

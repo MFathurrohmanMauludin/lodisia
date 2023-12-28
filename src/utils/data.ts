@@ -196,8 +196,43 @@ const CompanyList = () => [
         name: 'PT Tokopedia',
         banner: 'https://i.ibb.co/f0cZkX8/tokopedia.jpg',
         logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
-        jobs: 1,
+        jobs: [
+            {
+                id: 1,
+                name: 'Software Engineer',
+                company: 'PT Tokopedia', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
+                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
+                levelWork: 'Mid-Senior Level',
+                styleWork: 'On-site',
+                typeContract: 'Full-time',
+                location: 'Jakarta',
+                startDate: '12/23/2023',
+                finishDate: '1/10/2024',
+                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
+                salary: '10.000.000 - 15.000.000',
+                disability: [
+                    {
+                        id: 1,
+                        name: "Tuna daksa",
+                    }
+                ],
+                createdBy: 'Vladilena Milize',
+                createdAt: '12/14/2023',
+            }
+        ],
         posts: 5,
+        url: 'https://www.tokopedia.com/',
+        sector: 'E-Commerce',
+        location: 'Jakarta, Indonesia',
+        operation: '2009',
+        ceo: 'William Tanuwijaya',
+        socmed: {
+            twitter: 'https://twitter.com/tokopedia',
+            tiktok: 'https://www.tiktok.com/@tokopedia?lang=en',
+            instagram: 'https://www.instagram.com/tokopedia',
+            youtube: 'https://www.youtube.com/@tokopedia',
+        },
         about: 'Tokopedia merupakan salah satu situs jual beli online di Indonesia yang perkembangannya terhitung cepat dan memiliki tujuan untuk memudahkan setiap masyarakat',
     },
     {
@@ -205,8 +240,43 @@ const CompanyList = () => [
         name: 'PT Pertamina (Persero)',
         banner: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/PertaminaHO1.jpg/500px-PertaminaHO1.jpg',
         logo: 'https://static.republika.co.id/uploads/images/inpicture_slide/pertamina-_131128123540-120.jpg',
-        jobs: 7,
+        jobs: [
+            {
+                id: 1,
+                name: 'Software Engineer',
+                company: 'PT Tokopedia', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
+                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
+                levelWork: 'Mid-Senior Level',
+                styleWork: 'On-site',
+                typeContract: 'Full-time',
+                location: 'Jakarta',
+                startDate: '12/23/2023',
+                finishDate: '1/10/2024',
+                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
+                salary: '10.000.000 - 15.000.000',
+                disability: [
+                    {
+                        id: 1,
+                        name: "Tuna daksa",
+                    }
+                ],
+                createdBy: 'Vladilena Milize',
+                createdAt: '12/14/2023',
+            }
+        ],
         posts: 5,
+        url: 'https://www.tokopedia.com/',
+        sector: 'E-Commerce',
+        location: 'Jakarta, Indonesia',
+        operation: '2009',
+        ceo: 'William Tanuwijaya',
+        socmed: {
+            twitter: '',
+            tiktok: '',
+            instagram: '',
+            youtube: '',
+        },
         about: 'tentang perusahaan',
     },
     {
@@ -214,8 +284,43 @@ const CompanyList = () => [
         name: 'PT Kereta Api Indonesia',
         banner: 'https://emitennews.com/uploads/news/image_1675772735.png',
         logo: 'https://keretaapikita.com/wp-content/uploads/2020/09/Logo-Baru-PT-KAI.jpg',
-        jobs: 4,
+        jobs: [
+            {
+                id: 1,
+                name: 'Software Engineer',
+                company: 'PT Tokopedia', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
+                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
+                levelWork: 'Mid-Senior Level',
+                styleWork: 'On-site',
+                typeContract: 'Full-time',
+                location: 'Jakarta',
+                startDate: '12/23/2023',
+                finishDate: '1/10/2024',
+                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
+                salary: '10.000.000 - 15.000.000',
+                disability: [
+                    {
+                        id: 1,
+                        name: "Tuna daksa",
+                    }
+                ],
+                createdBy: 'Vladilena Milize',
+                createdAt: '12/14/2023',
+            }
+        ],
         posts: 3,
+        url: 'https://www.tokopedia.com/',
+        sector: 'E-Commerce',
+        location: 'Jakarta, Indonesia',
+        operation: '2009',
+        ceo: 'William Tanuwijaya',
+        socmed: {
+            twitter: '',
+            tiktok: '',
+            instagram: '',
+            youtube: '',
+        },
         about: 'tentang perusahaan',
     },
     {
@@ -223,8 +328,43 @@ const CompanyList = () => [
         name: 'PT PLN (Persero)',
         banner: 'https://www.tambang.co.id/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-13.05.51.jpeg',
         logo: 'https://pln24.files.wordpress.com/2013/07/perusahaan_listrik_negara.png',
-        jobs: 4,
+        jobs: [
+            {
+                id: 1,
+                name: 'Software Engineer',
+                company: 'PT Tokopedia', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
+                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
+                levelWork: 'Mid-Senior Level',
+                styleWork: 'On-site',
+                typeContract: 'Full-time',
+                location: 'Jakarta',
+                startDate: '12/23/2023',
+                finishDate: '1/10/2024',
+                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
+                salary: '10.000.000 - 15.000.000',
+                disability: [
+                    {
+                        id: 1,
+                        name: "Tuna daksa",
+                    }
+                ],
+                createdBy: 'Vladilena Milize',
+                createdAt: '12/14/2023',
+            }
+        ],
         posts: 3,
+        url: 'https://www.tokopedia.com/',
+        sector: 'E-Commerce',
+        location: 'Jakarta, Indonesia',
+        operation: '2009',
+        ceo: 'William Tanuwijaya',
+        socmed: {
+            twitter: '',
+            tiktok: '',
+            instagram: '',
+            youtube: '',
+        },
         about: 'tentang perusahaan',
     },
 ]

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Avatar, Card, CardBody, Image } from "@nextui-org/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +9,7 @@ interface Props {
     name: string;
     banner: string;
     logo: string;
-    job: number;
+    job: any;
     post: number;
     about: string;
 }
@@ -40,7 +41,7 @@ const CompanyCard = (data: Props) => {
                 <CardBody className="overflow-hidden -mt-3">
                     <a href={`/detail-perusahaan?name=${data.name}`} className="text-[18px] tracking-wide capitalize font-medium text-blue-400" tabIndex={0}>{data.name}</a>
                     <div className="flex items-center gap-x-4 text-gray-500" tabIndex={0}>
-                        <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faBriefcase} /> <span>{data.job} Loker Tersedia</span></div>
+                        <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faBriefcase} /> <span>{data.job.length} Loker Tersedia</span></div>
                         <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faNewspaper} /> <span>{data.post} Posting</span></div>
                     </div>
 
