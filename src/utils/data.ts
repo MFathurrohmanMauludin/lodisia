@@ -199,6 +199,29 @@ const CompanyList = () => [
         jobs: [
             {
                 id: 1,
+                name: 'Optimization Manager',
+                company: 'PT Tokopedia', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
+                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
+                levelWork: 'Entry Level',
+                styleWork: 'On-site',
+                typeContract: 'Full-time',
+                location: 'Jakarta',
+                startDate: '12/01/2023',
+                finishDate: '01/01/2024',
+                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Optimization Manager</em></strong></p><p><strong>What You Will Do</strong></p><ul><li>Act as a Tokopedia Marketing Solutions expert and have a deep understanding of how to optimize Tokopedia marketing advertisement tools.</li><li>Continuously find ways to optimize clients’ campaign performance using Tokopedia internal tools.</li><li>Analyze performance, generate a report on campaign results, and present it to clients.</li><li>Make sure campaign delivery is running as expected.</li><li>Will work closely with the Account Manager, Relationship Manager, channel owner, and tech team for bug reports for any issues that happen with campaigns.</li><li>Constantly evolve best practices and share them with internal/external stakeholders</li><li>Collaborate closely with Account Managers to grow the business and align priorities</li></ul><p><strong>What You Will Need</strong></p><ul><li>A minimum of 1 year of experience in Marketing, or fresh graduates are welcome to apply.</li><li>Strong interest and/or experience in operations, analytics, working with data, and reporting.</li><li>Experience working on performance metrics in the digital advertisement.</li><li>Results-oriented and comfortable working & delivering against sales targets.</li></ul><p><strong>Preferred Skills</strong></p><ul><li>Prior experience in using advertisement within e-commerce and being able to strategize internal eCommerce advertisement tools such as TopAds will be a plus.</li><li>Ability to work with big brands to SMEs and strive for better results for clients</li><li>Able to work with the team.</li></ul></span></div>',
+                salary: '10.000.000 - 15.000.000',
+                disability: [
+                    {
+                        id: 1,
+                        name: "Tuna daksa",
+                    }
+                ],
+                createdBy: 'Mikey Mouse',
+                createdAt: '12/14/2023',
+            },
+            {
+                id: 2,
                 name: 'Software Engineer',
                 company: 'PT Tokopedia', // mengambil data dari list perusahaan
                 imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
@@ -219,7 +242,7 @@ const CompanyList = () => [
                 ],
                 createdBy: 'Vladilena Milize',
                 createdAt: '12/14/2023',
-            }
+            },
         ],
         posts: 5,
         url: 'https://www.tokopedia.com/',

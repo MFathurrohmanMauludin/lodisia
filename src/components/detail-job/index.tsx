@@ -23,6 +23,8 @@ const InfoJob = (getData: Props) => {
     const getId = matchId ? matchId[1] : 0;
 
     const filterData = getData.data.filter((job: any) => job.id === parseInt(`${getId}`) && job.company === company);
+    console.log(filterData);
+
     return (
         <>
             <BannerJobs
