@@ -265,26 +265,30 @@ const CompanyList = () => [
         logo: 'https://static.republika.co.id/uploads/images/inpicture_slide/pertamina-_131128123540-120.jpg',
         jobs: [
             {
-                id: 1,
-                name: 'Software Engineer',
-                company: 'PT Tokopedia', // mengambil data dari list perusahaan
-                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
-                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
-                levelWork: 'Mid-Senior Level',
+                id: 3,
+                name: 'Frontend Developer',
+                company: 'PT Shopee internasional Indonesia', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/jVyp5mW/shopee.jpg',
+                logo: 'https://i.ibb.co/bryBvh9/logo-shopee.png',
+                levelWork: 'Entry Level',
                 styleWork: 'On-site',
                 typeContract: 'Full-time',
-                location: 'Jakarta',
-                startDate: '12/23/2023',
-                finishDate: '1/10/2024',
-                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
-                salary: '10.000.000 - 15.000.000',
+                location: 'Jakarta Utara',
+                startDate: '12/13/2023',
+                finishDate: '12/25/2023',
+                jobDesc: 'deskripsi pekerjaan',
+                salary: 'gaji pekerjaan',
                 disability: [
                     {
                         id: 1,
                         name: "Tuna daksa",
-                    }
+                    },
+                    {
+                        id: 2,
+                        name: "Tuna rungu",
+                    },
                 ],
-                createdBy: 'Vladilena Milize',
+                createdBy: 'Akihisa Yuko',
                 createdAt: '12/14/2023',
             }
         ],
@@ -309,26 +313,26 @@ const CompanyList = () => [
         logo: 'https://keretaapikita.com/wp-content/uploads/2020/09/Logo-Baru-PT-KAI.jpg',
         jobs: [
             {
-                id: 1,
-                name: 'Software Engineer',
-                company: 'PT Tokopedia', // mengambil data dari list perusahaan
-                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
-                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
-                levelWork: 'Mid-Senior Level',
+                id: 4,
+                name: 'Desain Grafis & Layout Buku',
+                company: 'CV Penerbit Mega Cakrawala', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/CPcGhFf/poster-lowongan.jpg',
+                logo: 'https://i.ibb.co/HXk4bY8/logo-mega-cakrawala-1.jpg',
+                levelWork: 'Entry Level',
                 styleWork: 'On-site',
-                typeContract: 'Full-time',
-                location: 'Jakarta',
-                startDate: '12/23/2023',
-                finishDate: '1/10/2024',
-                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
-                salary: '10.000.000 - 15.000.000',
+                typeContract: 'Part-time',
+                location: 'Yogyakarta',
+                startDate: '12/5/2023',
+                finishDate: '12/28/2023',
+                jobDesc: 'deskripsi pekerjaan',
+                salary: 'gaji pekerjaan',
                 disability: [
                     {
                         id: 1,
                         name: "Tuna daksa",
                     }
                 ],
-                createdBy: 'Vladilena Milize',
+                createdBy: 'Akihisa Yuko',
                 createdAt: '12/14/2023',
             }
         ],
@@ -353,26 +357,26 @@ const CompanyList = () => [
         logo: 'https://pln24.files.wordpress.com/2013/07/perusahaan_listrik_negara.png',
         jobs: [
             {
-                id: 1,
-                name: 'Software Engineer',
-                company: 'PT Tokopedia', // mengambil data dari list perusahaan
-                imgUrl: 'https://i.ibb.co/PGR7CnK/Lowongan-Pekerjaan-Tokopedia.jpg',
-                logo: 'https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp',
-                levelWork: 'Mid-Senior Level',
+                id: 5,
+                name: 'Desain Grafis & Layout Buku',
+                company: 'CV Win', // mengambil data dari list perusahaan
+                imgUrl: 'https://i.ibb.co/g6PrJtb/accounting-poster.jpg',
+                logo: 'https://i.ibb.co/fXVD0DC/logo-win.png',
+                levelWork: 'Entry Level',
                 styleWork: 'On-site',
-                typeContract: 'Full-time',
-                location: 'Jakarta',
-                startDate: '12/23/2023',
-                finishDate: '1/10/2024',
-                jobDesc: '<div class="ql-content ql-editor"><span><p><strong><em>Software Engineer</em></strong></p><p>Unit kerja Solution Engineering bertanggung jawab untuk mengembangkan serta menyempurnakan perangkat lunak</p><p><strong>Kualifikasi</strong></p><ul><li>Memiliki Pengalaman 1-3 Tahun.</li><li>Memiliki pemahaman Object Oriented Programming (OOP) Minimal dalam satu bahasa pemograman.</li><li>Memiliki Pengetahuan MS SQL, Postgre atau Database Lainnya.</li><li>Memiliki Pengetahuan tentang Restful API dan Windows Services.</li><li>Memiliki pengetahuan mengenai Microservices adalah nilai plus.</li><li>Memahami siklus SDLC.</li><li>Memiliki kemampuan komunikasi yang baik.</li></ul><h2><br></h2></span></div>',
-                salary: '10.000.000 - 15.000.000',
+                typeContract: 'Casual',
+                location: 'Yogyakarta',
+                startDate: '12/1/2023',
+                finishDate: '12/10/2023',
+                jobDesc: 'deskripsi pekerjaan',
+                salary: '',
                 disability: [
                     {
                         id: 1,
                         name: "Tuna daksa",
                     }
                 ],
-                createdBy: 'Vladilena Milize',
+                createdBy: 'Akihisa Yuko',
                 createdAt: '12/14/2023',
             }
         ],

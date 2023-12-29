@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import { ListWork } from "../../utils/data";
+import { CompanyList } from "../../utils/data";
 import InfoJob from "../../components/detail-job";
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 }
 
 interface State {
-    workList: any;
+    companyList: any;
 }
 
 class DetailJobs extends React.Component<Props, State>{
@@ -16,14 +16,14 @@ class DetailJobs extends React.Component<Props, State>{
         super(props);
 
         this.state = {
-            workList: ListWork(),
+            companyList: CompanyList(),
         }
     }
 
     render() {
         return (
             <>
-                <InfoJob data={this.state.workList} />
+                <InfoJob data={this.state.companyList.flatMap((data: any) => data.jobs)} />
             </>
         )
     }

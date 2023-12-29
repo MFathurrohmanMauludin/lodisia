@@ -1,5 +1,5 @@
 import React from "react";
-import { ListWork } from "../../utils/data";
+import { CompanyList } from "../../utils/data";
 import WorkList from "../../components/list-work";
 import SearchField from "../../components/search";
 
@@ -18,13 +18,14 @@ class SearchPage extends React.Component<Props, State>{
         super(props);
 
         this.state = {
-            workData: ListWork(),
+            workData: CompanyList(),
             filterData: [],
         }
     }
 
     filterJobsWithSearch = (event: any) => {
-        const getData = this.state.workData.filter((data: any) => data.name.toLowerCase().includes(event.target.value));
+        const workData = this.state.workData.flatMap((data: any) => data.jobs);
+        const getData = workData.filter((job: any) => job.name.toLowerCase().includes(event.target.value));
         this.setState({ filterData: getData });
     }
 
@@ -42,7 +43,8 @@ class SearchPage extends React.Component<Props, State>{
                     control={this.filterJobsWithSearch}
                 />
                 <div className="px-16 pb-16 md:px-4 sm:px-4">
-                    <WorkList work={this.state.filterData.length <= 0 ? this.state.workData : this.state.filterData} headLine={"Lowongan Tersedia"} />
+                    <WorkList work={this.state.filterData.length <= 0 ? this.state.workData.flatMap((data: any) => data.jobs)
+                        : this.state.filterData} headLine={"Lowongan Tersedia"} />
                 </div>
 
             </>
