@@ -8,11 +8,11 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
 interface Props {
-    work: any;
+    jobs: any;
     headLine: string;
 }
 
-const WorkList = (getData: Props) => {
+const JobList = (getData: Props) => {
     // convert date
     const dayDate = (data: number) => new Date(data).getDate();
     const yearDate = (data: number) => new Date(data).getFullYear();
@@ -26,7 +26,7 @@ const WorkList = (getData: Props) => {
     const { pathname } = location;
 
     // limit show data
-    const descData = getData.work.sort((a: any, b: any) => dayDate(b.startDate) - dayDate(a.startDate));
+    const descData = getData.jobs.sort((a: any, b: any) => dayDate(b.startDate) - dayDate(a.startDate));
     const limitData = pathname === '/' ? descData.slice(0, 6) : descData;
 
 
@@ -36,9 +36,9 @@ const WorkList = (getData: Props) => {
 
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const totalPage = Math.ceil(getData.work.length / itemsPerPage);
+    const totalPage = Math.ceil(getData.jobs.length / itemsPerPage);
 
-    const currentItems = getData.work.slice(indexOfFirstItem, indexOfLastItem);
+    const currentItems = getData.jobs.slice(indexOfFirstItem, indexOfLastItem);
 
     const handlePageChange = (pageNumber: number) => {
         setCurrentPage(pageNumber);
@@ -123,4 +123,4 @@ const WorkList = (getData: Props) => {
     )
 }
 
-export default WorkList
+export default JobList

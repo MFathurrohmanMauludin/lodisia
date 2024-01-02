@@ -1,6 +1,6 @@
 import React from "react";
 import { CompanyList } from "../../utils/data";
-import WorkList from "../../components/list-work";
+import JobList from "../../components/list-work";
 import SearchField from "../../components/search";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -43,7 +43,7 @@ class SearchPage extends React.Component<Props, State>{
                     control={this.filterJobsWithSearch}
                 />
                 <div className="px-16 pb-16 md:px-4 sm:px-4">
-                    <WorkList work={this.state.filterData.length <= 0 ? this.state.workData.flatMap((data: any) => data.jobs)
+                    <JobList jobs={this.state.filterData.length <= 0 ? this.state.workData.flatMap((data: any) => data.jobs)
                         : this.state.filterData} headLine={"Lowongan Tersedia"} />
                 </div>
 
