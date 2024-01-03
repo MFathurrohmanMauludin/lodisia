@@ -36,7 +36,7 @@ const DetailCompany = () => {
                         <div className="flex flex-col">
                             <span className="font-semibold tracking-wide text-[16px] text-slate-700">{detailCompany.name}
                             </span>
-                            <span className="text-[12px]">120K Follower</span>
+                            <span className="text-[12px]">120K Followers</span>
                         </div>
 
                         <Button variant="solid" size="sm" color="primary" radius="full" startContent={<FontAwesomeIcon icon={faPlus} />}>Follow</Button>
