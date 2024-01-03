@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Tabs, Tab, Card, CardBody, Button, Link } from '@nextui-org/react';
 import CardJob from '../card-job';
+import CardPosting from '../card-post';
 
 interface Props {
     company: any;
@@ -100,11 +101,7 @@ const InfoCompany = (getData: Props) => {
 
                     {/* posts section */}
                     <Tab key="posts" title="Postingan">
-                        <Card>
-                            <CardBody tabIndex={0}>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </CardBody>
-                        </Card>
+                        <CardPosting />
                     </Tab>
                 </Tabs>
             </div>

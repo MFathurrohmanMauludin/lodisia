@@ -32,14 +32,14 @@ const DetailCompany = () => {
                     <Avatar className="w-24 h-24" src={detailCompany.logo} showFallback name="PNG" />
 
                     {/* follow */}
-                    <div className="flex flex-row items-center gap-x-4 my-4">
+                    <div className="flex flex-row items-center gap-x-4 my-4" tabIndex={0}>
                         <div className="flex flex-col">
-                            <span className="font-semibold text-lg text-slate-700">{detailCompany.name}
+                            <span className="font-semibold tracking-wide text-[16px] text-slate-700">{detailCompany.name}
                             </span>
-                            <span>120K Follower</span>
+                            <span className="text-[12px]">120K Follower</span>
                         </div>
 
-                        <Button variant="solid" color="primary" radius="full" startContent={<FontAwesomeIcon icon={faPlus} />}>Follow</Button>
+                        <Button variant="solid" size="sm" color="primary" radius="full" startContent={<FontAwesomeIcon icon={faPlus} />}>Follow</Button>
                     </div>
 
                     {/* social media */}
