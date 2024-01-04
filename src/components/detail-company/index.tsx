@@ -28,8 +28,6 @@ const InfoCompany = (getData: Props) => {
     const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { day: 'numeric', month: 'long', year: 'numeric' });
     const countDay = (finish: number) => Math.ceil((new Date(finish).getTime() - new Date().getTime()) / ((1000 * 3600) * 24));
 
-    console.log(getData.jobs);
-
 
     return (
         <>
@@ -101,7 +99,11 @@ const InfoCompany = (getData: Props) => {
 
                     {/* posts section */}
                     <Tab key="posts" title="Postingan">
-                        <CardPosting />
+                        <div className="grid grid-cols-3 gap-4">
+                            <CardPosting />
+                            <CardPosting />
+                            <CardPosting />
+                        </div>
                     </Tab>
                 </Tabs>
             </div>
