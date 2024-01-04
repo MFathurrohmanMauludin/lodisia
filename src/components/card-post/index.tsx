@@ -1,10 +1,9 @@
-import { faDiscord, faFacebook, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faBell, faHeart as faHeartNoSolid, faShareSquare } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faHeartSolid, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Popover, PopoverContent, PopoverTrigger, Snippet, useDisclosure } from "@nextui-org/react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { ShareFacebook, ShareTelegram, ShareWhatsapp, ShareXTwitter } from "../button/ShareButton";
 
 const CardPosting = () => {
     const [isFollowed, setIsFollowed] = useState(false);
@@ -40,15 +39,16 @@ const CardPosting = () => {
                     </Button>
                 </CardHeader>
 
+                {/* content */}
                 <CardBody className="px-3 py-0 text-small text-default-400">
 
                     {/* description */}
-                    <p className="line-clamp-5">
+                    <p className="line-clamp-5 text-gray-700">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum laudantium sed quo atque, enim accusamus asperiores incidunt amet consequuntur deleniti repellat vitae adipisci temporibus.
                     </p>
 
                     {/* tag */}
-                    <span className="pt-2 space-x-3">
+                    <span className="pt-2 text-[12px] space-x-3 text-gray-700 font-semibold tracking-wide">
                         <span className="py-2" aria-label="computer" role="img">
                             #FrontendWithZoey 💻
                         </span>
@@ -125,11 +125,11 @@ const CardPosting = () => {
                             <PopoverContent>
                                 <div className="px-1 py-2">
                                     <div className="text-small font-bold pb-2">Ayo bagikan</div>
-                                    <div className="flex items-center gap-x-4">
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faFacebook} />} isIconOnly />
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faXTwitter} />} isIconOnly />
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faInstagram} />} isIconOnly />
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faDiscord} />} isIconOnly />
+                                    <div className="flex justify-center items-center gap-x-4">
+                                        <ShareWhatsapp />
+                                        <ShareXTwitter />
+                                        <ShareFacebook />
+                                        <ShareTelegram />
                                     </div>
                                     <Snippet symbol="#" codeString="http://127.0.0.1:5173/detail-perusahaan?name=PT%20Tokopedia" className="mt-2 w-full" size="sm">Salin tautan ini</Snippet>
                                 </div>
