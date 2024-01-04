@@ -9,7 +9,11 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: '/google1f0e8001161825e8.html',
+          src: 'google1f0e8001161825e8.html',
+          dest: 'dist'
+        },
+        {
+          src: 'robots.txt',
           dest: 'dist'
         }
       ]

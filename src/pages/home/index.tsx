@@ -7,8 +7,8 @@ import Opportunity from "../../components/opportunity"
 import Partnert from "../../components/partner"
 import Testimony from "../../components/testimony"
 import TopWork from "../../components/top-work"
-import { ListTestimony, ListWork } from "../../utils/data"
-import WorkList from "../../components/list-work"
+import { CompanyList, ListTestimony } from "../../utils/data"
+import JobList from "../../components/list-work"
 
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
 }
 
 interface State {
-    workList: any;
+    companyList: any;
     testimony: any;
     testimonyActive: any;
     counter: number;
@@ -27,7 +27,7 @@ class Home extends React.Component<Props, State>{
         super(props);
 
         this.state = {
-            workList: ListWork(),
+            companyList: CompanyList(),
             testimony: ListTestimony(),
             testimonyActive: '',
             counter: 0,
@@ -57,6 +57,7 @@ class Home extends React.Component<Props, State>{
     render() {
         const getCounter = this.state.counter;
         const data = this.state.testimony[getCounter];
+        const jobs = this.state.companyList.flatMap((data: any) => data.jobs)
 
         return (
             <>
@@ -64,7 +65,7 @@ class Home extends React.Component<Props, State>{
                 <Brand />
                 <TopWork />
                 <div className="px-16 pt-16 sm:px-4">
-                    <WorkList work={this.state.workList} headLine={"Lowongan Kerja Terbaru"} />
+                    <JobList jobs={jobs} headLine={"Lowongan Kerja Terbaru"} />
                 </div>
                 <Opportunity />
                 <Testimony
