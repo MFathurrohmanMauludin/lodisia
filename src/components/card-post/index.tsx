@@ -1,9 +1,10 @@
 import { faBell, faHeart as faHeartNoSolid, faShareSquare } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faHeartSolid, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Popover, PopoverContent, PopoverTrigger, Snippet, useDisclosure } from "@nextui-org/react";
+import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, Image, Popover, PopoverContent, PopoverTrigger, Snippet, useDisclosure } from "@nextui-org/react";
 import { useState } from "react";
 import { ShareFacebook, ShareTelegram, ShareWhatsapp, ShareXTwitter } from "../button/ShareButton";
+import DetailPost from "./DetailPost";
 
 const CardPosting = () => {
     const [isFollowed, setIsFollowed] = useState(false);
@@ -48,50 +49,18 @@ const CardPosting = () => {
                     </p>
 
                     {/* tag */}
-                    <span className="pt-2 text-[12px] space-x-3 text-gray-700 font-semibold tracking-wide">
-                        <span className="py-2" aria-label="computer" role="img">
-                            #FrontendWithZoey 💻
-                        </span>
-                    </span>
+                    <div className="pt-2 text-[12px] space-x-3 text-gray-700 font-semibold tracking-wide">
+                        <a href="#" className="py-2" aria-label="computer" role="img">
+                            #FrontendWithZoey
+                        </a>
+                    </div>
 
-                    {/* image show */}
+                    {/* detail posts*/}
                     <div className="flex mt-2 gap-x-2">
                         <Button size="lg" onPress={onOpen} radius="sm" isIconOnly>
                             <Image src={imgUrl} className="object-cover object-center w-[50px] h-[50px]" width={50} loading="lazy" radius="sm" />
                         </Button>
-                        <Modal
-                            isOpen={isOpen}
-                            placement="center"
-                            onOpenChange={onOpenChange}
-                        >
-                            <ModalContent>
-                                {(onClose) => (
-                                    <>
-                                        <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-                                        <ModalBody>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Nullam pulvinar risus non risus hendrerit venenatis.
-                                                Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                                            </p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Nullam pulvinar risus non risus hendrerit venenatis.
-                                                Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                                            </p>
-                                        </ModalBody>
-                                        <ModalFooter>
-                                            <Button color="danger" variant="light" onPress={onClose}>
-                                                Close
-                                            </Button>
-                                            <Button color="primary" onPress={onClose}>
-                                                Action
-                                            </Button>
-                                        </ModalFooter>
-                                    </>
-                                )}
-                            </ModalContent>
-                        </Modal>
+                        <DetailPost Open={isOpen} OpenChange={onOpenChange} />
                     </div>
                 </CardBody>
 
