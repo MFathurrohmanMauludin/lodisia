@@ -29,11 +29,11 @@ const DetailPost = (getData: Props) => {
             </div>
           </ModalHeader>
           <ModalBody>
-            <div className="grid grid-cols-2 gap-x-4 pb-2">
+            <div className="grid grid-cols-2 sm:grid-cols-1 gap-4 pb-2">
               {/* left content */}
               <Image
                 src={imgUrl}
-                className="w-[100%] max-w-[512px] h-[500px] bg-gray-800 object-contain object-center"
+                className="w-[100%] max-w-[512px] sm:h-[175px] md:h-[350px] h-[500px] bg-gray-800 object-contain object-center"
                 width={500}
                 height={500}
                 loading="lazy"
@@ -45,7 +45,7 @@ const DetailPost = (getData: Props) => {
                   <Tab className="!py-0" key="description" title="Deskripsi">
 
                     {/* description */}
-                    <ScrollShadow className="h-[350px]">
+                    <ScrollShadow className="sm:h-[150px] md:h-[200px] h-[350px]">
                       {/* sentence */}
                       <p className="py-4">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aperiam perferendis ducimus ex dolor, veniam ullam inventore accusamus quisquam tempora!

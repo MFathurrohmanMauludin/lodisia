@@ -25,8 +25,8 @@ const CommentPost = () => {
     <>
       {/* comments */}
       <ScrollShadow
-        className="h-[300px] p-3"
-        offset={400}
+        className="md:h-[200px] h-[300px] p-3"
+        isEnabled={false}
       >
         <div className="space-y-3">
           <CardComment />
@@ -41,7 +41,7 @@ const CommentPost = () => {
           color="default"
           placeholder="Tambahkan komentar"
           radius="sm"
-          maxRows={3}
+          maxRows={2}
           value={textareaValue}
           onValueChange={setTextareaValue}
         />
