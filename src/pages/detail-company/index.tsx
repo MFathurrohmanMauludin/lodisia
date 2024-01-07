@@ -27,8 +27,8 @@ const DetailCompany = () => {
     return (
         <>
             {/* right content */}
-            <div className="flex pt-8 pb-32">
-                <div className="flex-shrink-0 sm:flex-shrink flex flex-col items-center px-8 border-r-1 py-4 w-[100%] max-w-[300px]">
+            <div className="flex sm:flex-wrap md:flex-wrap sm:justify-center md:justify-center pt-8 pb-32">
+                <div className="flex-shrink-0 sm:flex-shrink flex flex-col items-center px-8 md:border-0 lg:border-r-1 py-4 w-[100%] max-w-[300px]">
                     <Avatar className="w-24 h-24" src={detailCompany.logo} showFallback name="PNG" />
 
                     {/* follow */}
@@ -68,7 +68,7 @@ const DetailCompany = () => {
                         }} />
                     <div className="flex flex-col pt-4">
                         <span className="text-[18px] font-semibold">Perusahaan Lainnya</span>
-                        <div className="grid grid-cols-3 gap-4 mt-4">
+                        <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
                             {
                                 anotherCompany.map((getData: any) => (
 

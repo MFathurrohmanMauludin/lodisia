@@ -17,6 +17,7 @@ export default {
       'lg': { 'max': '1024px' },
       'md': { 'max': '768px' },
       'sm': { 'max': '639px' },
+      'xs': { 'max': '450px' },
     }
   },
   darkMode: "class",

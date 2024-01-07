@@ -14,7 +14,7 @@ const CardPosting = () => {
 
     return (
         <>
-            <Card className="max-w-[340px] border-0">
+            <Card className="max-w-[340px] sm:max-w-full border-0">
                 {/* head */}
                 <CardHeader className="justify-between">
                     <div className="flex gap-4">

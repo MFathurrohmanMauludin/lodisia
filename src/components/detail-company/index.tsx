@@ -76,7 +76,7 @@ const InfoCompany = (getData: Props) => {
 
                     {/* jobs section */}
                     <Tab key="jobs" title="Lowongan">
-                        <div className='grid grid-cols-2 gap-4'>
+                        <div className='grid grid-cols-2 sm:grid-cols-1 gap-4'>
                             {
                                 getData.jobs.map((job: any) => (
                                     <CardJob
@@ -99,7 +99,7 @@ const InfoCompany = (getData: Props) => {
 
                     {/* posts section */}
                     <Tab key="posts" title="Postingan">
-                        <div className="grid grid-cols-3 gap-4">
+                        <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
                             <CardPosting />
                             <CardPosting />
                             <CardPosting />
