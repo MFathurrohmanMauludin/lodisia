@@ -2,6 +2,7 @@
 import { faHeart, faShareFromSquare } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Modal, ModalContent, ModalHeader, Avatar, ModalBody, ScrollShadow, Image, Tabs, Tab, Button } from "@nextui-org/react"
+import CommentPost from "./CommentPost";
 
 interface Props {
   Open: boolean;
@@ -79,7 +80,7 @@ const DetailPost = (getData: Props) => {
                   </Tab>
 
                   <Tab key="comments" title="Komentar">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum maxime quae iste laborum maiores! Non!
+                    <CommentPost />
                   </Tab>
 
                 </Tabs>
