@@ -27,8 +27,9 @@ const CommentPost = () => {
       <ScrollShadow
         className="md:h-[200px] h-[300px] p-3"
         isEnabled={false}
+
       >
-        <div className="space-y-3">
+        <div className="flex flex-col gap-3">
           <CardComment />
           <CardComment />
           <CardComment />

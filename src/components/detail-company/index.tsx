@@ -32,7 +32,7 @@ const InfoCompany = (getData: Props) => {
     return (
         <>
             <div className="flex w-full flex-col">
-                <Tabs key={'color'} color='primary' size='md' aria-label="Options" radius='full'>
+                <Tabs className='xs:flex xs:justify-center' key={'color'} color='primary' size='md' aria-label="Options" radius='full'>
                     {/* about company section */}
                     <Tab key="about" title="Tentang">
                         <Card radius='sm'>
