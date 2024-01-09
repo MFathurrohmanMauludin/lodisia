@@ -8,6 +8,9 @@ import { useState, useEffect } from "react";
 interface Props {
   Open: boolean;
   OpenChange: any;
+  desc: string;
+  tag: any;
+
 }
 
 const DetailPost = (getData: Props) => {
@@ -68,15 +71,15 @@ const DetailPost = (getData: Props) => {
                       isEnabled={false}
                       hideScrollBar>
                       {/* sentence */}
-                      <p className="py-4">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et facilis impedit quaerat. Tenetur asperiores nulla rerum maiores laudantium atque, ullam fugiat illum ex ratione nam amet dolores unde error aliquam incidunt ipsum suscipit possimus velit aperiam accusantium? Dolorem id, sequi ab autem magnam corrupti veniam. Corrupti molestias itaque error ducimus, aliquid laudantium fugit corporis totam dolor iusto ipsum reiciendis quidem sequi eaque nihil! Quisquam odio neque nobis, vitae, labore hic molestias reiciendis ex adipisci recusandae officiis, temporibus id facilis enim dolor ab atque. Enim quam autem adipisci maiores porro quae nihil numquam harum ab. Qui beatae debitis velit voluptatum distinctio ratione voluptas cupiditate, officia animi molestiae? Adipisci veniam quasi quo error, voluptatem quidem dolorem dicta est molestias alias culpa. Molestias, eaque repellendus quidem deleniti autem laudantium neque perferendis rerum cumque voluptatum reiciendis numquam ipsam a soluta doloribus quaerat facere, perspiciatis nihil sit cupiditate veritatis. Tempora consectetur totam error aspernatur a.
-                      </p>
+                      <div className="py-4" dangerouslySetInnerHTML={{ __html: getData.desc }} />
 
                       {/* tags */}
                       <div className="space-x-2">
-                        <a
-                          href="#"
-                          className="font-semibold">#Indonesia_Maju</a>
+                        {
+                          getData.tag.map((tag: any) =>
+                            <a href={tag.link} className="font-semibold py-2" aria-label={tag.name}>#{tag.name}</a>
+                          )
+                        }
                       </div>
                     </ScrollShadow>
 

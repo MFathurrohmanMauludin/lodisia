@@ -125,20 +125,36 @@ const CompanyList = () => [
                     {
                         id: 1,
                         url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    },
+                    {
+                        id: 2,
+                        url: 'https://images.tokopedia.net/img/WMkIgA/2022/8/16/00aa24fb-2d48-4382-bd47-5f0347c418f5.png'
                     }
                 ],
                 content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
                 tag: [
                     {
                         id: 1,
-                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
-                    }
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
+                    },
                 ],
                 likes: [
                     {
                         id: 1,
-                        user: 'sasuke',
-                    }
+                        user: 'vladilena milize',
+                        imgUrl: '',
+                    },
+                    {
+                        id: 2,
+                        user: 'hatsune miku',
+                        imgUrl: '',
+                    },
+                    {
+                        id: 3,
+                        user: 'asuna yuuki',
+                        imgUrl: '',
+                    },
                 ],
                 share: 1300,
             },
@@ -221,7 +237,8 @@ const CompanyList = () => [
                 tag: [
                     {
                         id: 1,
-                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
                     }
                 ],
                 likes: [
@@ -307,7 +324,8 @@ const CompanyList = () => [
                 tag: [
                     {
                         id: 1,
-                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
                     }
                 ],
                 likes: [
@@ -393,7 +411,8 @@ const CompanyList = () => [
                 tag: [
                     {
                         id: 1,
-                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
                     }
                 ],
                 likes: [

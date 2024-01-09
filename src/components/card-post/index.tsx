@@ -11,21 +11,32 @@ interface Props {
     id: any;
     company: string;
     followers: any;
-    post: {
-        id: any;
-        imgPost: any;
-        content: string;
-        tag: any;
-        likes: any;
-        share: any;
-    }
+    imgCompany: any;
+    imgPost: any;
+    content: string;
+    tag: any;
+    likes: any;
+    share: any;
 }
 
 const CardPosting = (getData: Props) => {
+    // like or likes
     const [isFollowed, setIsFollowed] = useState(false);
     const [isLike, setIsLike] = useState(false);
-    const imgUrl = "https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp";
+
+    // open modal
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+    // count convert
+    const countConvert = (count: number) => {
+        if (count >= 1000) {
+            return `${count / 1000}K`
+        } else if (count >= 1000000) {
+            return `${count / 1000}M`
+        } else {
+            return count
+        }
+    }
 
     return (
         <>
@@ -33,10 +44,10 @@ const CardPosting = (getData: Props) => {
                 {/* head */}
                 <CardHeader className="justify-between">
                     <div className="flex gap-4">
-                        <Avatar radius="full" size="lg" src={imgUrl} />
+                        <Avatar radius="full" size="md" src={getData.imgCompany} />
                         <div className="flex flex-col gap-1 items-start justify-center">
                             <span className="text-[14px] font-semibold leading-none text-default-600">{getData.company}</span>
-                            <span className="text-[12px] tracking-tight text-default-400" >{getData.followers.length}</span>
+                            <span className="text-[12px] tracking-tight text-default-400" >{getData.followers.length} Followers</span>
                         </div>
                     </div>
                     <Button
@@ -59,21 +70,41 @@ const CardPosting = (getData: Props) => {
                 <CardBody className="px-3 py-0 text-small text-default-400">
 
                     {/* description */}
-                    <div className="line-clamp-5 text-gray-700" dangerouslySetInnerHTML={{ __html: getData.post.content }} />
+                    <div
+                        className="line-clamp-5 text-gray-700"
+                        dangerouslySetInnerHTML={{ __html: getData.content }} />
 
                     {/* tag */}
                     <div className="pt-2 text-[12px] space-x-3 text-gray-700 font-semibold tracking-wide">
-                        <a href="#" className="py-2" aria-label="computer" role="img">
-                            #FrontendWithZoey
-                        </a>
+                        {
+                            getData.tag.map((data: any) =>
+                                <a href={data.link} className="py-2" aria-label={data.name}>#{data.name}
+                                </a>
+                            )
+                        }
                     </div>
 
                     {/* detail posts*/}
                     <div className="flex mt-2 gap-x-2">
-                        <Button size="lg" onPress={onOpen} radius="sm" isIconOnly>
-                            <Image src={imgUrl} className="object-cover object-center w-[50px] h-[50px]" width={50} loading="lazy" radius="sm" />
-                        </Button>
-                        <DetailPost Open={isOpen} OpenChange={onOpenChange} />
+                        {getData.imgPost.map((data: any) =>
+                            <Button
+                                id={data.id}
+                                size="lg"
+                                onPress={onOpen}
+                                radius="sm"
+                                isIconOnly>
+                                <Image
+                                    src={data.url}
+                                    className="object-cover object-center w-[50px] h-[50px]" width={50}
+                                    loading="lazy"
+                                    radius="sm" />
+                            </Button>
+                        )}
+                        <DetailPost
+                            Open={isOpen}
+                            OpenChange={onOpenChange}
+                            desc={getData.content}
+                            tag={getData.tag} />
                     </div>
                 </CardBody>
 
@@ -88,7 +119,9 @@ const CardPosting = (getData: Props) => {
                             onPress={() => setIsLike(!isLike)}
                             startContent={isLike ? <FontAwesomeIcon className="text-rose-500" icon={faHeartSolid} fontSize={16} /> : <FontAwesomeIcon icon={faHeartNoSolid} fontSize={16} />} isIconOnly />
                         <div className="flex gap-1 leading-none">
-                            <span className="font-semibold text-default-400 text-small">97.1K</span>
+                            <span className="font-semibold text-gray-500 text-small">
+                                {countConvert(getData.likes.length)}
+                            </span>
                             <p className="text-default-400 text-small">suka</p>
                         </div>
                     </div>
@@ -117,8 +150,10 @@ const CardPosting = (getData: Props) => {
                                 </div>
                             </PopoverContent>
                         </Popover>
-                        <div className="flex gap-1 leading-none">
-                            <span className="font-semibold text-default-400 text-small">1K</span>
+                        <div className="flex flex-wrap gap-1 leading-none">
+                            <span className="font-semibold text-gray-500 text-small">
+                                {countConvert(getData.share)}
+                            </span>
                             <p className="text-default-400 text-small">dibagikan</p>
                         </div>
                     </div>

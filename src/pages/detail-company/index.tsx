@@ -12,13 +12,13 @@ const DetailCompany = () => {
     const location = useLocation();
     const { search } = location;
 
-    // info company 
+    // get name company
     const regexCompany = /(?:\?)name=([^&?]+)/;
     const matchCompany = search.match(regexCompany);
     const company = matchCompany ? decodeURIComponent(matchCompany[1]).replace(/\+/g, ' ') : ' ';
 
+    // data company
     const companyList = CompanyList();
-
     const detailCompany = companyList.filter((data: any) => data.name === company)[0];
 
     // another company
@@ -65,7 +65,9 @@ const DetailCompany = () => {
                             sector: `${detailCompany.sector}`,
                             url: `${detailCompany.url}`,
                             ceo: `${detailCompany.ceo}`
-                        }} />
+                        }}
+                        followers={detailCompany.followers}
+                        logo={detailCompany.logo} />
                     <div className="flex flex-col pt-4">
                         <span className="text-[18px] font-semibold">Perusahaan Lainnya</span>
                         <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-4 mt-4">
