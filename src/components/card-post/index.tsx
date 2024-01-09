@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { faBell, faHeart as faHeartNoSolid, faShareSquare } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faHeartSolid, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,7 +7,21 @@ import { useState } from "react";
 import { ShareFacebook, ShareTelegram, ShareWhatsapp, ShareXTwitter } from "../button/ShareButton";
 import DetailPost from "./DetailPost";
 
-const CardPosting = () => {
+interface Props {
+    id: any;
+    company: string;
+    followers: any;
+    post: {
+        id: any;
+        imgPost: any;
+        content: string;
+        tag: any;
+        likes: any;
+        share: any;
+    }
+}
+
+const CardPosting = (getData: Props) => {
     const [isFollowed, setIsFollowed] = useState(false);
     const [isLike, setIsLike] = useState(false);
     const imgUrl = "https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp";
@@ -20,8 +35,8 @@ const CardPosting = () => {
                     <div className="flex gap-4">
                         <Avatar radius="full" size="lg" src={imgUrl} />
                         <div className="flex flex-col gap-1 items-start justify-center">
-                            <span className="text-[14px] font-semibold leading-none text-default-600">PT Tokopedia</span>
-                            <span className="text-[12px] tracking-tight text-default-400" >120.560 Followers</span>
+                            <span className="text-[14px] font-semibold leading-none text-default-600">{getData.company}</span>
+                            <span className="text-[12px] tracking-tight text-default-400" >{getData.followers.length}</span>
                         </div>
                     </div>
                     <Button
@@ -44,9 +59,7 @@ const CardPosting = () => {
                 <CardBody className="px-3 py-0 text-small text-default-400">
 
                     {/* description */}
-                    <p className="line-clamp-5 text-gray-700">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum laudantium sed quo atque, enim accusamus asperiores incidunt amet consequuntur deleniti repellat vitae adipisci temporibus.
-                    </p>
+                    <div className="line-clamp-5 text-gray-700" dangerouslySetInnerHTML={{ __html: getData.post.content }} />
 
                     {/* tag */}
                     <div className="pt-2 text-[12px] space-x-3 text-gray-700 font-semibold tracking-wide">

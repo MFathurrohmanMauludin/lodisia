@@ -118,7 +118,49 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             },
         ],
-        posts: 5,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
+                    }
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'sasuke',
+                    }
+                ],
+                share: 1300,
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',
@@ -166,7 +208,49 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             }
         ],
-        posts: 5,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
+                    }
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'sasuke',
+                    }
+                ],
+                share: 1300,
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',
@@ -210,7 +294,49 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             }
         ],
-        posts: 3,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
+                    }
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'sasuke',
+                    }
+                ],
+                share: 1300,
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',
@@ -254,7 +380,49 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             }
         ],
-        posts: 3,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        title: '<a href="https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D"></a>'
+                    }
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'sasuke',
+                    }
+                ],
+                share: 1300,
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',
