@@ -113,7 +113,7 @@ const InfoCompany = (getData: Props) => {
                                         tag={data.tag}
                                         likes={data.likes}
                                         share={data.share}
-                                    />
+                                        comments={data.comments} />
                                 )
                             }
                         </div>

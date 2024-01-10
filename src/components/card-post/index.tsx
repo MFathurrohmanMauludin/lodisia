@@ -17,6 +17,7 @@ interface Props {
     tag: any;
     likes: any;
     share: any;
+    comments: any;
 }
 
 const CardPosting = (getData: Props) => {
@@ -111,7 +112,9 @@ const CardPosting = (getData: Props) => {
                             followers={getData.followers.length}
                             likes={getData.likes}
                             share={countConvert(getData.share)}
-                            date={'31 Desember 20232'} />
+                            date={'31 Desember 20232'}
+                            comments={getData.comments}
+                        />
                     </div>
                 </CardBody>
 

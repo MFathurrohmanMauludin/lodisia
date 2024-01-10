@@ -157,6 +157,38 @@ const CompanyList = () => [
                     },
                 ],
                 share: 1300,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2022-04-14T04:27:34.572Z',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            }
+                        ],
+                        likes: [
+                            {
+                                id: 3,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    }
+                ],
                 createAt: '12/31/2023',
             },
         ],
@@ -249,6 +281,38 @@ const CompanyList = () => [
                     }
                 ],
                 share: 1500,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2022-04-14T04:27:34.572Z',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            }
+                        ],
+                        likes: [
+                            {
+                                id: 1,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    }
+                ],
                 createAt: '12/31/2023',
             },
         ],
@@ -337,6 +401,38 @@ const CompanyList = () => [
                     }
                 ],
                 share: 400,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2022-04-14T04:27:34.572Z',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            }
+                        ],
+                        likes: [
+                            {
+                                id: 1,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    }
+                ],
                 createAt: '12/31/2023',
             },
         ],
@@ -425,6 +521,38 @@ const CompanyList = () => [
                     }
                 ],
                 share: 6900,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2022-04-14T04:27:34.572Z',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            },
+                        ],
+                        likes: [
+                            {
+                                id: 1,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    }
+                ],
                 createAt: '12/31/2023',
             },
         ],

@@ -1,10 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, ScrollShadow, Textarea } from "@nextui-org/react"
 import CardComment from "../card-comment/CommentCard"
 import { useState, KeyboardEvent } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 
-const CommentPost = () => {
+interface Props {
+  data: any;
+}
+
+const CommentPost = (getComment: Props) => {
   const [textareaValue, setTextareaValue] = useState('');
   const temp: string[] = [];
 
@@ -30,9 +35,18 @@ const CommentPost = () => {
 
       >
         <div className="flex flex-col gap-3">
-          <CardComment />
-          <CardComment />
-          <CardComment />
+          {
+            getComment.data.map((comment: any) =>
+              <CardComment
+                id={comment.id}
+                imgUrl={comment.imgUrl}
+                name={comment.name}
+                content={comment.content}
+                likes={comment.likes}
+                createdAt={comment.createdAt}
+              />
+            )
+          }
         </div>
       </ScrollShadow>
 

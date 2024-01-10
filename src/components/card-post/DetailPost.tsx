@@ -16,6 +16,7 @@ interface Props {
   desc: string;
   tag: any;
   date: any;
+  comments: any;
 }
 
 const DetailPost = (getData: Props) => {
@@ -119,7 +120,7 @@ const DetailPost = (getData: Props) => {
 
                   <Tab key="comments" title="Komentar">
                     <div className="flex flex-col xs:flex-col-reverse xs:gap-3">
-                      <CommentPost />
+                      <CommentPost data={getData.comments} />
                     </div>
                   </Tab>
 

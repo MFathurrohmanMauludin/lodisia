@@ -1,11 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, ScrollShadow } from "@nextui-org/react";
 import { faHeart as faHeartNoSolid } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faHeartSolid, faReply } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+interface Props {
+    id: any;
+    name: string;
+    imgUrl: string;
+    content: any;
+    likes: any;
+    createdAt: any;
+}
 
-const CardComment = () => {
+const CardComment = (getData: Props) => {
     const [isReply, setIsReply] = useState(false);
     const [isLike, setIsLike] = useState(false);
 
@@ -14,10 +23,10 @@ const CardComment = () => {
             <Card className="border-1 border-slate-300" shadow="none" radius="sm">
                 <CardHeader className="justify-between">
                     <div className="flex gap-3">
-                        <Avatar radius="full" size="md" src="/avatars/avatar-1.png" />
+                        <Avatar radius="full" size="md" src={getData.imgUrl} />
                         <div className="flex flex-col gap-[2px] items-start justify-center">
-                            <span className="text-[16px] font-semibold leading-none text-default-600">Zoey Lang</span>
-                            <span className="text-[14px] tracking-tight text-default-400">12 Second Ago</span>
+                            <span className="text-[16px] font-semibold leading-none text-default-600">{getData.name}</span>
+                            <span className="text-[14px] tracking-tight text-default-400">{getData.createdAt}</span>
                         </div>
                     </div>
                     <Button
@@ -38,15 +47,7 @@ const CardComment = () => {
                         hideScrollBar
                         isEnabled={false}
                     >
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur dolores dignissimos voluptatem unde assumenda expedita laborum laboriosam nobis eligendi optio ex dolor maiores non, ducimus, tempore velit id! Tenetur deserunt excepturi officia cupiditate in distinctio nihil minima unde temporibus. Dolorum sit distinctio, veritatis maiores fuga exercitationem illo! Omnis neque sint iusto voluptatibus quae possimus dignissimos beatae laudantium illum? Quo, temporibus.
-                        </p>
-                        <span className="pt-2">
-                            #FrontendWithZoey
-                            <span className="py-2" aria-label="computer" role="img">
-                                💻
-                            </span>
-                        </span>
+                        <p>{getData.content}</p>
                     </ScrollShadow>
                 </CardBody>
                 <CardFooter className="gap-3">
@@ -59,7 +60,7 @@ const CardComment = () => {
                             onPress={() => setIsLike(!isLike)}
                             startContent={isLike ? <FontAwesomeIcon className="text-rose-500" icon={faHeartSolid} fontSize={16} /> : <FontAwesomeIcon icon={faHeartNoSolid} fontSize={16} />} isIconOnly />
                         <div className="flex gap-1 leading-none">
-                            <span className="font-medium text-default-400 text-small">900</span>
+                            <span className="font-medium text-default-400 text-small">{getData.likes.length}</span>
                             <p className="text-default-400 text-small">suka</p>
                         </div>
                     </div>
