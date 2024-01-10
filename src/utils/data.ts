@@ -143,20 +143,21 @@ const CompanyList = () => [
                     {
                         id: 1,
                         user: 'vladilena milize',
-                        imgUrl: '',
+                        imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
                     },
                     {
                         id: 2,
                         user: 'hatsune miku',
-                        imgUrl: '',
+                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
                     },
                     {
                         id: 3,
                         user: 'asuna yuuki',
-                        imgUrl: '',
+                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
                     },
                 ],
                 share: 1300,
+                createAt: '12/31/2023',
             },
         ],
         followers: [
@@ -247,7 +248,8 @@ const CompanyList = () => [
                         user: 'sasuke',
                     }
                 ],
-                share: 1300,
+                share: 1500,
+                createAt: '12/31/2023',
             },
         ],
         followers: [
@@ -334,7 +336,8 @@ const CompanyList = () => [
                         user: 'sasuke',
                     }
                 ],
-                share: 1300,
+                share: 400,
+                createAt: '12/31/2023',
             },
         ],
         followers: [
@@ -421,7 +424,8 @@ const CompanyList = () => [
                         user: 'sasuke',
                     }
                 ],
-                share: 1300,
+                share: 6900,
+                createAt: '12/31/2023',
             },
         ],
         followers: [

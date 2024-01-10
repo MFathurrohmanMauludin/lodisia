@@ -8,14 +8,22 @@ import { useState, useEffect } from "react";
 interface Props {
   Open: boolean;
   OpenChange: any;
+  company: string;
+  logo: string;
+  followers: any;
+  likes: any;
+  share: any;
   desc: string;
   tag: any;
-
+  date: any;
 }
 
 const DetailPost = (getData: Props) => {
-  const imgUrl = "https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp";
 
+  // 
+  const firstUser = getData.likes[0].user;
+
+  // penyesuaian konten berdasarkan ukuran device
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
@@ -43,17 +51,17 @@ const DetailPost = (getData: Props) => {
       >
         <ModalContent>
           <ModalHeader className="flex flex-row items-center gap-x-4">
-            <Avatar radius="full" size={windowWidth <= 350 ? "md" : "lg"} src={imgUrl} />
+            <Avatar radius="full" size={windowWidth <= 350 ? "md" : "lg"} src={getData.logo} />
             <div className="flex flex-col justify-center font-normal">
-              <span className="text-[16px] font-semibold leading-none text-default-600">PT Tokopedia</span>
-              <span className="text-[14px] tracking-wide text-gray-600" >120.500 Followers</span>
+              <span className="text-[16px] font-semibold leading-none text-default-600">{getData.company}</span>
+              <span className="text-[14px] tracking-wide text-gray-600" >{getData.followers} Followers</span>
             </div>
           </ModalHeader>
           <ModalBody className="xs:!px-4">
             <div className="grid grid-cols-2 sm:grid-cols-1 gap-4 pb-2">
               {/* left content */}
               <Image
-                src={imgUrl}
+                src={getData.logo}
                 className="w-[100%] max-w-[512px] sm:h-[175px] md:h-[350px] h-[500px] bg-gray-800 object-contain object-center"
                 width={500}
                 height={500}
@@ -86,23 +94,27 @@ const DetailPost = (getData: Props) => {
                     <div className="flex flex-row space-x-3 py-2">
                       <div className="flex items-center space-x-1">
                         <Button variant="light" color="default" startContent={<FontAwesomeIcon fontSize={24} icon={faHeart} />} isIconOnly />
-                        <span>97.1K Suka</span>
+                        <span>{getData.likes.length} Suka</span>
                       </div>
                       <div className="flex items-center space-x-1">
                         <Button variant="light" color="default" startContent={<FontAwesomeIcon fontSize={21} icon={faShareFromSquare} />} isIconOnly />
-                        <span>1K dibagikan</span>
+                        <span>{getData.share} dibagikan</span>
                       </div>
                     </div>
 
                     <div className="flex flex-row xs:flex-wrap items-center">
-                      <div className="flex flex-row">
-                        <Avatar className="object-cover border-2 border-white lg:hover:-translate-y-2 ease-in duration-200" radius="full" size="sm" src={imgUrl} />
-                        <Avatar className="z-10 -ml-2 border-2 border-white lg:hover:-translate-y-2 ease-in duration-200" radius="full" size="sm" src={imgUrl} />
-                        <Avatar className="z-10 -ml-2 border-2 border-white lg:hover:-translate-y-2 ease-in duration-200" radius="full" size="sm" src={imgUrl} />
+                      <div className="flex flex-row space-x-[-8px]">
+                        {
+                          getData.likes.map((data: any) => getData.likes.length <= 3 ?
+                            <Avatar className="object-cover border-1 border-white 
+                            xs:hover:translate-y-0 hover:-translate-y-2 ease-in duration-200" radius="full" size="sm" src={data.imgUrl} />
+                            :
+                            '')
+                        }
                       </div>
-                      <p className="ml-2">disukai oleh <span className="font-semibold">sasuke</span> dan <span className="font-semibold">97.156</span> Lainnya</p>
+                      <p className="ml-2">disukai oleh <span className="font-semibold">{firstUser}</span> dan <span className="font-semibold">{getData.likes.length - 1}</span> Lainnya</p>
                     </div>
-                    <span className="flex justify-end text-[14px] text-gray-600">31 Desember 2023</span>
+                    <span className="flex justify-end text-[14px] text-gray-600">{getData.date}</span>
                   </Tab>
 
                   <Tab key="comments" title="Komentar">

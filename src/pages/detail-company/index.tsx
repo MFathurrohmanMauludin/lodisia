@@ -21,6 +21,17 @@ const DetailCompany = () => {
     const companyList = CompanyList();
     const detailCompany = companyList.filter((data: any) => data.name === company)[0];
 
+    // count convert
+    const countConvert = (count: number) => {
+        if (count >= 1000) {
+            return `${count / 1000}K`
+        } else if (count >= 1000000) {
+            return `${count / 1000}M`
+        } else {
+            return count
+        }
+    }
+
     // another company
     const anotherCompany = companyList.filter((data: any) => data.name !== company);
 
@@ -36,7 +47,7 @@ const DetailCompany = () => {
                         <div className="flex flex-col">
                             <span className="font-semibold tracking-wide text-[16px] text-slate-700">{detailCompany.name}
                             </span>
-                            <span className="text-[12px]">120K Followers</span>
+                            <span className="text-[12px]">{countConvert(detailCompany.followers.length)} Followers</span>
                         </div>
 
                         <Button variant="solid" size="sm" color="primary" radius="full" startContent={<FontAwesomeIcon icon={faPlus} />}>Follow</Button>

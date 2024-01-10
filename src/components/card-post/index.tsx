@@ -95,7 +95,8 @@ const CardPosting = (getData: Props) => {
                                 isIconOnly>
                                 <Image
                                     src={data.url}
-                                    className="object-cover object-center w-[50px] h-[50px]" width={50}
+                                    className="object-cover object-center w-[50px] h-[50px]"
+                                    width={50}
                                     loading="lazy"
                                     radius="sm" />
                             </Button>
@@ -103,8 +104,14 @@ const CardPosting = (getData: Props) => {
                         <DetailPost
                             Open={isOpen}
                             OpenChange={onOpenChange}
+                            company={getData.company}
+                            logo={getData.imgCompany}
                             desc={getData.content}
-                            tag={getData.tag} />
+                            tag={getData.tag}
+                            followers={getData.followers.length}
+                            likes={getData.likes}
+                            share={countConvert(getData.share)}
+                            date={'31 Desember 20232'} />
                     </div>
                 </CardBody>
 

@@ -17,7 +17,7 @@ interface Props {
 const CompanyCard = (data: Props) => {
     return (
         <>
-            <Card className="hover:border-cyan-500 hover:-translate-y-2 ease-in duration-300 rounded-lg" key={data.id}>
+            <Card className="hover:border-cyan-500 xs:hover:translate-y-0 hover:-translate-y-2 ease-in duration-300 rounded-lg" key={data.id}>
                 {/* card head */}
                 <div className="flex flex-col justify-center p-3">
                     <Image
