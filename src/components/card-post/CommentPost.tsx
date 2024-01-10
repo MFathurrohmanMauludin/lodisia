@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, ScrollShadow, Textarea } from "@nextui-org/react"
-import CardComment from "../card-comment/CommentCard"
+import CommentCard from "../card-comment/CommentCard"
 import { useState, KeyboardEvent } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
@@ -37,7 +37,7 @@ const CommentPost = (getComment: Props) => {
         <div className="flex flex-col gap-3">
           {
             getComment.data.map((comment: any) =>
-              <CardComment
+              <CommentCard
                 id={comment.id}
                 imgUrl={comment.imgUrl}
                 name={comment.name}

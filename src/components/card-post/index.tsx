@@ -3,9 +3,9 @@ import { faBell, faHeart as faHeartNoSolid, faShareSquare } from "@fortawesome/f
 import { faHeart as faHeartSolid, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, Image, Popover, PopoverContent, PopoverTrigger, Snippet, useDisclosure } from "@nextui-org/react";
-import { useState } from "react";
 import { ShareFacebook, ShareTelegram, ShareWhatsapp, ShareXTwitter } from "../button/ShareButton";
 import DetailPost from "./DetailPost";
+import { useState } from "react";
 
 interface Props {
     id: any;
