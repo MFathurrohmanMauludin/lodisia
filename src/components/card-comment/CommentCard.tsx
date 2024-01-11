@@ -4,6 +4,7 @@ import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, ScrollShadow } 
 import { faHeart as faHeartNoSolid } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faHeartSolid, faReply } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import moment from "moment";
 
 interface Props {
     id: any;
@@ -26,7 +27,7 @@ const CommentCard = (getData: Props) => {
                         <Avatar className="!object-cover" radius="full" size="md" src={getData.imgUrl} />
                         <div className="flex flex-col gap-[2px] items-start justify-center">
                             <span className="text-[16px] font-semibold leading-none text-default-600">{getData.name}</span>
-                            <span className="text-[14px] tracking-tight text-default-400">{getData.createdAt}</span>
+                            <span className="text-[14px] tracking-tight text-default-400">{moment(getData.createdAt).fromNow()}</span>
                         </div>
                     </div>
                     <Button

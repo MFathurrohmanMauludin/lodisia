@@ -15,11 +15,9 @@ const CommentPost = (getComment: Props) => {
 
   const handleButtonClick = () => {
     if (temp.push(textareaValue)) setTextareaValue('')
-    console.log(temp);
   };
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    console.log(temp);
     if (e.key === 'Enter') {
       e.preventDefault(); // Prevent the default behavior (e.g., submitting a form)
       if (temp.push(textareaValue)) setTextareaValue('')

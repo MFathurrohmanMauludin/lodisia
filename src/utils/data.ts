@@ -148,7 +148,7 @@ const CompanyList = () => [
                     {
                         id: 2,
                         user: 'hatsune miku',
-                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
                     },
                     {
                         id: 3,
@@ -161,9 +161,9 @@ const CompanyList = () => [
                     {
                         id: 1,
                         name: 'hatsune miku',
-                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
                         content: 'i will buy new cosmetic in Tokopedia',
-                        createdAt: '2022-04-14T04:27:34.572Z',
+                        createdAt: '2024-01-11 17:16:44',
                         replied: [
                             {
                                 id: 1,
@@ -187,7 +187,7 @@ const CompanyList = () => [
                                 imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
                             }
                         ],
-                    }
+                    },
                 ],
                 createAt: '12/31/2023',
             },
@@ -285,7 +285,7 @@ const CompanyList = () => [
                     {
                         id: 1,
                         name: 'hatsune miku',
-                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
                         content: 'i will buy new cosmetic in Tokopedia',
                         createdAt: '2022-04-14T04:27:34.572Z',
                         replied: [
@@ -405,7 +405,7 @@ const CompanyList = () => [
                     {
                         id: 1,
                         name: 'hatsune miku',
-                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
                         content: 'i will buy new cosmetic in Tokopedia',
                         createdAt: '2022-04-14T04:27:34.572Z',
                         replied: [
@@ -525,7 +525,7 @@ const CompanyList = () => [
                     {
                         id: 1,
                         name: 'hatsune miku',
-                        imgUrl: 'https://w0.peakpx.com/wallpaper/92/262/HD-wallpaper-hatsune-miku-cute-vocoloid.jpg',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
                         content: 'i will buy new cosmetic in Tokopedia',
                         createdAt: '2022-04-14T04:27:34.572Z',
                         replied: [

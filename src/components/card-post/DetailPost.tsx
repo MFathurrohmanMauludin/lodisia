@@ -99,9 +99,9 @@ const DetailPost = (getData: Props) => {
               {/* right content */}
               <div className="flex flex-col">
                 <Tabs aria-label="opsi">
-                  <Tab className="!py-0" key="description" title="Deskripsi">
 
-                    {/* description */}
+                  {/* description */}
+                  <Tab className="!py-0" key="description" title="Deskripsi">
                     <ScrollShadow
                       className="sm:h-[150px] md:h-[200px] h-[350px]"
                       isEnabled={false}
@@ -145,6 +145,7 @@ const DetailPost = (getData: Props) => {
                     <span className="flex justify-end text-[14px] text-gray-600">{getData.date}</span>
                   </Tab>
 
+                  {/* comments */}
                   <Tab key="comments" title="Komentar">
                     <div className="flex flex-col xs:flex-col-reverse xs:gap-3">
                       <CommentPost data={getData.comments} />
