@@ -4,12 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Modal, ModalContent, ModalHeader, Avatar, ModalBody, ScrollShadow, Image, Tabs, Tab, Button } from "@nextui-org/react"
 import CommentPost from "./CommentPost";
 import { useState, useEffect } from "react";
+import Slider from "react-slick";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   Open: boolean;
   OpenChange: any;
   company: string;
   logo: string;
+  imgPost: any;
   followers: any;
   likes: any;
   share: any;
@@ -20,8 +23,20 @@ interface Props {
 }
 
 const DetailPost = (getData: Props) => {
+  // slider
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    nextArrow: <Button variant="solid" color="default" size="md" radius="full" startContent={<FontAwesomeIcon className="!text-white" fontSize={24} icon={faChevronRight} />} isIconOnly />,
+    prevArrow: <Button variant="solid" color="default" size="md" radius="full" startContent={<FontAwesomeIcon className="!text-white" fontSize={24} icon={faChevronLeft} />} isIconOnly />,
+  };
 
-  // 
+  // pengguna yang pertama menyukai post
   const firstUser = getData.likes[0].user;
 
   // penyesuaian konten berdasarkan ukuran device
@@ -59,15 +74,27 @@ const DetailPost = (getData: Props) => {
             </div>
           </ModalHeader>
           <ModalBody className="xs:!px-4">
+
             <div className="grid grid-cols-2 sm:grid-cols-1 gap-4 pb-2">
               {/* left content */}
-              <Image
-                src={getData.logo}
-                className="w-[100%] max-w-[512px] sm:h-[175px] md:h-[350px] h-[500px] bg-gray-800 object-contain object-center"
-                width={500}
-                height={500}
-                loading="lazy"
-              />
+              <div className="!flex !flex-col">
+                <Slider {...settings}>
+                  {
+                    getData.imgPost.map((img: any, index: any) => (
+                      <div key={index}>
+                        <Image
+                          src={img.url}
+                          className="w-[100%] max-w-[512px] sm:h-[175px] md:h-[350px] h-[500px] bg-gray-800 object-contain object-center"
+                          width={500}
+                          height={500}
+                          alt={`post ${index}`}
+                          loading="lazy"
+                        />
+                      </div>
+                    ))
+                  }
+                </Slider>
+              </div>
 
               {/* right content */}
               <div className="flex flex-col">

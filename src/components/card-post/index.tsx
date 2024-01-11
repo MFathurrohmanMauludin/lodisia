@@ -47,10 +47,15 @@ const CardPosting = (getData: Props) => {
                     <div className="flex gap-4">
                         <Avatar radius="full" size="md" src={getData.imgCompany} />
                         <div className="flex flex-col gap-1 items-start justify-center">
-                            <span className="text-[14px] font-semibold leading-none text-default-600">{getData.company}</span>
-                            <span className="text-[12px] tracking-tight text-default-400" >{getData.followers.length} Followers</span>
+                            <span className="text-[14px] font-semibold leading-none text-default-600">
+                                {getData.company}
+                            </span>
+                            <span className="text-[12px] tracking-tight text-default-400">
+                                {getData.followers.length} Followers
+                            </span>
                         </div>
                     </div>
+
                     <Button
                         className={isFollowed ? "bg-transparent text-foreground border-default-200" : ""}
                         color="primary"
@@ -69,7 +74,6 @@ const CardPosting = (getData: Props) => {
 
                 {/* content */}
                 <CardBody className="px-3 py-0 text-small text-default-400">
-
                     {/* description */}
                     <div
                         className="line-clamp-5 text-gray-700"
@@ -114,6 +118,7 @@ const CardPosting = (getData: Props) => {
                             share={countConvert(getData.share)}
                             date={'31 Desember 20232'}
                             comments={getData.comments}
+                            imgPost={getData.imgPost}
                         />
                     </div>
                 </CardBody>

@@ -32,7 +32,6 @@ const CommentPost = (getComment: Props) => {
       <ScrollShadow
         className="md:h-[200px] h-[300px] p-3"
         isEnabled={false}
-
       >
         <div className="flex flex-col gap-3">
           {

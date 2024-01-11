@@ -172,3 +172,45 @@ div#disqus_thread iframe[sandbox] {
 .next:active {
     transform: scale(0.8);
 }
+
+/* slider post */
+.slick-slider {
+    display: flex;
+    position: relative;
+}
+
+button.slick-prev {
+    position: absolute;
+    top: 44%;
+    left: -14px;
+    background-color: hsla(0, 0%, 13%, 0.8);
+    z-index: 10;
+}
+
+button.slick-next {
+    position: absolute;
+    top: 44%;
+    right: -18px;
+    background-color: hsla(0, 0%, 13%, 0.8);
+    z-index: 10;
+}
+
+.slick-list {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 500px !important;
+}
+
+.slick-track {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 425px) {
+
+    button.slick-next,
+    button.slick-prev {
+        display: none !important;
+    }
+}
