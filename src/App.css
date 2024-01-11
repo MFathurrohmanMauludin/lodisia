@@ -180,6 +180,7 @@ div#disqus_thread iframe[sandbox] {
 }
 
 button.slick-prev {
+    display: flex !important;
     position: absolute;
     top: 44%;
     left: -14px;
@@ -188,6 +189,7 @@ button.slick-prev {
 }
 
 button.slick-next {
+    display: flex !important;
     position: absolute;
     top: 44%;
     right: -18px;
