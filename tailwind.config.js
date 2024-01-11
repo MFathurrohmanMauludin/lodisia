@@ -15,8 +15,9 @@ export default {
       '2xl': { 'max': '1535px' },
       'xl': { 'max': '1279px' },
       'lg': { 'max': '1024px' },
-      'md': { 'max': '768px' },
+      'md': { 'max': '820px' },
       'sm': { 'max': '639px' },
+      'xs': { 'max': '450px' },
     }
   },
   darkMode: "class",

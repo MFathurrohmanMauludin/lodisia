@@ -118,7 +118,98 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             },
         ],
-        posts: 5,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    },
+                    {
+                        id: 2,
+                        url: 'https://images.tokopedia.net/img/WMkIgA/2022/8/16/00aa24fb-2d48-4382-bd47-5f0347c418f5.png'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
+                    },
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'vladilena milize',
+                        imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                    },
+                    {
+                        id: 2,
+                        user: 'hatsune miku',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
+                    },
+                    {
+                        id: 3,
+                        user: 'asuna yuuki',
+                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                    },
+                ],
+                share: 1300,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2024-01-11 17:16:44',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            }
+                        ],
+                        likes: [
+                            {
+                                id: 3,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    },
+                ],
+                createAt: '12/31/2023',
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',
@@ -166,7 +257,83 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             }
         ],
-        posts: 5,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
+                    }
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'sasuke',
+                    }
+                ],
+                share: 1500,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2022-04-14T04:27:34.572Z',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            }
+                        ],
+                        likes: [
+                            {
+                                id: 1,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    }
+                ],
+                createAt: '12/31/2023',
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',
@@ -210,7 +377,83 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             }
         ],
-        posts: 3,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
+                    }
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'sasuke',
+                    }
+                ],
+                share: 400,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2022-04-14T04:27:34.572Z',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            }
+                        ],
+                        likes: [
+                            {
+                                id: 1,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    }
+                ],
+                createAt: '12/31/2023',
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',
@@ -254,7 +497,83 @@ const CompanyList = () => [
                 createdAt: '12/14/2023',
             }
         ],
-        posts: 3,
+        posts: [
+            {
+                id: 1,
+                imgPost: [
+                    {
+                        id: 1,
+                        url: 'https://i.ibb.co/XzqGynR/tokopedia-post.jpg'
+                    }
+                ],
+                content: '<p>What an exciting news to kick off the new year!<br/><br/>The collaborative campaign between Tokopedia and TikTok Indonesia, which was launched during National Shopping Day (Harbolnas), has received tremendous enthusiasm from the community!<br/><br/>The Beli Lokal campaign, aimed at realizing our commitment to boosting the growth of homegrown brands and products, recorded a significant #increase in transactions for various local beauty and personal care brands, with an average surge of nearly 19 times, especially during the National Shopping Day on 12 December 2023.<br/><br/>Find out more about Beli Lokal\'s interesting facts here!</p>',
+                tag: [
+                    {
+                        id: 1,
+                        name: 'Hatsune Miku',
+                        link: 'https://www.linkedin.com/feed/hashtag/?keywords=insidetokopedia&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7148160050279198720&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B3yWVLm4rRyCzldcgCNJzOQ%3D%3D'
+                    }
+                ],
+                likes: [
+                    {
+                        id: 1,
+                        user: 'sasuke',
+                    }
+                ],
+                share: 6900,
+                comments: [
+                    {
+                        id: 1,
+                        name: 'hatsune miku',
+                        imgUrl: 'https://i.ibb.co/Z2GVKDV/Miku-Chan-v4.jpg',
+                        content: 'i will buy new cosmetic in Tokopedia',
+                        createdAt: '2022-04-14T04:27:34.572Z',
+                        replied: [
+                            {
+                                id: 1,
+                                user: 'vladilena milize',
+                                imgUrl: 'https://thicc-af.mywaifulist.moe/waifus/vladilena-milize-86/Z5uJ9dECiYdBQTwVDam2GDv4Ky2mltQWgFjuLeW8.jpg',
+                                content: '',
+                                likes: [
+                                    {
+                                        id: 3,
+                                        user: 'asuna yuuki',
+                                        imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                                    }
+                                ],
+                                createdAt: '2022-04-14T04:27:34.572Z',
+                            },
+                        ],
+                        likes: [
+                            {
+                                id: 1,
+                                user: 'asuna yuuki',
+                                imgUrl: 'https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/49b54237-c066-4da7-f7f5-9a5dd9a67500/width=450/350907.jpeg',
+                            }
+                        ],
+                    }
+                ],
+                createAt: '12/31/2023',
+            },
+        ],
+        followers: [
+            {
+                id: 1,
+                user: 'hatsune miku',
+            },
+            {
+                id: 2,
+                user: 'vladilena milize',
+            },
+            {
+                id: 3,
+                user: 'asuna yuuki',
+            },
+            {
+                id: 4,
+                user: 'elaina',
+            },
+        ],
         url: 'https://www.tokopedia.com/',
         sector: 'E-Commerce',
         location: 'Jakarta, Indonesia',

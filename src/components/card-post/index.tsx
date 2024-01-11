@@ -1,29 +1,61 @@
-import { faDiscord, faFacebook, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { faBell, faHeart as faHeartNoSolid, faShareSquare } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faHeartSolid, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, Image, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Popover, PopoverContent, PopoverTrigger, Snippet, useDisclosure } from "@nextui-org/react";
+import { Avatar, Button, Card, CardBody, CardFooter, CardHeader, Image, Popover, PopoverContent, PopoverTrigger, Snippet, useDisclosure } from "@nextui-org/react";
+import { ShareFacebook, ShareTelegram, ShareWhatsapp, ShareXTwitter } from "../button/ShareButton";
+import DetailPost from "./DetailPost";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
-const CardPosting = () => {
+interface Props {
+    id: any;
+    company: string;
+    followers: any;
+    imgCompany: any;
+    imgPost: any;
+    content: string;
+    tag: any;
+    likes: any;
+    share: any;
+    comments: any;
+}
+
+const CardPosting = (getData: Props) => {
+    // like or likes
     const [isFollowed, setIsFollowed] = useState(false);
     const [isLike, setIsLike] = useState(false);
-    const imgUrl = "https://www.slawipos.com/wp-content/uploads/2023/07/Logo-Tokopedia-2023-hijau.webp";
+
+    // open modal
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+    // count convert
+    const countConvert = (count: number) => {
+        if (count >= 1000) {
+            return `${count / 1000}K`
+        } else if (count >= 1000000) {
+            return `${count / 1000}M`
+        } else {
+            return count
+        }
+    }
 
     return (
         <>
-            <Card className="max-w-[340px] border-0">
+            <Card className="max-w-[340px] sm:max-w-full border-0">
                 {/* head */}
                 <CardHeader className="justify-between">
                     <div className="flex gap-4">
-                        <Avatar radius="full" size="lg" src={imgUrl} />
+                        <Avatar radius="full" size="md" src={getData.imgCompany} />
                         <div className="flex flex-col gap-1 items-start justify-center">
-                            <span className="text-[14px] font-semibold leading-none text-default-600">PT Tokopedia</span>
-                            <span className="text-[12px] tracking-tight text-default-400" >120.560 Followers</span>
+                            <span className="text-[14px] font-semibold leading-none text-default-600">
+                                {getData.company}
+                            </span>
+                            <span className="text-[12px] tracking-tight text-default-400">
+                                {getData.followers.length} Followers
+                            </span>
                         </div>
                     </div>
+
                     <Button
                         className={isFollowed ? "bg-transparent text-foreground border-default-200" : ""}
                         color="primary"
@@ -40,58 +72,54 @@ const CardPosting = () => {
                     </Button>
                 </CardHeader>
 
+                {/* content */}
                 <CardBody className="px-3 py-0 text-small text-default-400">
-
                     {/* description */}
-                    <p className="line-clamp-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum laudantium sed quo atque, enim accusamus asperiores incidunt amet consequuntur deleniti repellat vitae adipisci temporibus.
-                    </p>
+                    <div
+                        className="line-clamp-5 text-gray-700"
+                        dangerouslySetInnerHTML={{ __html: getData.content }} />
 
                     {/* tag */}
-                    <span className="pt-2 space-x-3">
-                        <span className="py-2" aria-label="computer" role="img">
-                            #FrontendWithZoey 💻
-                        </span>
-                    </span>
+                    <div className="pt-2 text-[12px] space-x-3 text-gray-700 font-semibold tracking-wide">
+                        {
+                            getData.tag.map((data: any) =>
+                                <a href={data.link} className="py-2" aria-label={data.name}>#{data.name}
+                                </a>
+                            )
+                        }
+                    </div>
 
-                    {/* image show */}
+                    {/* detail posts*/}
                     <div className="flex mt-2 gap-x-2">
-                        <Button size="lg" onPress={onOpen} radius="sm" isIconOnly>
-                            <Image src={imgUrl} className="object-cover object-center w-[50px] h-[50px]" width={50} loading="lazy" radius="sm" />
-                        </Button>
-                        <Modal
-                            isOpen={isOpen}
-                            placement="center"
-                            onOpenChange={onOpenChange}
-                        >
-                            <ModalContent>
-                                {(onClose) => (
-                                    <>
-                                        <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-                                        <ModalBody>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Nullam pulvinar risus non risus hendrerit venenatis.
-                                                Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                                            </p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Nullam pulvinar risus non risus hendrerit venenatis.
-                                                Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                                            </p>
-                                        </ModalBody>
-                                        <ModalFooter>
-                                            <Button color="danger" variant="light" onPress={onClose}>
-                                                Close
-                                            </Button>
-                                            <Button color="primary" onPress={onClose}>
-                                                Action
-                                            </Button>
-                                        </ModalFooter>
-                                    </>
-                                )}
-                            </ModalContent>
-                        </Modal>
+                        {getData.imgPost.map((data: any) =>
+                            <Button
+                                id={data.id}
+                                size="lg"
+                                onPress={onOpen}
+                                radius="sm"
+                                isIconOnly>
+                                <Image
+                                    src={data.url}
+                                    className="object-cover object-center w-[50px] h-[50px]"
+                                    width={50}
+                                    loading="lazy"
+                                    radius="sm" />
+                            </Button>
+                        )}
+                        <DetailPost
+                            Open={isOpen}
+                            OpenChange={onOpenChange}
+                            company={getData.company}
+                            logo={getData.imgCompany}
+                            desc={getData.content}
+                            tag={getData.tag}
+                            followers={getData.followers.length}
+                            likes={getData.likes}
+                            share={countConvert(getData.share)}
+                            date={'31 Desember 20232'}
+                            comments={getData.comments}
+                            imgPost={getData.imgPost}
+                        />
                     </div>
                 </CardBody>
 
@@ -106,7 +134,9 @@ const CardPosting = () => {
                             onPress={() => setIsLike(!isLike)}
                             startContent={isLike ? <FontAwesomeIcon className="text-rose-500" icon={faHeartSolid} fontSize={16} /> : <FontAwesomeIcon icon={faHeartNoSolid} fontSize={16} />} isIconOnly />
                         <div className="flex gap-1 leading-none">
-                            <span className="font-semibold text-default-400 text-small">97.1K</span>
+                            <span className="font-semibold text-gray-500 text-small">
+                                {countConvert(getData.likes.length)}
+                            </span>
                             <p className="text-default-400 text-small">suka</p>
                         </div>
                     </div>
@@ -125,18 +155,20 @@ const CardPosting = () => {
                             <PopoverContent>
                                 <div className="px-1 py-2">
                                     <div className="text-small font-bold pb-2">Ayo bagikan</div>
-                                    <div className="flex items-center gap-x-4">
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faFacebook} />} isIconOnly />
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faXTwitter} />} isIconOnly />
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faInstagram} />} isIconOnly />
-                                        <Button as={Link} href="#" startContent={<FontAwesomeIcon fontSize={24} icon={faDiscord} />} isIconOnly />
+                                    <div className="flex justify-center items-center gap-x-4">
+                                        <ShareWhatsapp />
+                                        <ShareXTwitter />
+                                        <ShareFacebook />
+                                        <ShareTelegram />
                                     </div>
                                     <Snippet symbol="#" codeString="http://127.0.0.1:5173/detail-perusahaan?name=PT%20Tokopedia" className="mt-2 w-full" size="sm">Salin tautan ini</Snippet>
                                 </div>
                             </PopoverContent>
                         </Popover>
-                        <div className="flex gap-1 leading-none">
-                            <span className="font-semibold text-default-400 text-small">1K</span>
+                        <div className="flex flex-wrap gap-1 leading-none">
+                            <span className="font-semibold text-gray-500 text-small">
+                                {countConvert(getData.share)}
+                            </span>
                             <p className="text-default-400 text-small">dibagikan</p>
                         </div>
                     </div>

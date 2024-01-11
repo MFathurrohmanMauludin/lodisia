@@ -5,8 +5,10 @@ import CardPosting from '../card-post';
 
 interface Props {
     company: any;
+    logo: any;
     jobs: any;
     posts: any;
+    followers: any;
     detail: {
         about: string;
         location: string;
@@ -28,11 +30,10 @@ const InfoCompany = (getData: Props) => {
     const finishDate = (data: number) => new Date(data).toLocaleDateString('id', { day: 'numeric', month: 'long', year: 'numeric' });
     const countDay = (finish: number) => Math.ceil((new Date(finish).getTime() - new Date().getTime()) / ((1000 * 3600) * 24));
 
-
     return (
         <>
             <div className="flex w-full flex-col">
-                <Tabs key={'color'} color='primary' size='md' aria-label="Options" radius='full'>
+                <Tabs className='xs:flex xs:justify-center' key={'color'} color='primary' size='md' aria-label="Options" radius='full'>
                     {/* about company section */}
                     <Tab key="about" title="Tentang">
                         <Card radius='sm'>
@@ -76,7 +77,7 @@ const InfoCompany = (getData: Props) => {
 
                     {/* jobs section */}
                     <Tab key="jobs" title="Lowongan">
-                        <div className='grid grid-cols-2 gap-4'>
+                        <div className='grid grid-cols-2 sm:grid-cols-1 gap-4'>
                             {
                                 getData.jobs.map((job: any) => (
                                     <CardJob
@@ -99,10 +100,22 @@ const InfoCompany = (getData: Props) => {
 
                     {/* posts section */}
                     <Tab key="posts" title="Postingan">
-                        <div className="grid grid-cols-3 gap-4">
-                            <CardPosting />
-                            <CardPosting />
-                            <CardPosting />
+                        <div className="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
+                            {
+                                getData.posts.map((data: any) =>
+                                    <CardPosting
+                                        id={data.id}
+                                        company={getData.company}
+                                        followers={getData.followers}
+                                        imgCompany={getData.logo}
+                                        imgPost={data.imgPost}
+                                        content={data.content}
+                                        tag={data.tag}
+                                        likes={data.likes}
+                                        share={data.share}
+                                        comments={data.comments} />
+                                )
+                            }
                         </div>
                     </Tab>
                 </Tabs>

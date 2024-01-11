@@ -22,7 +22,7 @@ interface Props {
 const CardJob = (getData: Props) => {
     return (
         <>
-            <Card className="py-4 hover:-translate-y-2.5 hover:transition-all ease-in duration-300" id={`${getData.id}`}>
+            <Card className="py-4 xs:hover:translate-y-0 hover:-translate-y-2.5 hover:transition-all ease-in duration-300" id={`${getData.id}`}>
                 <CardHeader className="pb-0 pt-2 px-4 flex flex-row items-center gap-x-3">
                     {/* logo perusahaan */}
                     <Avatar src={getData.logo} size="md" alt={`logo ${getData.name}`} />

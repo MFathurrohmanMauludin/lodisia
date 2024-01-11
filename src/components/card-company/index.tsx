@@ -10,14 +10,14 @@ interface Props {
     banner: string;
     logo: string;
     job: any;
-    post: number;
+    post: any;
     about: string;
 }
 
 const CompanyCard = (data: Props) => {
     return (
         <>
-            <Card className="hover:border-cyan-500 hover:-translate-y-2 ease-in duration-300 rounded-lg" key={data.id}>
+            <Card className="hover:border-cyan-500 xs:hover:translate-y-0 hover:-translate-y-2 ease-in duration-300 rounded-lg" key={data.id}>
                 {/* card head */}
                 <div className="flex flex-col justify-center p-3">
                     <Image
@@ -42,7 +42,7 @@ const CompanyCard = (data: Props) => {
                     <a href={`/detail-perusahaan?name=${data.name}`} className="text-[18px] tracking-wide capitalize font-medium text-blue-400" tabIndex={0}>{data.name}</a>
                     <div className="flex items-center gap-x-4 text-gray-500" tabIndex={0}>
                         <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faBriefcase} /> <span>{data.job.length} Loker Tersedia</span></div>
-                        <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faNewspaper} /> <span>{data.post} Posting</span></div>
+                        <div className="space-x-0.5 text-tiny"><FontAwesomeIcon icon={faNewspaper} /> <span>{data.post.length} Posting</span></div>
                     </div>
 
                     <p className="text-small line-clamp-2 mt-2 text-slate-800" tabIndex={0}>{data.about}</p>
