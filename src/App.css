@@ -180,16 +180,18 @@ div#disqus_thread iframe[sandbox] {
 }
 
 button.slick-prev {
+    display: flex !important;
     position: absolute;
-    top: 44%;
+    top: 45%;
     left: -14px;
     background-color: hsla(0, 0%, 13%, 0.8);
     z-index: 10;
 }
 
 button.slick-next {
+    display: flex !important;
     position: absolute;
-    top: 44%;
+    top: 45%;
     right: -18px;
     background-color: hsla(0, 0%, 13%, 0.8);
     z-index: 10;

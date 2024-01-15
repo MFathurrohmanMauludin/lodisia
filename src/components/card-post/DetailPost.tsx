@@ -32,8 +32,8 @@ const DetailPost = (getData: Props) => {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 5000,
-    nextArrow: <Button variant="solid" color="default" size="md" radius="full" startContent={<FontAwesomeIcon className="!text-white" fontSize={24} icon={faChevronRight} />} isIconOnly />,
-    prevArrow: <Button variant="solid" color="default" size="md" radius="full" startContent={<FontAwesomeIcon className="!text-white" fontSize={24} icon={faChevronLeft} />} isIconOnly />,
+    nextArrow: <Button variant="solid" color="default" size="md" radius="full" startContent={<FontAwesomeIcon className="!text-white" fontSize={16} icon={faChevronRight} />} isIconOnly />,
+    prevArrow: <Button variant="solid" color="default" size="md" radius="full" startContent={<FontAwesomeIcon className="!text-white" fontSize={16} icon={faChevronLeft} />} isIconOnly />,
   };
 
   // pengguna yang pertama menyukai post
